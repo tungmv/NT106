@@ -15,7 +15,8 @@ namespace Train_Booking_System
         public LoginForm()
         {
             InitializeComponent();
-
+            BookingForm bookingForm = new BookingForm();
+            bookingForm.Show();
 
         }
             
