@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Train_Booking_System
 {
-    public partial class LoginForm : Form
+    public partial class BookingForm : Form
     {
-        public LoginForm()
+        public BookingForm()
         {
             InitializeComponent();
-
-
-        }
-            
-        private void ButtonLogin_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void kryptonButton1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
