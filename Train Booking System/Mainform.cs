@@ -11,10 +11,10 @@ using System.Threading;
 
 namespace Train_Booking_System
 {
-    public partial class BookingForm : Form
+    public partial class Mainform : Form
     {
-        bool SideBarExpanded = false;
-        public BookingForm()
+        MyAccountForm AccountForm;
+        public Mainform()
         {
             InitializeComponent();
         }
@@ -50,6 +50,29 @@ namespace Train_Booking_System
                     FlowLayoutSidebar.Width = FlowLayoutSidebar.Width + 10;
                     await Task.Delay(10);
                 }
+        }
+
+        private void ButtonMyAccount_Click(object sender, EventArgs e)
+        {
+            // Choose MyAccount option
+            if(AccountForm == null || AccountForm.IsDisposed)
+            {
+                AccountForm = new MyAccountForm();
+                AccountForm.FormClosed += AccountForm_FormClosed;
+                AccountForm.MdiParent = this;
+                AccountForm.Dock = DockStyle.Fill;
+                AccountForm.Show();
+            }
+            else
+            {
+                AccountForm.Activate();
+            }
+        }
+
+        //handle form closed event
+        private void AccountForm_FormClosed(object sender,FormClosedEventArgs e)
+        {
+            AccountForm = null;
         }
     }
 }

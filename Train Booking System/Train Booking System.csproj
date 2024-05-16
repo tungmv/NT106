@@ -70,11 +70,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingForm.cs">
+    <Compile Include="MyAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookingForm.Designer.cs">
-      <DependentUpon>BookingForm.cs</DependentUpon>
+    <Compile Include="MyAccountForm.Designer.cs">
+      <DependentUpon>MyAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -84,8 +90,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BookingForm.resx">
-      <DependentUpon>BookingForm.cs</DependentUpon>
+    <EmbeddedResource Include="MyAccountForm.resx">
+      <DependentUpon>MyAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
