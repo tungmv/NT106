@@ -13,7 +13,8 @@ namespace Train_Booking_System
 {
     public partial class Mainform : Form
     {
-        MyAccountForm AccountForm;
+        MyAccountForm MyAccountForm;
+        TrainBookingFormStep1 TrainBookingFormStep1;
         public Mainform()
         {
             InitializeComponent();
@@ -55,24 +56,42 @@ namespace Train_Booking_System
         private void ButtonMyAccount_Click(object sender, EventArgs e)
         {
             // Choose MyAccount option
-            if(AccountForm == null || AccountForm.IsDisposed)
+            if(MyAccountForm == null || MyAccountForm.IsDisposed)
             {
-                AccountForm = new MyAccountForm();
-                AccountForm.FormClosed += AccountForm_FormClosed;
-                AccountForm.MdiParent = this;
-                AccountForm.Dock = DockStyle.Fill;
-                AccountForm.Show();
+                MyAccountForm = new MyAccountForm();
+                MyAccountForm.FormClosed += AccountForm_FormClosed;
+                MyAccountForm.MdiParent = this;
+                MyAccountForm.Dock = DockStyle.Fill;
+                MyAccountForm.Show();
             }
             else
             {
-                AccountForm.Activate();
+                MyAccountForm.Activate();
             }
+            
         }
 
         //handle form closed event
         private void AccountForm_FormClosed(object sender,FormClosedEventArgs e)
         {
-            AccountForm = null;
+            TrainBookingFormStep1 = null;
+        }
+
+        private void ButtonBooking_Click(object sender, EventArgs e)
+        {
+            // Choose MyAccount option
+            if (TrainBookingFormStep1 == null || TrainBookingFormStep1.IsDisposed)
+            {
+                TrainBookingFormStep1 = new TrainBookingFormStep1();
+                TrainBookingFormStep1.FormClosed += AccountForm_FormClosed;
+                TrainBookingFormStep1.MdiParent = this;
+                TrainBookingFormStep1.Dock = DockStyle.Fill;
+                TrainBookingFormStep1.Show();
+            }
+            else
+            {
+                TrainBookingFormStep1.Activate();
+            }
         }
     }
 }
