@@ -76,6 +76,12 @@
     <Compile Include="MyAccountForm.Designer.cs">
       <DependentUpon>MyAccountForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketsForm.Designer.cs">
+      <DependentUpon>TicketsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrainBookingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MyAccountForm.resx">
       <DependentUpon>MyAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketsForm.resx">
+      <DependentUpon>TicketsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrainBookingForm.resx">
       <DependentUpon>TrainBookingForm.cs</DependentUpon>
