@@ -13,10 +13,13 @@ namespace Train_Booking_System
 {
     public partial class TrainBookingFormStep1 : Form
     {
-        public TrainBookingFormStep1()
+        private Mainform mainform;
+
+        public TrainBookingFormStep1(Mainform mainform)
         {
-            //set
-            
+            //accept reference to mainform
+            this.mainform = mainform;
+
             InitializeComponent();
         }
 
@@ -32,6 +35,25 @@ namespace Train_Booking_System
                 ComboBoxReturn.Enabled = false;
                 DateTimePickerReturnDate.Enabled = false;
             }
+        }
+
+        private void ButtonNext(object sender, EventArgs e)
+        {
+            // insert check here
+
+
+
+
+
+
+
+            //open TrainBookingFormStep2
+            TrainBookingFormStep2 trainBookingFormStep2 = new TrainBookingFormStep2(mainform);
+            //reference to mainform
+            trainBookingFormStep2.MdiParent = mainform;
+            trainBookingFormStep2.Dock = DockStyle.Fill;
+            trainBookingFormStep2.Show();
+
         }
     }
 }

@@ -10,10 +10,12 @@ using System.Windows.Forms;
 
 namespace Train_Booking_System
 {
-    public partial class TicketsForm : Form
+    public partial class TrainBookingFormStep2 : Form
     {
-        public TicketsForm()
+        private Mainform mainform;
+        public TrainBookingFormStep2(Mainform mainform)
         {
+            this.mainform = mainform;
             InitializeComponent();
         }
     }

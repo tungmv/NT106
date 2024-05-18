@@ -25,3 +25,4 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\De
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.Mainform.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep1.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.MyAccountForm.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep2.resources

@@ -15,6 +15,7 @@ namespace Train_Booking_System
     {
         MyAccountForm MyAccountForm;
         TrainBookingFormStep1 TrainBookingFormStep1;
+
         public Mainform()
         {
             InitializeComponent();
@@ -82,7 +83,7 @@ namespace Train_Booking_System
             // Choose MyAccount option
             if (TrainBookingFormStep1 == null || TrainBookingFormStep1.IsDisposed)
             {
-                TrainBookingFormStep1 = new TrainBookingFormStep1();
+                TrainBookingFormStep1 = new TrainBookingFormStep1(this);
                 TrainBookingFormStep1.FormClosed += AccountForm_FormClosed;
                 TrainBookingFormStep1.MdiParent = this;
                 TrainBookingFormStep1.Dock = DockStyle.Fill;
@@ -93,5 +94,8 @@ namespace Train_Booking_System
                 TrainBookingFormStep1.Activate();
             }
         }
+
+        
+
     }
 }

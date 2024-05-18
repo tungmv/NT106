@@ -76,17 +76,17 @@
     <Compile Include="MyAccountForm.Designer.cs">
       <DependentUpon>MyAccountForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TicketsForm.cs">
+    <Compile Include="TrainBookingFormStep2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TicketsForm.Designer.cs">
-      <DependentUpon>TicketsForm.cs</DependentUpon>
+    <Compile Include="TrainBookingFormStep2.Designer.cs">
+      <DependentUpon>TrainBookingFormStep2.cs</DependentUpon>
     </Compile>
-    <Compile Include="TrainBookingForm.cs">
+    <Compile Include="TrainBookingFormStep1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TrainBookingForm.Designer.cs">
-      <DependentUpon>TrainBookingForm.cs</DependentUpon>
+    <Compile Include="TrainBookingFormStep1.Designer.cs">
+      <DependentUpon>TrainBookingFormStep1.cs</DependentUpon>
     </Compile>
     <Compile Include="Mainform.cs">
       <SubType>Form</SubType>
@@ -105,11 +105,11 @@
     <EmbeddedResource Include="MyAccountForm.resx">
       <DependentUpon>MyAccountForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TicketsForm.resx">
-      <DependentUpon>TicketsForm.cs</DependentUpon>
+    <EmbeddedResource Include="TrainBookingFormStep2.resx">
+      <DependentUpon>TrainBookingFormStep2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrainBookingForm.resx">
-      <DependentUpon>TrainBookingForm.cs</DependentUpon>
+    <EmbeddedResource Include="TrainBookingFormStep1.resx">
+      <DependentUpon>TrainBookingFormStep1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainform.resx">
       <DependentUpon>Mainform.cs</DependentUpon>

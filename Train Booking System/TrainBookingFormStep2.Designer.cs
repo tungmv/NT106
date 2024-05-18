@@ -1,6 +1,6 @@
 ﻿namespace Train_Booking_System
 {
-    partial class TicketsForm
+    partial class TrainBookingFormStep2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainBookingFormStep2));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
@@ -147,6 +148,12 @@
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.button23 = new System.Windows.Forms.Button();
             this.kryptonButton40 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.ButtonLogin = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -187,12 +194,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox1.Location = new System.Drawing.Point(74, 98);
+            this.pictureBox1.Location = new System.Drawing.Point(106, 203);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(12, 39);
             this.pictureBox1.TabIndex = 1;
@@ -200,7 +211,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(83, 143);
+            this.kryptonButton2.Location = new System.Drawing.Point(115, 248);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -218,7 +229,7 @@
             // pictureBox41
             // 
             this.pictureBox41.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox41.Location = new System.Drawing.Point(74, 143);
+            this.pictureBox41.Location = new System.Drawing.Point(106, 248);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(12, 39);
             this.pictureBox41.TabIndex = 82;
@@ -229,7 +240,7 @@
             this.button40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.ForeColor = System.Drawing.Color.Black;
-            this.button40.Location = new System.Drawing.Point(83, 143);
+            this.button40.Location = new System.Drawing.Point(115, 248);
             this.button40.Name = "button40";
             this.button40.Size = new System.Drawing.Size(32, 39);
             this.button40.TabIndex = 81;
@@ -238,7 +249,7 @@
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(143, 98);
+            this.kryptonButton3.Location = new System.Drawing.Point(175, 203);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -256,7 +267,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox2.Location = new System.Drawing.Point(134, 98);
+            this.pictureBox2.Location = new System.Drawing.Point(166, 203);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(12, 39);
             this.pictureBox2.TabIndex = 85;
@@ -267,7 +278,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(143, 98);
+            this.button1.Location = new System.Drawing.Point(175, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(32, 39);
             this.button1.TabIndex = 84;
@@ -276,7 +287,7 @@
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(143, 143);
+            this.kryptonButton4.Location = new System.Drawing.Point(175, 248);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -294,7 +305,7 @@
             // pictureBox42
             // 
             this.pictureBox42.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox42.Location = new System.Drawing.Point(134, 143);
+            this.pictureBox42.Location = new System.Drawing.Point(166, 248);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(12, 39);
             this.pictureBox42.TabIndex = 88;
@@ -305,7 +316,7 @@
             this.button41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.ForeColor = System.Drawing.Color.Black;
-            this.button41.Location = new System.Drawing.Point(143, 143);
+            this.button41.Location = new System.Drawing.Point(175, 248);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(32, 39);
             this.button41.TabIndex = 87;
@@ -314,7 +325,7 @@
             // 
             // kryptonButton5
             // 
-            this.kryptonButton5.Location = new System.Drawing.Point(83, 219);
+            this.kryptonButton5.Location = new System.Drawing.Point(115, 324);
             this.kryptonButton5.Name = "kryptonButton5";
             this.kryptonButton5.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -332,7 +343,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox5.Location = new System.Drawing.Point(74, 219);
+            this.pictureBox5.Location = new System.Drawing.Point(106, 324);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(12, 39);
             this.pictureBox5.TabIndex = 91;
@@ -343,7 +354,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(83, 219);
+            this.button4.Location = new System.Drawing.Point(115, 324);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(32, 39);
             this.button4.TabIndex = 90;
@@ -352,7 +363,7 @@
             // 
             // kryptonButton6
             // 
-            this.kryptonButton6.Location = new System.Drawing.Point(83, 264);
+            this.kryptonButton6.Location = new System.Drawing.Point(115, 369);
             this.kryptonButton6.Name = "kryptonButton6";
             this.kryptonButton6.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -370,7 +381,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox6.Location = new System.Drawing.Point(74, 264);
+            this.pictureBox6.Location = new System.Drawing.Point(106, 369);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(12, 39);
             this.pictureBox6.TabIndex = 94;
@@ -381,7 +392,7 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(83, 264);
+            this.button5.Location = new System.Drawing.Point(115, 369);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(32, 39);
             this.button5.TabIndex = 93;
@@ -390,7 +401,7 @@
             // 
             // kryptonButton7
             // 
-            this.kryptonButton7.Location = new System.Drawing.Point(143, 219);
+            this.kryptonButton7.Location = new System.Drawing.Point(175, 324);
             this.kryptonButton7.Name = "kryptonButton7";
             this.kryptonButton7.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton7.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -408,7 +419,7 @@
             // pictureBox43
             // 
             this.pictureBox43.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox43.Location = new System.Drawing.Point(134, 219);
+            this.pictureBox43.Location = new System.Drawing.Point(166, 324);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(12, 39);
             this.pictureBox43.TabIndex = 97;
@@ -419,7 +430,7 @@
             this.button42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.ForeColor = System.Drawing.Color.Black;
-            this.button42.Location = new System.Drawing.Point(143, 219);
+            this.button42.Location = new System.Drawing.Point(175, 324);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(32, 39);
             this.button42.TabIndex = 96;
@@ -428,7 +439,7 @@
             // 
             // kryptonButton8
             // 
-            this.kryptonButton8.Location = new System.Drawing.Point(143, 264);
+            this.kryptonButton8.Location = new System.Drawing.Point(175, 369);
             this.kryptonButton8.Name = "kryptonButton8";
             this.kryptonButton8.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -446,7 +457,7 @@
             // pictureBox44
             // 
             this.pictureBox44.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox44.Location = new System.Drawing.Point(134, 264);
+            this.pictureBox44.Location = new System.Drawing.Point(166, 369);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(12, 39);
             this.pictureBox44.TabIndex = 100;
@@ -457,7 +468,7 @@
             this.button43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.ForeColor = System.Drawing.Color.Black;
-            this.button43.Location = new System.Drawing.Point(143, 264);
+            this.button43.Location = new System.Drawing.Point(175, 369);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(32, 39);
             this.button43.TabIndex = 99;
@@ -466,7 +477,7 @@
             // 
             // kryptonButton9
             // 
-            this.kryptonButton9.Location = new System.Drawing.Point(203, 98);
+            this.kryptonButton9.Location = new System.Drawing.Point(235, 203);
             this.kryptonButton9.Name = "kryptonButton9";
             this.kryptonButton9.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton9.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -484,7 +495,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox3.Location = new System.Drawing.Point(194, 98);
+            this.pictureBox3.Location = new System.Drawing.Point(226, 203);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(12, 39);
             this.pictureBox3.TabIndex = 103;
@@ -495,7 +506,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(203, 98);
+            this.button2.Location = new System.Drawing.Point(235, 203);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(32, 39);
             this.button2.TabIndex = 102;
@@ -504,7 +515,7 @@
             // 
             // kryptonButton10
             // 
-            this.kryptonButton10.Location = new System.Drawing.Point(203, 143);
+            this.kryptonButton10.Location = new System.Drawing.Point(235, 248);
             this.kryptonButton10.Name = "kryptonButton10";
             this.kryptonButton10.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton10.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -522,7 +533,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox4.Location = new System.Drawing.Point(194, 143);
+            this.pictureBox4.Location = new System.Drawing.Point(226, 248);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(12, 39);
             this.pictureBox4.TabIndex = 106;
@@ -533,7 +544,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(203, 143);
+            this.button3.Location = new System.Drawing.Point(235, 248);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(32, 39);
             this.button3.TabIndex = 105;
@@ -542,7 +553,7 @@
             // 
             // kryptonButton11
             // 
-            this.kryptonButton11.Location = new System.Drawing.Point(263, 98);
+            this.kryptonButton11.Location = new System.Drawing.Point(295, 203);
             this.kryptonButton11.Name = "kryptonButton11";
             this.kryptonButton11.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton11.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -560,7 +571,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox7.Location = new System.Drawing.Point(254, 98);
+            this.pictureBox7.Location = new System.Drawing.Point(286, 203);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(12, 39);
             this.pictureBox7.TabIndex = 109;
@@ -571,7 +582,7 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(263, 98);
+            this.button6.Location = new System.Drawing.Point(295, 203);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(32, 39);
             this.button6.TabIndex = 108;
@@ -580,7 +591,7 @@
             // 
             // kryptonButton12
             // 
-            this.kryptonButton12.Location = new System.Drawing.Point(263, 143);
+            this.kryptonButton12.Location = new System.Drawing.Point(295, 248);
             this.kryptonButton12.Name = "kryptonButton12";
             this.kryptonButton12.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton12.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -598,7 +609,7 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox8.Location = new System.Drawing.Point(254, 143);
+            this.pictureBox8.Location = new System.Drawing.Point(286, 248);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(12, 39);
             this.pictureBox8.TabIndex = 112;
@@ -609,7 +620,7 @@
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(263, 143);
+            this.button7.Location = new System.Drawing.Point(295, 248);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(32, 39);
             this.button7.TabIndex = 111;
@@ -618,7 +629,7 @@
             // 
             // kryptonButton13
             // 
-            this.kryptonButton13.Location = new System.Drawing.Point(203, 219);
+            this.kryptonButton13.Location = new System.Drawing.Point(235, 324);
             this.kryptonButton13.Name = "kryptonButton13";
             this.kryptonButton13.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton13.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -636,7 +647,7 @@
             // pictureBox45
             // 
             this.pictureBox45.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox45.Location = new System.Drawing.Point(194, 219);
+            this.pictureBox45.Location = new System.Drawing.Point(226, 324);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(12, 39);
             this.pictureBox45.TabIndex = 115;
@@ -647,7 +658,7 @@
             this.button44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button44.ForeColor = System.Drawing.Color.Black;
-            this.button44.Location = new System.Drawing.Point(203, 219);
+            this.button44.Location = new System.Drawing.Point(235, 324);
             this.button44.Name = "button44";
             this.button44.Size = new System.Drawing.Size(32, 39);
             this.button44.TabIndex = 114;
@@ -656,7 +667,7 @@
             // 
             // kryptonButton14
             // 
-            this.kryptonButton14.Location = new System.Drawing.Point(203, 264);
+            this.kryptonButton14.Location = new System.Drawing.Point(235, 369);
             this.kryptonButton14.Name = "kryptonButton14";
             this.kryptonButton14.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton14.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -674,7 +685,7 @@
             // pictureBox46
             // 
             this.pictureBox46.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox46.Location = new System.Drawing.Point(194, 264);
+            this.pictureBox46.Location = new System.Drawing.Point(226, 369);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(12, 39);
             this.pictureBox46.TabIndex = 118;
@@ -685,7 +696,7 @@
             this.button45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.ForeColor = System.Drawing.Color.Black;
-            this.button45.Location = new System.Drawing.Point(203, 264);
+            this.button45.Location = new System.Drawing.Point(235, 369);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(32, 39);
             this.button45.TabIndex = 117;
@@ -694,7 +705,7 @@
             // 
             // kryptonButton15
             // 
-            this.kryptonButton15.Location = new System.Drawing.Point(263, 219);
+            this.kryptonButton15.Location = new System.Drawing.Point(295, 324);
             this.kryptonButton15.Name = "kryptonButton15";
             this.kryptonButton15.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton15.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -712,7 +723,7 @@
             // pictureBox47
             // 
             this.pictureBox47.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox47.Location = new System.Drawing.Point(254, 219);
+            this.pictureBox47.Location = new System.Drawing.Point(286, 324);
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.Size = new System.Drawing.Size(12, 39);
             this.pictureBox47.TabIndex = 121;
@@ -723,7 +734,7 @@
             this.button46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button46.ForeColor = System.Drawing.Color.Black;
-            this.button46.Location = new System.Drawing.Point(263, 219);
+            this.button46.Location = new System.Drawing.Point(295, 324);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(32, 39);
             this.button46.TabIndex = 120;
@@ -732,7 +743,7 @@
             // 
             // kryptonButton16
             // 
-            this.kryptonButton16.Location = new System.Drawing.Point(263, 264);
+            this.kryptonButton16.Location = new System.Drawing.Point(295, 369);
             this.kryptonButton16.Name = "kryptonButton16";
             this.kryptonButton16.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton16.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -750,7 +761,7 @@
             // pictureBox48
             // 
             this.pictureBox48.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox48.Location = new System.Drawing.Point(254, 264);
+            this.pictureBox48.Location = new System.Drawing.Point(286, 369);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(12, 39);
             this.pictureBox48.TabIndex = 124;
@@ -761,7 +772,7 @@
             this.button47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button47.ForeColor = System.Drawing.Color.Black;
-            this.button47.Location = new System.Drawing.Point(263, 264);
+            this.button47.Location = new System.Drawing.Point(295, 369);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(32, 39);
             this.button47.TabIndex = 123;
@@ -771,7 +782,7 @@
             // pictureBox55
             // 
             this.pictureBox55.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox55.Location = new System.Drawing.Point(621, 219);
+            this.pictureBox55.Location = new System.Drawing.Point(653, 324);
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.Size = new System.Drawing.Size(12, 39);
             this.pictureBox55.TabIndex = 169;
@@ -782,7 +793,7 @@
             this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button51.ForeColor = System.Drawing.Color.Black;
-            this.button51.Location = new System.Drawing.Point(630, 143);
+            this.button51.Location = new System.Drawing.Point(662, 248);
             this.button51.Name = "button51";
             this.button51.Size = new System.Drawing.Size(32, 39);
             this.button51.TabIndex = 159;
@@ -792,7 +803,7 @@
             // pictureBox53
             // 
             this.pictureBox53.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox53.Location = new System.Drawing.Point(561, 219);
+            this.pictureBox53.Location = new System.Drawing.Point(593, 324);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(12, 39);
             this.pictureBox53.TabIndex = 163;
@@ -801,7 +812,7 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox10.Location = new System.Drawing.Point(441, 143);
+            this.pictureBox10.Location = new System.Drawing.Point(473, 248);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(12, 39);
             this.pictureBox10.TabIndex = 130;
@@ -810,7 +821,7 @@
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox11.Location = new System.Drawing.Point(501, 98);
+            this.pictureBox11.Location = new System.Drawing.Point(533, 203);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(12, 39);
             this.pictureBox11.TabIndex = 133;
@@ -821,7 +832,7 @@
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(450, 98);
+            this.button8.Location = new System.Drawing.Point(482, 203);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(32, 39);
             this.button8.TabIndex = 126;
@@ -830,7 +841,7 @@
             // 
             // kryptonButton22
             // 
-            this.kryptonButton22.Location = new System.Drawing.Point(450, 264);
+            this.kryptonButton22.Location = new System.Drawing.Point(482, 369);
             this.kryptonButton22.Name = "kryptonButton22";
             this.kryptonButton22.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton22.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -847,7 +858,7 @@
             // 
             // kryptonButton23
             // 
-            this.kryptonButton23.Location = new System.Drawing.Point(510, 219);
+            this.kryptonButton23.Location = new System.Drawing.Point(542, 324);
             this.kryptonButton23.Name = "kryptonButton23";
             this.kryptonButton23.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton23.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -864,7 +875,7 @@
             // 
             // kryptonButton20
             // 
-            this.kryptonButton20.Location = new System.Drawing.Point(510, 143);
+            this.kryptonButton20.Location = new System.Drawing.Point(542, 248);
             this.kryptonButton20.Name = "kryptonButton20";
             this.kryptonButton20.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton20.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -881,7 +892,7 @@
             // 
             // kryptonButton21
             // 
-            this.kryptonButton21.Location = new System.Drawing.Point(450, 219);
+            this.kryptonButton21.Location = new System.Drawing.Point(482, 324);
             this.kryptonButton21.Name = "kryptonButton21";
             this.kryptonButton21.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton21.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -898,7 +909,7 @@
             // 
             // kryptonButton26
             // 
-            this.kryptonButton26.Location = new System.Drawing.Point(570, 143);
+            this.kryptonButton26.Location = new System.Drawing.Point(602, 248);
             this.kryptonButton26.Name = "kryptonButton26";
             this.kryptonButton26.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton26.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -915,7 +926,7 @@
             // 
             // kryptonButton27
             // 
-            this.kryptonButton27.Location = new System.Drawing.Point(630, 98);
+            this.kryptonButton27.Location = new System.Drawing.Point(662, 203);
             this.kryptonButton27.Name = "kryptonButton27";
             this.kryptonButton27.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton27.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -932,7 +943,7 @@
             // 
             // kryptonButton24
             // 
-            this.kryptonButton24.Location = new System.Drawing.Point(510, 264);
+            this.kryptonButton24.Location = new System.Drawing.Point(542, 369);
             this.kryptonButton24.Name = "kryptonButton24";
             this.kryptonButton24.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton24.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -949,7 +960,7 @@
             // 
             // kryptonButton25
             // 
-            this.kryptonButton25.Location = new System.Drawing.Point(570, 98);
+            this.kryptonButton25.Location = new System.Drawing.Point(602, 203);
             this.kryptonButton25.Name = "kryptonButton25";
             this.kryptonButton25.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton25.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -969,7 +980,7 @@
             this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button50.ForeColor = System.Drawing.Color.Black;
-            this.button50.Location = new System.Drawing.Point(630, 98);
+            this.button50.Location = new System.Drawing.Point(662, 203);
             this.button50.Name = "button50";
             this.button50.Size = new System.Drawing.Size(32, 39);
             this.button50.TabIndex = 156;
@@ -978,7 +989,7 @@
             // 
             // kryptonButton28
             // 
-            this.kryptonButton28.Location = new System.Drawing.Point(630, 143);
+            this.kryptonButton28.Location = new System.Drawing.Point(662, 248);
             this.kryptonButton28.Name = "kryptonButton28";
             this.kryptonButton28.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton28.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -995,7 +1006,7 @@
             // 
             // kryptonButton29
             // 
-            this.kryptonButton29.Location = new System.Drawing.Point(570, 219);
+            this.kryptonButton29.Location = new System.Drawing.Point(602, 324);
             this.kryptonButton29.Name = "kryptonButton29";
             this.kryptonButton29.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton29.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1015,7 +1026,7 @@
             this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button49.ForeColor = System.Drawing.Color.Black;
-            this.button49.Location = new System.Drawing.Point(570, 143);
+            this.button49.Location = new System.Drawing.Point(602, 248);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(32, 39);
             this.button49.TabIndex = 153;
@@ -1024,7 +1035,7 @@
             // 
             // kryptonButton17
             // 
-            this.kryptonButton17.Location = new System.Drawing.Point(450, 98);
+            this.kryptonButton17.Location = new System.Drawing.Point(482, 203);
             this.kryptonButton17.Name = "kryptonButton17";
             this.kryptonButton17.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton17.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1042,7 +1053,7 @@
             // pictureBox51
             // 
             this.pictureBox51.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox51.Location = new System.Drawing.Point(621, 98);
+            this.pictureBox51.Location = new System.Drawing.Point(653, 203);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(12, 39);
             this.pictureBox51.TabIndex = 157;
@@ -1050,7 +1061,7 @@
             // 
             // kryptonButton18
             // 
-            this.kryptonButton18.Location = new System.Drawing.Point(450, 143);
+            this.kryptonButton18.Location = new System.Drawing.Point(482, 248);
             this.kryptonButton18.Name = "kryptonButton18";
             this.kryptonButton18.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton18.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1067,7 +1078,7 @@
             // 
             // kryptonButton19
             // 
-            this.kryptonButton19.Location = new System.Drawing.Point(510, 98);
+            this.kryptonButton19.Location = new System.Drawing.Point(542, 203);
             this.kryptonButton19.Name = "kryptonButton19";
             this.kryptonButton19.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton19.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1087,7 +1098,7 @@
             this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button54.ForeColor = System.Drawing.Color.Black;
-            this.button54.Location = new System.Drawing.Point(630, 219);
+            this.button54.Location = new System.Drawing.Point(662, 324);
             this.button54.Name = "button54";
             this.button54.Size = new System.Drawing.Size(32, 39);
             this.button54.TabIndex = 168;
@@ -1097,7 +1108,7 @@
             // pictureBox52
             // 
             this.pictureBox52.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox52.Location = new System.Drawing.Point(621, 143);
+            this.pictureBox52.Location = new System.Drawing.Point(653, 248);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(12, 39);
             this.pictureBox52.TabIndex = 160;
@@ -1108,7 +1119,7 @@
             this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button55.ForeColor = System.Drawing.Color.Black;
-            this.button55.Location = new System.Drawing.Point(630, 264);
+            this.button55.Location = new System.Drawing.Point(662, 369);
             this.button55.Name = "button55";
             this.button55.Size = new System.Drawing.Size(32, 39);
             this.button55.TabIndex = 171;
@@ -1120,7 +1131,7 @@
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.Black;
-            this.button14.Location = new System.Drawing.Point(510, 219);
+            this.button14.Location = new System.Drawing.Point(542, 324);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(32, 39);
             this.button14.TabIndex = 144;
@@ -1129,7 +1140,7 @@
             // 
             // kryptonButton30
             // 
-            this.kryptonButton30.Location = new System.Drawing.Point(570, 264);
+            this.kryptonButton30.Location = new System.Drawing.Point(602, 369);
             this.kryptonButton30.Name = "kryptonButton30";
             this.kryptonButton30.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton30.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1149,7 +1160,7 @@
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.Black;
-            this.button15.Location = new System.Drawing.Point(510, 264);
+            this.button15.Location = new System.Drawing.Point(542, 369);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(32, 39);
             this.button15.TabIndex = 147;
@@ -1161,7 +1172,7 @@
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(450, 143);
+            this.button9.Location = new System.Drawing.Point(482, 248);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(32, 39);
             this.button9.TabIndex = 129;
@@ -1173,7 +1184,7 @@
             this.button48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button48.ForeColor = System.Drawing.Color.Black;
-            this.button48.Location = new System.Drawing.Point(570, 98);
+            this.button48.Location = new System.Drawing.Point(602, 203);
             this.button48.Name = "button48";
             this.button48.Size = new System.Drawing.Size(32, 39);
             this.button48.TabIndex = 150;
@@ -1185,7 +1196,7 @@
             this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button53.ForeColor = System.Drawing.Color.Black;
-            this.button53.Location = new System.Drawing.Point(570, 264);
+            this.button53.Location = new System.Drawing.Point(602, 369);
             this.button53.Name = "button53";
             this.button53.Size = new System.Drawing.Size(32, 39);
             this.button53.TabIndex = 165;
@@ -1195,7 +1206,7 @@
             // pictureBox49
             // 
             this.pictureBox49.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox49.Location = new System.Drawing.Point(561, 98);
+            this.pictureBox49.Location = new System.Drawing.Point(593, 203);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(12, 39);
             this.pictureBox49.TabIndex = 151;
@@ -1204,7 +1215,7 @@
             // pictureBox54
             // 
             this.pictureBox54.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox54.Location = new System.Drawing.Point(561, 264);
+            this.pictureBox54.Location = new System.Drawing.Point(593, 369);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(12, 39);
             this.pictureBox54.TabIndex = 166;
@@ -1215,7 +1226,7 @@
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(450, 264);
+            this.button13.Location = new System.Drawing.Point(482, 369);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(32, 39);
             this.button13.TabIndex = 141;
@@ -1227,7 +1238,7 @@
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(510, 98);
+            this.button10.Location = new System.Drawing.Point(542, 203);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(32, 39);
             this.button10.TabIndex = 132;
@@ -1239,7 +1250,7 @@
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(510, 143);
+            this.button11.Location = new System.Drawing.Point(542, 248);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(32, 39);
             this.button11.TabIndex = 135;
@@ -1249,7 +1260,7 @@
             // pictureBox16
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox16.Location = new System.Drawing.Point(501, 264);
+            this.pictureBox16.Location = new System.Drawing.Point(533, 369);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(12, 39);
             this.pictureBox16.TabIndex = 148;
@@ -1258,7 +1269,7 @@
             // pictureBox56
             // 
             this.pictureBox56.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox56.Location = new System.Drawing.Point(621, 264);
+            this.pictureBox56.Location = new System.Drawing.Point(653, 369);
             this.pictureBox56.Name = "pictureBox56";
             this.pictureBox56.Size = new System.Drawing.Size(12, 39);
             this.pictureBox56.TabIndex = 172;
@@ -1269,7 +1280,7 @@
             this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button52.ForeColor = System.Drawing.Color.Black;
-            this.button52.Location = new System.Drawing.Point(570, 219);
+            this.button52.Location = new System.Drawing.Point(602, 324);
             this.button52.Name = "button52";
             this.button52.Size = new System.Drawing.Size(32, 39);
             this.button52.TabIndex = 162;
@@ -1279,7 +1290,7 @@
             // pictureBox50
             // 
             this.pictureBox50.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox50.Location = new System.Drawing.Point(561, 143);
+            this.pictureBox50.Location = new System.Drawing.Point(593, 248);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(12, 39);
             this.pictureBox50.TabIndex = 154;
@@ -1290,7 +1301,7 @@
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(450, 219);
+            this.button12.Location = new System.Drawing.Point(482, 324);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(32, 39);
             this.button12.TabIndex = 138;
@@ -1300,7 +1311,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox9.Location = new System.Drawing.Point(441, 98);
+            this.pictureBox9.Location = new System.Drawing.Point(473, 203);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(12, 39);
             this.pictureBox9.TabIndex = 127;
@@ -1309,7 +1320,7 @@
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox12.Location = new System.Drawing.Point(501, 143);
+            this.pictureBox12.Location = new System.Drawing.Point(533, 248);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(12, 39);
             this.pictureBox12.TabIndex = 136;
@@ -1317,7 +1328,7 @@
             // 
             // kryptonButton32
             // 
-            this.kryptonButton32.Location = new System.Drawing.Point(630, 264);
+            this.kryptonButton32.Location = new System.Drawing.Point(662, 369);
             this.kryptonButton32.Name = "kryptonButton32";
             this.kryptonButton32.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton32.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1335,7 +1346,7 @@
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox13.Location = new System.Drawing.Point(441, 219);
+            this.pictureBox13.Location = new System.Drawing.Point(473, 324);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(12, 39);
             this.pictureBox13.TabIndex = 139;
@@ -1344,7 +1355,7 @@
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox14.Location = new System.Drawing.Point(441, 264);
+            this.pictureBox14.Location = new System.Drawing.Point(473, 369);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(12, 39);
             this.pictureBox14.TabIndex = 142;
@@ -1353,7 +1364,7 @@
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox15.Location = new System.Drawing.Point(501, 219);
+            this.pictureBox15.Location = new System.Drawing.Point(533, 324);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(12, 39);
             this.pictureBox15.TabIndex = 145;
@@ -1361,7 +1372,7 @@
             // 
             // kryptonButton31
             // 
-            this.kryptonButton31.Location = new System.Drawing.Point(630, 219);
+            this.kryptonButton31.Location = new System.Drawing.Point(662, 324);
             this.kryptonButton31.Name = "kryptonButton31";
             this.kryptonButton31.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton31.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1378,7 +1389,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(322, 98);
+            this.kryptonButton1.Location = new System.Drawing.Point(354, 203);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1396,7 +1407,7 @@
             // pictureBox25
             // 
             this.pictureBox25.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox25.Location = new System.Drawing.Point(313, 98);
+            this.pictureBox25.Location = new System.Drawing.Point(345, 203);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(12, 39);
             this.pictureBox25.TabIndex = 175;
@@ -1407,7 +1418,7 @@
             this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button24.ForeColor = System.Drawing.Color.Black;
-            this.button24.Location = new System.Drawing.Point(322, 98);
+            this.button24.Location = new System.Drawing.Point(354, 203);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(32, 39);
             this.button24.TabIndex = 174;
@@ -1416,7 +1427,7 @@
             // 
             // kryptonButton33
             // 
-            this.kryptonButton33.Location = new System.Drawing.Point(322, 143);
+            this.kryptonButton33.Location = new System.Drawing.Point(354, 248);
             this.kryptonButton33.Name = "kryptonButton33";
             this.kryptonButton33.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton33.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1434,7 +1445,7 @@
             // pictureBox26
             // 
             this.pictureBox26.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox26.Location = new System.Drawing.Point(313, 143);
+            this.pictureBox26.Location = new System.Drawing.Point(345, 248);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(12, 39);
             this.pictureBox26.TabIndex = 178;
@@ -1445,7 +1456,7 @@
             this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button25.ForeColor = System.Drawing.Color.Black;
-            this.button25.Location = new System.Drawing.Point(322, 143);
+            this.button25.Location = new System.Drawing.Point(354, 248);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(32, 39);
             this.button25.TabIndex = 177;
@@ -1454,7 +1465,7 @@
             // 
             // kryptonButton34
             // 
-            this.kryptonButton34.Location = new System.Drawing.Point(322, 219);
+            this.kryptonButton34.Location = new System.Drawing.Point(354, 324);
             this.kryptonButton34.Name = "kryptonButton34";
             this.kryptonButton34.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton34.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1472,7 +1483,7 @@
             // pictureBox27
             // 
             this.pictureBox27.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox27.Location = new System.Drawing.Point(313, 219);
+            this.pictureBox27.Location = new System.Drawing.Point(345, 324);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(12, 39);
             this.pictureBox27.TabIndex = 181;
@@ -1483,7 +1494,7 @@
             this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button26.ForeColor = System.Drawing.Color.Black;
-            this.button26.Location = new System.Drawing.Point(322, 219);
+            this.button26.Location = new System.Drawing.Point(354, 324);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(32, 39);
             this.button26.TabIndex = 180;
@@ -1492,7 +1503,7 @@
             // 
             // kryptonButton35
             // 
-            this.kryptonButton35.Location = new System.Drawing.Point(322, 264);
+            this.kryptonButton35.Location = new System.Drawing.Point(354, 369);
             this.kryptonButton35.Name = "kryptonButton35";
             this.kryptonButton35.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton35.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1510,7 +1521,7 @@
             // pictureBox28
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox28.Location = new System.Drawing.Point(313, 264);
+            this.pictureBox28.Location = new System.Drawing.Point(345, 369);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(12, 39);
             this.pictureBox28.TabIndex = 184;
@@ -1521,7 +1532,7 @@
             this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button27.ForeColor = System.Drawing.Color.Black;
-            this.button27.Location = new System.Drawing.Point(322, 264);
+            this.button27.Location = new System.Drawing.Point(354, 369);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(32, 39);
             this.button27.TabIndex = 183;
@@ -1530,7 +1541,7 @@
             // 
             // kryptonButton36
             // 
-            this.kryptonButton36.Location = new System.Drawing.Point(689, 98);
+            this.kryptonButton36.Location = new System.Drawing.Point(721, 203);
             this.kryptonButton36.Name = "kryptonButton36";
             this.kryptonButton36.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton36.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1548,7 +1559,7 @@
             // pictureBox21
             // 
             this.pictureBox21.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox21.Location = new System.Drawing.Point(680, 98);
+            this.pictureBox21.Location = new System.Drawing.Point(712, 203);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(12, 39);
             this.pictureBox21.TabIndex = 187;
@@ -1559,7 +1570,7 @@
             this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.Black;
-            this.button20.Location = new System.Drawing.Point(689, 98);
+            this.button20.Location = new System.Drawing.Point(721, 203);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(32, 39);
             this.button20.TabIndex = 186;
@@ -1568,7 +1579,7 @@
             // 
             // kryptonButton37
             // 
-            this.kryptonButton37.Location = new System.Drawing.Point(689, 143);
+            this.kryptonButton37.Location = new System.Drawing.Point(721, 248);
             this.kryptonButton37.Name = "kryptonButton37";
             this.kryptonButton37.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton37.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1586,7 +1597,7 @@
             // pictureBox22
             // 
             this.pictureBox22.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox22.Location = new System.Drawing.Point(680, 143);
+            this.pictureBox22.Location = new System.Drawing.Point(712, 248);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(12, 39);
             this.pictureBox22.TabIndex = 190;
@@ -1597,7 +1608,7 @@
             this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.Color.Black;
-            this.button21.Location = new System.Drawing.Point(689, 143);
+            this.button21.Location = new System.Drawing.Point(721, 248);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(32, 39);
             this.button21.TabIndex = 189;
@@ -1606,7 +1617,7 @@
             // 
             // kryptonButton38
             // 
-            this.kryptonButton38.Location = new System.Drawing.Point(689, 219);
+            this.kryptonButton38.Location = new System.Drawing.Point(721, 324);
             this.kryptonButton38.Name = "kryptonButton38";
             this.kryptonButton38.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton38.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1624,7 +1635,7 @@
             // pictureBox23
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox23.Location = new System.Drawing.Point(680, 219);
+            this.pictureBox23.Location = new System.Drawing.Point(712, 324);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(12, 39);
             this.pictureBox23.TabIndex = 193;
@@ -1635,7 +1646,7 @@
             this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.Black;
-            this.button22.Location = new System.Drawing.Point(689, 219);
+            this.button22.Location = new System.Drawing.Point(721, 324);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(32, 39);
             this.button22.TabIndex = 192;
@@ -1644,7 +1655,7 @@
             // 
             // kryptonButton39
             // 
-            this.kryptonButton39.Location = new System.Drawing.Point(689, 264);
+            this.kryptonButton39.Location = new System.Drawing.Point(721, 369);
             this.kryptonButton39.Name = "kryptonButton39";
             this.kryptonButton39.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton39.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1662,7 +1673,7 @@
             // pictureBox24
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox24.Location = new System.Drawing.Point(680, 264);
+            this.pictureBox24.Location = new System.Drawing.Point(712, 369);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(12, 39);
             this.pictureBox24.TabIndex = 196;
@@ -1673,7 +1684,7 @@
             this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.Color.Black;
-            this.button23.Location = new System.Drawing.Point(689, 264);
+            this.button23.Location = new System.Drawing.Point(721, 369);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(32, 39);
             this.button23.TabIndex = 195;
@@ -1682,7 +1693,7 @@
             // 
             // kryptonButton40
             // 
-            this.kryptonButton40.Location = new System.Drawing.Point(83, 98);
+            this.kryptonButton40.Location = new System.Drawing.Point(115, 203);
             this.kryptonButton40.Name = "kryptonButton40";
             this.kryptonButton40.Size = new System.Drawing.Size(32, 39);
             this.kryptonButton40.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1697,11 +1708,105 @@
             this.kryptonButton40.TabIndex = 198;
             this.kryptonButton40.Values.Text = "1";
             // 
-            // TicketsForm
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(653, 98);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(179, 76);
+            this.pictureBox17.TabIndex = 199;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(441, 94);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(206, 76);
+            this.pictureBox18.TabIndex = 200;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(235, 94);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(206, 76);
+            this.pictureBox19.TabIndex = 201;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Location = new System.Drawing.Point(32, 94);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(206, 76);
+            this.pictureBox20.TabIndex = 202;
+            this.pictureBox20.TabStop = false;
+            // 
+            // ButtonLogin
+            // 
+            this.ButtonLogin.Location = new System.Drawing.Point(362, 485);
+            this.ButtonLogin.Name = "ButtonLogin";
+            this.ButtonLogin.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ButtonLogin.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.OverrideDefault.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ButtonLogin.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.OverrideFocus.Back.ColorAngle = 45F;
+            this.ButtonLogin.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.ButtonLogin.Size = new System.Drawing.Size(123, 37);
+            this.ButtonLogin.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ButtonLogin.StateCommon.Back.ColorAngle = 135F;
+            this.ButtonLogin.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ButtonLogin.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.StateCommon.Border.ColorAngle = 45F;
+            this.ButtonLogin.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.ButtonLogin.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ButtonLogin.StateCommon.Border.Rounding = 10;
+            this.ButtonLogin.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.ButtonLogin.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.ButtonLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLogin.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.StatePressed.Back.ColorAngle = 135F;
+            this.ButtonLogin.StatePressed.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ButtonLogin.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonLogin.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ButtonLogin.StateTracking.Back.ColorAngle = 135F;
+            this.ButtonLogin.StateTracking.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ButtonLogin.TabIndex = 204;
+            this.ButtonLogin.Values.Text = "Finish";
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(360, 23);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonLabel1.Size = new System.Drawing.Size(154, 33);
+            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonLabel1.StateCommon.ShortText.ColorAngle = 45F;
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.kryptonLabel1.TabIndex = 206;
+            this.kryptonLabel1.Values.Text = "Seat Selection";
+            // 
+            // TrainBookingFormStep2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(905, 548);
+            this.Controls.Add(this.kryptonLabel1);
+            this.Controls.Add(this.ButtonLogin);
+            this.Controls.Add(this.pictureBox20);
+            this.Controls.Add(this.pictureBox19);
+            this.Controls.Add(this.pictureBox18);
+            this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.pictureBox41);
@@ -1821,7 +1926,8 @@
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.kryptonButton40);
-            this.Name = "TicketsForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "TrainBookingFormStep2";
             this.Text = "TicketsForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
@@ -1863,7 +1969,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1987,5 +2098,11 @@
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.Button button23;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton40;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton ButtonLogin;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }
