@@ -152,8 +152,12 @@
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.ButtonLogin = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.kryptonButton41 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -198,6 +202,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -224,7 +232,7 @@
             this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.TabIndex = 83;
-            this.kryptonButton2.Values.Text = "1";
+            this.kryptonButton2.Values.Text = "2";
             // 
             // pictureBox41
             // 
@@ -262,7 +270,7 @@
             this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton3.TabIndex = 86;
-            this.kryptonButton3.Values.Text = "1";
+            this.kryptonButton3.Values.Text = "5";
             // 
             // pictureBox2
             // 
@@ -300,7 +308,7 @@
             this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton4.TabIndex = 89;
-            this.kryptonButton4.Values.Text = "1";
+            this.kryptonButton4.Values.Text = "6";
             // 
             // pictureBox42
             // 
@@ -338,7 +346,7 @@
             this.kryptonButton5.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton5.TabIndex = 92;
-            this.kryptonButton5.Values.Text = "1";
+            this.kryptonButton5.Values.Text = "3";
             // 
             // pictureBox5
             // 
@@ -376,7 +384,7 @@
             this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton6.TabIndex = 95;
-            this.kryptonButton6.Values.Text = "1";
+            this.kryptonButton6.Values.Text = "4";
             // 
             // pictureBox6
             // 
@@ -414,7 +422,7 @@
             this.kryptonButton7.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton7.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton7.TabIndex = 98;
-            this.kryptonButton7.Values.Text = "1";
+            this.kryptonButton7.Values.Text = "7";
             // 
             // pictureBox43
             // 
@@ -452,7 +460,7 @@
             this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton8.TabIndex = 101;
-            this.kryptonButton8.Values.Text = "1";
+            this.kryptonButton8.Values.Text = "8";
             // 
             // pictureBox44
             // 
@@ -490,7 +498,7 @@
             this.kryptonButton9.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton9.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton9.TabIndex = 104;
-            this.kryptonButton9.Values.Text = "1";
+            this.kryptonButton9.Values.Text = "9";
             // 
             // pictureBox3
             // 
@@ -528,7 +536,7 @@
             this.kryptonButton10.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton10.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton10.TabIndex = 107;
-            this.kryptonButton10.Values.Text = "1";
+            this.kryptonButton10.Values.Text = "10";
             // 
             // pictureBox4
             // 
@@ -566,7 +574,7 @@
             this.kryptonButton11.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton11.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton11.TabIndex = 110;
-            this.kryptonButton11.Values.Text = "1";
+            this.kryptonButton11.Values.Text = "13";
             // 
             // pictureBox7
             // 
@@ -604,7 +612,7 @@
             this.kryptonButton12.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton12.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton12.TabIndex = 113;
-            this.kryptonButton12.Values.Text = "1";
+            this.kryptonButton12.Values.Text = "14";
             // 
             // pictureBox8
             // 
@@ -642,7 +650,7 @@
             this.kryptonButton13.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton13.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton13.TabIndex = 116;
-            this.kryptonButton13.Values.Text = "1";
+            this.kryptonButton13.Values.Text = "11";
             // 
             // pictureBox45
             // 
@@ -680,7 +688,7 @@
             this.kryptonButton14.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton14.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton14.TabIndex = 119;
-            this.kryptonButton14.Values.Text = "1";
+            this.kryptonButton14.Values.Text = "12";
             // 
             // pictureBox46
             // 
@@ -718,7 +726,7 @@
             this.kryptonButton15.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton15.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton15.TabIndex = 122;
-            this.kryptonButton15.Values.Text = "1";
+            this.kryptonButton15.Values.Text = "15";
             // 
             // pictureBox47
             // 
@@ -756,7 +764,7 @@
             this.kryptonButton16.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton16.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton16.TabIndex = 125;
-            this.kryptonButton16.Values.Text = "1";
+            this.kryptonButton16.Values.Text = "16";
             // 
             // pictureBox48
             // 
@@ -854,7 +862,7 @@
             this.kryptonButton22.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton22.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton22.TabIndex = 143;
-            this.kryptonButton22.Values.Text = "1";
+            this.kryptonButton22.Values.Text = "24";
             // 
             // kryptonButton23
             // 
@@ -871,7 +879,7 @@
             this.kryptonButton23.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton23.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton23.TabIndex = 146;
-            this.kryptonButton23.Values.Text = "1";
+            this.kryptonButton23.Values.Text = "27";
             // 
             // kryptonButton20
             // 
@@ -888,7 +896,7 @@
             this.kryptonButton20.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton20.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton20.TabIndex = 137;
-            this.kryptonButton20.Values.Text = "1";
+            this.kryptonButton20.Values.Text = "26";
             // 
             // kryptonButton21
             // 
@@ -905,7 +913,7 @@
             this.kryptonButton21.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton21.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton21.TabIndex = 140;
-            this.kryptonButton21.Values.Text = "1";
+            this.kryptonButton21.Values.Text = "23";
             // 
             // kryptonButton26
             // 
@@ -922,7 +930,7 @@
             this.kryptonButton26.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton26.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton26.TabIndex = 155;
-            this.kryptonButton26.Values.Text = "1";
+            this.kryptonButton26.Values.Text = "30";
             // 
             // kryptonButton27
             // 
@@ -939,7 +947,7 @@
             this.kryptonButton27.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton27.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton27.TabIndex = 158;
-            this.kryptonButton27.Values.Text = "1";
+            this.kryptonButton27.Values.Text = "33";
             // 
             // kryptonButton24
             // 
@@ -956,7 +964,7 @@
             this.kryptonButton24.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton24.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton24.TabIndex = 149;
-            this.kryptonButton24.Values.Text = "1";
+            this.kryptonButton24.Values.Text = "28";
             // 
             // kryptonButton25
             // 
@@ -973,7 +981,7 @@
             this.kryptonButton25.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton25.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton25.TabIndex = 152;
-            this.kryptonButton25.Values.Text = "1";
+            this.kryptonButton25.Values.Text = "29";
             // 
             // button50
             // 
@@ -1002,7 +1010,7 @@
             this.kryptonButton28.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton28.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton28.TabIndex = 161;
-            this.kryptonButton28.Values.Text = "1";
+            this.kryptonButton28.Values.Text = "34";
             // 
             // kryptonButton29
             // 
@@ -1019,7 +1027,7 @@
             this.kryptonButton29.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton29.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton29.TabIndex = 164;
-            this.kryptonButton29.Values.Text = "1";
+            this.kryptonButton29.Values.Text = "31";
             // 
             // button49
             // 
@@ -1048,7 +1056,7 @@
             this.kryptonButton17.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton17.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton17.TabIndex = 128;
-            this.kryptonButton17.Values.Text = "1";
+            this.kryptonButton17.Values.Text = "21";
             // 
             // pictureBox51
             // 
@@ -1074,7 +1082,7 @@
             this.kryptonButton18.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton18.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton18.TabIndex = 131;
-            this.kryptonButton18.Values.Text = "1";
+            this.kryptonButton18.Values.Text = "22";
             // 
             // kryptonButton19
             // 
@@ -1091,7 +1099,7 @@
             this.kryptonButton19.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton19.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton19.TabIndex = 134;
-            this.kryptonButton19.Values.Text = "1";
+            this.kryptonButton19.Values.Text = "25";
             // 
             // button54
             // 
@@ -1153,7 +1161,7 @@
             this.kryptonButton30.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton30.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton30.TabIndex = 167;
-            this.kryptonButton30.Values.Text = "1";
+            this.kryptonButton30.Values.Text = "32";
             // 
             // button15
             // 
@@ -1341,7 +1349,7 @@
             this.kryptonButton32.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton32.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton32.TabIndex = 173;
-            this.kryptonButton32.Values.Text = "1";
+            this.kryptonButton32.Values.Text = "36";
             // 
             // pictureBox13
             // 
@@ -1385,7 +1393,7 @@
             this.kryptonButton31.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton31.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton31.TabIndex = 170;
-            this.kryptonButton31.Values.Text = "1";
+            this.kryptonButton31.Values.Text = "35";
             // 
             // kryptonButton1
             // 
@@ -1402,7 +1410,7 @@
             this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.TabIndex = 176;
-            this.kryptonButton1.Values.Text = "1";
+            this.kryptonButton1.Values.Text = "17";
             // 
             // pictureBox25
             // 
@@ -1440,7 +1448,7 @@
             this.kryptonButton33.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton33.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton33.TabIndex = 179;
-            this.kryptonButton33.Values.Text = "1";
+            this.kryptonButton33.Values.Text = "18";
             // 
             // pictureBox26
             // 
@@ -1478,7 +1486,7 @@
             this.kryptonButton34.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton34.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton34.TabIndex = 182;
-            this.kryptonButton34.Values.Text = "1";
+            this.kryptonButton34.Values.Text = "19";
             // 
             // pictureBox27
             // 
@@ -1516,7 +1524,7 @@
             this.kryptonButton35.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton35.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton35.TabIndex = 185;
-            this.kryptonButton35.Values.Text = "1";
+            this.kryptonButton35.Values.Text = "20";
             // 
             // pictureBox28
             // 
@@ -1554,7 +1562,7 @@
             this.kryptonButton36.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton36.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton36.TabIndex = 188;
-            this.kryptonButton36.Values.Text = "1";
+            this.kryptonButton36.Values.Text = "37";
             // 
             // pictureBox21
             // 
@@ -1592,7 +1600,7 @@
             this.kryptonButton37.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton37.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton37.TabIndex = 191;
-            this.kryptonButton37.Values.Text = "1";
+            this.kryptonButton37.Values.Text = "38";
             // 
             // pictureBox22
             // 
@@ -1630,7 +1638,7 @@
             this.kryptonButton38.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton38.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton38.TabIndex = 194;
-            this.kryptonButton38.Values.Text = "1";
+            this.kryptonButton38.Values.Text = "39";
             // 
             // pictureBox23
             // 
@@ -1668,7 +1676,7 @@
             this.kryptonButton39.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonButton39.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton39.TabIndex = 197;
-            this.kryptonButton39.Values.Text = "1";
+            this.kryptonButton39.Values.Text = "40";
             // 
             // pictureBox24
             // 
@@ -1744,44 +1752,6 @@
             this.pictureBox20.TabIndex = 202;
             this.pictureBox20.TabStop = false;
             // 
-            // ButtonLogin
-            // 
-            this.ButtonLogin.Location = new System.Drawing.Point(362, 485);
-            this.ButtonLogin.Name = "ButtonLogin";
-            this.ButtonLogin.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ButtonLogin.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.OverrideDefault.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ButtonLogin.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.OverrideFocus.Back.ColorAngle = 45F;
-            this.ButtonLogin.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ButtonLogin.Size = new System.Drawing.Size(123, 37);
-            this.ButtonLogin.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ButtonLogin.StateCommon.Back.ColorAngle = 135F;
-            this.ButtonLogin.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ButtonLogin.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.StateCommon.Border.ColorAngle = 45F;
-            this.ButtonLogin.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ButtonLogin.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ButtonLogin.StateCommon.Border.Rounding = 10;
-            this.ButtonLogin.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.ButtonLogin.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.ButtonLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonLogin.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.StatePressed.Back.ColorAngle = 135F;
-            this.ButtonLogin.StatePressed.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ButtonLogin.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonLogin.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ButtonLogin.StateTracking.Back.ColorAngle = 135F;
-            this.ButtonLogin.StateTracking.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ButtonLogin.TabIndex = 204;
-            this.ButtonLogin.Values.Text = "Finish";
-            // 
             // kryptonLabel1
             // 
             this.kryptonLabel1.Location = new System.Drawing.Point(360, 23);
@@ -1796,13 +1766,79 @@
             this.kryptonLabel1.TabIndex = 206;
             this.kryptonLabel1.Values.Text = "Seat Selection";
             // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
+            this.pictureBox29.Location = new System.Drawing.Point(721, 55);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox29.TabIndex = 207;
+            this.pictureBox29.TabStop = false;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
+            this.pictureBox30.Location = new System.Drawing.Point(524, 55);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox30.TabIndex = 208;
+            this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
+            this.pictureBox31.Location = new System.Drawing.Point(320, 55);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox31.TabIndex = 209;
+            this.pictureBox31.TabStop = false;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
+            this.pictureBox32.Location = new System.Drawing.Point(115, 55);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox32.TabIndex = 210;
+            this.pictureBox32.TabStop = false;
+            // 
+            // kryptonButton41
+            // 
+            this.kryptonButton41.Location = new System.Drawing.Point(362, 485);
+            this.kryptonButton41.Name = "kryptonButton41";
+            this.kryptonButton41.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonButton41.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonButton41.OverrideFocus.Back.ColorAngle = 45F;
+            this.kryptonButton41.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton41.Size = new System.Drawing.Size(123, 37);
+            this.kryptonButton41.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton41.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton41.StateCommon.Back.ColorAngle = 135F;
+            this.kryptonButton41.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton41.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonButton41.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonButton41.StateCommon.Border.ColorAngle = 45F;
+            this.kryptonButton41.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton41.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton41.StateCommon.Border.Rounding = 10;
+            this.kryptonButton41.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.kryptonButton41.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.kryptonButton41.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton41.TabIndex = 211;
+            this.kryptonButton41.Values.Text = "Next";
+            // 
             // TrainBookingFormStep2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 548);
+            this.Controls.Add(this.pictureBox32);
+            this.Controls.Add(this.pictureBox31);
+            this.Controls.Add(this.pictureBox30);
+            this.Controls.Add(this.pictureBox29);
             this.Controls.Add(this.kryptonLabel1);
-            this.Controls.Add(this.ButtonLogin);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
@@ -1926,6 +1962,7 @@
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.kryptonButton40);
+            this.Controls.Add(this.kryptonButton41);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TrainBookingFormStep2";
             this.Text = "TicketsForm";
@@ -1973,6 +2010,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2102,7 +2143,11 @@
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton ButtonLogin;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton41;
     }
 }

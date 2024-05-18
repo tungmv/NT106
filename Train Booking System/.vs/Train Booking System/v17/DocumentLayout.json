@@ -7,24 +7,16 @@
       "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:trainbookingformstep2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\\u0111\u1ED3 \u00E1n\\nt106\\train booking system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\\u0111\u1ED3 \u00E1n\\nt106\\train booking system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\\u0111\u1ED3 \u00E1n\\nt106\\train booking system\\myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\\u0111\u1ED3 \u00E1n\\nt106\\train booking system\\trainbookingformstep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:trainbookingformstep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\\u0111\u1ED3 \u00E1n\\nt106\\train booking system\\trainbookingformstep2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\trainbookingformstep2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:trainbookingformstep2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\trainbookingformstep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:trainbookingformstep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,6 +42,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainBookingFormStep1.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
+              "RelativeDocumentMoniker": "TrainBookingFormStep1.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
+              "RelativeToolTip": "TrainBookingFormStep1.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAlwDIAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T10:17:31.833Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MyAccountForm.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\MyAccountForm.cs",
@@ -57,46 +61,19 @@
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\MyAccountForm.cs [Design]",
               "RelativeToolTip": "MyAccountForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T10:14:35.784Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-18T10:14:35.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "TrainBookingFormStep2.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\TrainBookingFormStep2.cs",
               "RelativeDocumentMoniker": "TrainBookingFormStep2.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\TrainBookingFormStep2.cs*",
               "RelativeToolTip": "TrainBookingFormStep2.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T09:53:42.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:46:26.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Mainform.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\Mainform.cs",
-              "RelativeDocumentMoniker": "Mainform.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\Mainform.cs",
-              "RelativeToolTip": "Mainform.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAcwBEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:40:33.146Z",
               "EditorCaption": ""
             },
             {
@@ -109,18 +86,6 @@
               "RelativeToolTip": "TrainBookingFormStep2.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T09:20:36.678Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TrainBookingFormStep1.cs [Design]",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
-              "RelativeDocumentMoniker": "TrainBookingFormStep1.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\Train Booking System\\TrainBookingFormStep1.cs [Design]",
-              "RelativeToolTip": "TrainBookingFormStep1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:20:34.618Z",
               "EditorCaption": " [Design]"
             }
           ]
