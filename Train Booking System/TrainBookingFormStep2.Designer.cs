@@ -157,7 +157,7 @@
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.kryptonButton41 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.ButtonNext = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -1802,32 +1802,33 @@
             this.pictureBox32.TabIndex = 210;
             this.pictureBox32.TabStop = false;
             // 
-            // kryptonButton41
+            // ButtonNext
             // 
-            this.kryptonButton41.Location = new System.Drawing.Point(362, 485);
-            this.kryptonButton41.Name = "kryptonButton41";
-            this.kryptonButton41.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kryptonButton41.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kryptonButton41.OverrideFocus.Back.ColorAngle = 45F;
-            this.kryptonButton41.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton41.Size = new System.Drawing.Size(123, 37);
-            this.kryptonButton41.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton41.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton41.StateCommon.Back.ColorAngle = 135F;
-            this.kryptonButton41.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonButton41.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kryptonButton41.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kryptonButton41.StateCommon.Border.ColorAngle = 45F;
-            this.kryptonButton41.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.ButtonNext.Location = new System.Drawing.Point(362, 485);
+            this.ButtonNext.Name = "ButtonNext";
+            this.ButtonNext.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonNext.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonNext.OverrideFocus.Back.ColorAngle = 45F;
+            this.ButtonNext.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.ButtonNext.Size = new System.Drawing.Size(123, 37);
+            this.ButtonNext.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.ButtonNext.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.ButtonNext.StateCommon.Back.ColorAngle = 135F;
+            this.ButtonNext.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ButtonNext.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonNext.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonNext.StateCommon.Border.ColorAngle = 45F;
+            this.ButtonNext.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton41.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonButton41.StateCommon.Border.Rounding = 10;
-            this.kryptonButton41.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kryptonButton41.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kryptonButton41.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton41.TabIndex = 211;
-            this.kryptonButton41.Values.Text = "Next";
+            this.ButtonNext.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ButtonNext.StateCommon.Border.Rounding = 10;
+            this.ButtonNext.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ButtonNext.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonNext.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonNext.TabIndex = 211;
+            this.ButtonNext.Values.Text = "Next";
+            this.ButtonNext.Click += new System.EventHandler(this.ButtonNext_Click);
             // 
             // TrainBookingFormStep2
             // 
@@ -1962,7 +1963,7 @@
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.kryptonButton40);
-            this.Controls.Add(this.kryptonButton41);
+            this.Controls.Add(this.ButtonNext);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TrainBookingFormStep2";
             this.Text = "TicketsForm";
@@ -2148,6 +2149,6 @@
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.PictureBox pictureBox32;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton41;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton ButtonNext;
     }
 }

@@ -18,5 +18,17 @@ namespace Train_Booking_System
             this.mainform = mainform;
             InitializeComponent();
         }
+
+        private void ButtonNext_Click(object sender, EventArgs e)
+        {
+            //open the next form
+            TrainBookingFormStep3 trainBookingFormStep3 = new TrainBookingFormStep3(mainform);
+            //reference to mainform
+            trainBookingFormStep3.MdiParent = mainform;
+            trainBookingFormStep3.Dock = DockStyle.Fill;
+            trainBookingFormStep3.Show();
+
+
+        }
     }
 }
