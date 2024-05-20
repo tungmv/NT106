@@ -27,3 +27,28 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\De
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.MyAccountForm.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep2.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep3.resources
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\Train Booking System.exe.config
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\Train Booking System.exe
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\Train Booking System.pdb
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\Guna.UI2.dll
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Design.pdb
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+D:\uni\NT106\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Booking System.csproj.AssemblyReference.cache
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.AdminLogin.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.MyAccountForm.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep2.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep1.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.Mainform.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.LoginForm.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.Properties.Resources.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep3.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Booking System.csproj.GenerateResource.cache
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Booking System.csproj.CoreCompileInputs.cache
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Bo.7A443004.Up2Date
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Booking System.exe
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Booking System.pdb
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.Dashboard.resources
