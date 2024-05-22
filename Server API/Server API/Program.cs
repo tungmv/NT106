@@ -19,6 +19,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<UserDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Users")));
+builder.Services.AddDbContext<AdminDBContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("Admins")));
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
@@ -42,9 +44,13 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddAuthorization();
-
-builder.Services.AddAuthentication();
+builder.Services.AddAuthorization(options => {
+    options.AddPolicy("ValidJwt", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        // Reserved for elaborated policy but not gonna be needed anyway because what'd you expect from a train ticket booking program lol?
+    });
+});
 
 
 
@@ -58,19 +64,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseRouting();
 
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 
+app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
-
-app.UseRouting();
-
-app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {

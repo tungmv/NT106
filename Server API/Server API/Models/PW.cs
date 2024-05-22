@@ -8,7 +8,7 @@ namespace Server_API.Models
         [ForeignKey("khachhang")]
         public string ID_KhachHang { get; set; }
         public string Hashed {  get; set; }
-        public string salt { get; set; }
+        public string salt { get; set; }    // salt here is gonna be PK because why not
 
         [Required]
         public User User { get; set; }

@@ -5,7 +5,7 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-
+// ============ OBSOLETE ============
 namespace Server_API.Authentication
 {
     public interface ITokenGen

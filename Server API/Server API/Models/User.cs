@@ -13,5 +13,8 @@ namespace Server_API.Models
         public DateTime NgayTao { get; set; }
 
         public  PW PW { get; set; }
+
+        public ICollection<LichSuDatVeNam> LichSuDatVeNam { get; set; }
+        public ICollection<LichSuDatVeNgoi> LichSuDatVeNgoi { get; set; }
     }
 }
