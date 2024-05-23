@@ -1,0 +1,14 @@
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\bin\Debug\RemoteFileManagement.exe.config
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\bin\Debug\RemoteFileManagement.exe
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\bin\Debug\RemoteFileManagement.pdb
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.csproj.AssemblyReference.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Client.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Form1.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Properties.Resources.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Server.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.TestClientForm.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.TestForm.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.csproj.GenerateResource.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.csproj.CoreCompileInputs.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.exe
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.pdb

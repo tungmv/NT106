@@ -16,5 +16,17 @@ namespace RemoteFileManagement
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TestForm testForm = new TestForm();
+            testForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TestClientForm testClientForm = new TestClientForm();
+            testClientForm.Show();
+        }
     }
 }
