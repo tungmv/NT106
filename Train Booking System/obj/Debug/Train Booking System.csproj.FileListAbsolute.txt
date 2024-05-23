@@ -52,3 +52,7 @@ D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Bo.7A443004.Up2Date
 D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Booking System.exe
 D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train Booking System.pdb
 D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.Dashboard.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.AdminLogin.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.Dashboard.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.TicketForm.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.HistoryForm.resources

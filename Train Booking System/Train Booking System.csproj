@@ -76,11 +76,23 @@
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MyAccountForm.Designer.cs">
       <DependentUpon>MyAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketForm.Designer.cs">
+      <DependentUpon>TicketForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TrainBookingFormStep2.cs">
       <SubType>Form</SubType>
@@ -126,8 +138,14 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyAccountForm.resx">
       <DependentUpon>MyAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketForm.resx">
+      <DependentUpon>TicketForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrainBookingFormStep2.resx">
       <DependentUpon>TrainBookingFormStep2.cs</DependentUpon>

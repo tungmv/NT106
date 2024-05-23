@@ -36,8 +36,8 @@
             this.PictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.ButtonMyAccount = new System.Windows.Forms.Button();
             this.ButtonBooking = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonTickets = new System.Windows.Forms.Button();
+            this.ButtonHistory = new System.Windows.Forms.Button();
             this.TimerSidebar = new System.Windows.Forms.Timer(this.components);
             this.FlowLayoutSidebar.SuspendLayout();
             this.FlowLayoutMenu.SuspendLayout();
@@ -50,8 +50,8 @@
             this.FlowLayoutSidebar.Controls.Add(this.FlowLayoutMenu);
             this.FlowLayoutSidebar.Controls.Add(this.ButtonMyAccount);
             this.FlowLayoutSidebar.Controls.Add(this.ButtonBooking);
-            this.FlowLayoutSidebar.Controls.Add(this.button4);
-            this.FlowLayoutSidebar.Controls.Add(this.button1);
+            this.FlowLayoutSidebar.Controls.Add(this.ButtonTickets);
+            this.FlowLayoutSidebar.Controls.Add(this.ButtonHistory);
             this.FlowLayoutSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.FlowLayoutSidebar.Location = new System.Drawing.Point(0, 0);
             this.FlowLayoutSidebar.MaximumSize = new System.Drawing.Size(228, 611);
@@ -126,38 +126,39 @@
             this.ButtonBooking.UseVisualStyleBackColor = true;
             this.ButtonBooking.Click += new System.EventHandler(this.ButtonBooking_Click);
             // 
-            // button4
+            // ButtonTickets
             // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 231);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(224, 55);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Tickets";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ButtonTickets.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonTickets.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonTickets.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ButtonTickets.Image = ((System.Drawing.Image)(resources.GetObject("ButtonTickets.Image")));
+            this.ButtonTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonTickets.Location = new System.Drawing.Point(3, 231);
+            this.ButtonTickets.Name = "ButtonTickets";
+            this.ButtonTickets.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.ButtonTickets.Size = new System.Drawing.Size(224, 55);
+            this.ButtonTickets.TabIndex = 3;
+            this.ButtonTickets.Text = "Tickets";
+            this.ButtonTickets.UseVisualStyleBackColor = true;
+            this.ButtonTickets.Click += new System.EventHandler(this.ButtonTicketClick);
             // 
-            // button1
+            // ButtonHistory
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 292);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(224, 55);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "History";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonHistory.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ButtonHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonHistory.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonHistory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ButtonHistory.Image = ((System.Drawing.Image)(resources.GetObject("ButtonHistory.Image")));
+            this.ButtonHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonHistory.Location = new System.Drawing.Point(3, 292);
+            this.ButtonHistory.Name = "ButtonHistory";
+            this.ButtonHistory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.ButtonHistory.Size = new System.Drawing.Size(224, 55);
+            this.ButtonHistory.TabIndex = 4;
+            this.ButtonHistory.Text = "History";
+            this.ButtonHistory.UseVisualStyleBackColor = true;
+            this.ButtonHistory.Click += new System.EventHandler(this.ButtonHistory_Click);
             // 
             // TimerSidebar
             // 
@@ -187,8 +188,8 @@
         private System.Windows.Forms.Panel FlowLayoutMenu;
         private System.Windows.Forms.Button ButtonMyAccount;
         private System.Windows.Forms.Button ButtonBooking;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ButtonTickets;
+        private System.Windows.Forms.Button ButtonHistory;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer TimerSidebar;
         private System.Windows.Forms.PictureBox PictureBoxMenu;

@@ -15,6 +15,8 @@ namespace Train_Booking_System
     {
         MyAccountForm MyAccountForm;
         TrainBookingFormStep1 TrainBookingFormStep1;
+        TicketForm TicketForm;
+        HistoryForm HistoryForm;
 
         public Mainform()
         {
@@ -29,11 +31,6 @@ namespace Train_Booking_System
         private void TimerSidebar_Tick(object sender, EventArgs e)
         {
 
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -95,7 +92,46 @@ namespace Train_Booking_System
             }
         }
 
-        
+        private void TicketFormCLosed(object sender, FormClosedEventArgs e)
+        { 
+            TicketForm = null;
+        }
 
+        private void ButtonTicketClick(object sender, EventArgs e)
+        {
+            if(TicketForm == null || TicketForm.IsDisposed)
+            {
+                TicketForm = new TicketForm();
+                TicketForm.FormClosed += TicketFormCLosed;
+                TicketForm.MdiParent = this;
+                TicketForm.Dock = DockStyle.Fill;
+                TicketForm.Show();
+            }
+            else
+            {
+                TicketForm.Activate();
+            }
+        }
+
+        private void HistoryFormClosed(object sender, FormClosedEventArgs e)
+        {
+            HistoryForm = null;
+        }
+
+        private void ButtonHistory_Click(object sender, EventArgs e)
+        {
+            if(HistoryForm == null || HistoryForm.IsDisposed)
+            {
+                HistoryForm = new HistoryForm();
+                HistoryForm.FormClosed += HistoryFormClosed;
+                HistoryForm.MdiParent = this;
+                HistoryForm.Dock = DockStyle.Fill;
+                HistoryForm.Show();
+            }
+            else
+            {
+                HistoryForm.Activate();
+            }
+        }
     }
 }

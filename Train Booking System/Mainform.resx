@@ -146,7 +146,7 @@
   <data name="ButtonBooking.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADr4AAA6+AepCscAAAAAHdElNRQfoBQsKEhxIQJJ0AAAA
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAHdElNRQfoBQsKEhxIQJJ0AAAA
         GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAihJREFUWEft1k1LVVEUh/GbjcoaNahI
         iBoFvRBYQumoIAqhJvUFnEvNGjSIBjYPKRDEaJA07qsYRGghKCKVVoIgVtrzwNmwkd09+7xMLrjgB4fN
         Wv+77z3nbG4now7iNK7iWiZ7nXG2UV3BND7hG9Yy2euMs2bUqvtYwm5DZjxApfInbOPDA7PMzCrv2wxS
@@ -160,10 +160,10 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ButtonTickets.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADr0AAA69AUf7kK0AAAAHdElNRQfoBQsKEyEJM+8kAAAA
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAHdElNRQfoBQsKEyEJM+8kAAAA
         GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAgJJREFUWEft1rtLHFEUx/EVRQkKVipp
         fBZaWIgQFIt0QnwUiuIbtNMuRQq10N4/IU0gsZF0djaioOnyHwgqaKGiCAqCb7+/wVlOljvOzLruKvHA
         h92duTP37Nx77tzEe2QpSvEZw6jTgWxECVoxjz84wz3+4sWS+IBmTGMNp1Cnqb4hY1GIRnzFCo7h6tRa
@@ -176,7 +176,7 @@
         q+99SG7J/udIJB4A94IybgJZ2eEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ButtonHistory.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwABOvMAATrzARcLMswAAAAHdElNRQfoBQsMJCjkZYsGAAAA
