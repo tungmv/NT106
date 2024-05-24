@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Server_API.DBContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ builder.Services.AddDbContext<UserDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Users")));
 builder.Services.AddDbContext<AdminDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Admins")));
+builder.Services.AddDbContext<TrainDBContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("TrainSystem")));
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
@@ -48,7 +51,6 @@ builder.Services.AddAuthorization(options => {
     options.AddPolicy("ValidJwt", policy =>
     {
         policy.RequireAuthenticatedUser();
-        // Reserved for elaborated policy but not gonna be needed anyway because what'd you expect from a train ticket booking program lol?
     });
 });
 

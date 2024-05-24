@@ -28,8 +28,8 @@ public class UserDBContext : DbContext
             .HasKey(u => u.ID_KhachHang);
 
         modelBuilder.Entity<User>()
-            .HasOne(u => u.PW)
-            .WithOne(p => p.User)
+            .HasOne(p => p.PW)
+            .WithOne(u => u.User)
             .HasForeignKey<PW>(p => p.ID_KhachHang);    // Configuring Foreign key khachhang -> password
 
         modelBuilder.Entity<LichSuDatVeNgoi>()

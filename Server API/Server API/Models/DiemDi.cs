@@ -14,5 +14,8 @@ namespace Server_API.Models
         [MaxLength(15)]
         public string ID_Tram { get; set; }
         public float KhoangCach { get; set; }
+
+        public Tram Tram { get; set; }
+        public Tuyen Tuyen { get; set; }
     }
 }

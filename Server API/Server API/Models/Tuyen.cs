@@ -9,5 +9,9 @@ namespace Server_API.Models
         public string ID_Tuyen { get; set; }
         [MaxLength(40)]
         public string TenTuyen { get; set; }
+
+        public ICollection<DiemDi> DiemDi { get; set; }
+
+        public ICollection<LichTrinh> LichTrinh { get; set; }
     }
 }

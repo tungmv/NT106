@@ -9,5 +9,11 @@ namespace Server_API.Models
         [MaxLength(15)]
         public string ID_Tau { get; set; }
         public int TuoiTho {  get; set; }
+        public string Lop { get; set; }
+
+        public ICollection<Toa> Toa { get; set; }
+        public Tuyen Tuyen { get; set; }
+
+        public ICollection<LichTrinh> LichTrinh { get; set; }
     }
 }

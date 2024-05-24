@@ -37,22 +37,23 @@ namespace Server_API.Controllers
         }
 
 
-        [HttpPost("login")] // ========================================= Login for users algo go here ==================================================
-        public IActionResult Login([FromBody] LoginModel model) // model chua email + pw
+        [HttpPost("login")] // ========================================= Login ==================================================
+        public IActionResult Login([FromBody] LoginModel model)
         {
-            var user = _context.khachhang.SingleOrDefault(u => u.Email == model.Email); // PW HasNoKey in OnModelCreating
+            var user = _context.khachhang.SingleOrDefault(u => u.Email == model.Email);
             if (user == null)
                 return Unauthorized();
+
             var pass =  _context.Passwords
-                .FirstOrDefault(p => p.ID_KhachHang == user.ID_KhachHang);    // Lay bo Password tu database
-            if (pass.Hashed != HashPassword(model.Password, pass.salt)) // SS digest cua database voi ket qua hash tu login attempt
-            {
+                .FirstOrDefault(p => p.ID_KhachHang == user.ID_KhachHang);
+
+            if (pass.Hashed != HashPassword(model.Password, pass.salt))
                 return Unauthorized();
-            }
-            // var token = _tokenGen.GenerateJwtToken(user); ---- Outdated
+
             var token = GenerateJwtToken(user.Email, true);
             Response.Headers.Add("Authorization", "Bearer " + token);
-            return Ok(new { Token = token });   // Accept response, return OK + token
+
+            return Ok(new { Token = token });   // Accept, return OK + token
         }
 
         private string HashPassword(string password, string salt)
@@ -65,7 +66,7 @@ namespace Server_API.Controllers
                 return Convert.ToHexString(hashBytes);
             }
         }
-        private string GenerateJwtToken(string input, bool isUser)    // true for user, false for admin
+        private string GenerateJwtToken(string input, bool isUser)
         {
             var jwtSettings = _configuration.GetSection("Jwt");
             var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
@@ -130,18 +131,20 @@ namespace Server_API.Controllers
         public string Password { get; set; }
     }
     [ApiController]
-    [Route("api/[controller]")]         // =========== For testing purposes only ===============
+    [Route("api/[controller]")]         // =========== For testing ===============
     public class ServerController : ControllerBase
     {
-        [HttpGet("secure")]
+        [HttpGet("test")]
         [Authorize(Policy = "ValidJwt")]
         public IActionResult Get()
         {
             var header = Request.Headers["Authorization"].FirstOrDefault();
+
             if (header == null)
-                return BadRequest("Forgot the token dummy");
-            var token = header.Substring("Bearer ".Length).Trim();  // get the token exclusively
-            return Ok(new { message = token });
+                return BadRequest();
+
+            //var token = header.Substring("Bearer ".Length).Trim();  // get the token
+            return Ok();
         }
     }
 }

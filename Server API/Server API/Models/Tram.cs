@@ -14,5 +14,6 @@ namespace Server_API.Models
         [MaxLength(15)]
         public string Tinh {  get; set; }
 
+        public ICollection<DiemDi> DiemDi {  get; set; }
     }
 }
