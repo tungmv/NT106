@@ -13,13 +13,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
+using static System.Windows.Forms.LinkLabel;
 
 namespace RemoteFileManagement
 {
     public partial class Server : Form
     {
         TcpListener server;
-        RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+        //RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
         public Server()
         {
             CheckForIllegalCrossThreadCalls = false;
@@ -81,7 +82,7 @@ namespace RemoteFileManagement
             }
         }
 
-        private async void EncryptFileAES(string path, string result)
+        private async void EncryptFileAES(string path, string result, RSACryptoServiceProvider rsa)
         {
             result = await Task.Run(() => {
                 //string path = (string)obj;
@@ -109,6 +110,7 @@ namespace RemoteFileManagement
                 try
                 {
                     filestream_out = new FileStream(outputpath, FileMode.Create, FileAccess.Write);
+                    filestream_out.Seek(0, SeekOrigin.Begin);
                     //write encrypted aes key length to file
                     filestream_out.Write(encryptedAESKeyLength, 0, 4);
                     // 0 to 4 bytes are IV length
@@ -175,32 +177,149 @@ namespace RemoteFileManagement
 
         }
 
-        private byte[] Serialize(object obj)
+        private async void DecryptFileAES(string path, string filename, string result, RSACryptoServiceProvider rsa)
         {
-            MemoryStream stream = new MemoryStream();
-            BinaryFormatter formatter = new BinaryFormatter();
-            formatter.Serialize(stream, obj);
-            byte[] data = stream.ToArray();
-            stream.Close();
-            return data;
+            result = await Task.Run(() =>
+            {
+
+                //combine file name with path
+                string outputpath = Path.Combine(Path.GetDirectoryName(path), filename);
+
+                if(File.Exists(outputpath))
+                {
+                    File.Delete(outputpath);
+                }
+
+                Aes aes = Aes.Create();
+
+                //bytes array to store encrypted aes key length and IV length
+                byte[] encrypted_key_len = new byte[4];
+                byte[] IV_len = new byte[4];
+                
+
+                FileStream fileStream_in = null;
+                try
+                {
+                    fileStream_in = new FileStream(path, FileMode.Open, FileAccess.Read);
+                    fileStream_in.Seek(0, SeekOrigin.Begin);
+                    fileStream_in.Read(encrypted_key_len, 0, 3);
+                    fileStream_in.Seek(4, SeekOrigin.Begin);
+                    fileStream_in.Read(IV_len, 0, 3);
+                }
+                catch
+                {
+                    return null;
+                }
+
+                //convert byte array to int
+                int encrypted_key_length = BitConverter.ToInt32(encrypted_key_len, 0);
+                int IV_length = BitConverter.ToInt32(IV_len, 0);
+
+                // Determine the start position of
+                // the cipher text (startC)
+                // and its length(lenC).
+                int startC = encrypted_key_length + IV_length + 8;
+                int lenC = (int)fileStream_in.Length - startC;
+
+                //byte array to store encrypted aes key and IV
+                byte[] encrypted_key = new byte[encrypted_key_length];
+                byte[] IV = new byte[IV_length];
+
+
+                // Extract the key and IV
+                // starting from index 8
+                // after the length values.
+
+                try
+                {
+                    fileStream_in.Seek(8, SeekOrigin.Begin);
+                    fileStream_in.Read(encrypted_key, 0, encrypted_key_length);
+                    fileStream_in.Seek(8 + encrypted_key_length, SeekOrigin.Begin);
+                    fileStream_in.Read(IV, 0, IV_length);
+                }
+
+                catch
+                {
+                    return null;
+                }
+
+                byte[] decryptedAESKey = rsa.Decrypt(encrypted_key, false);
+                
+                //decrypt the key
+                ICryptoTransform transform = aes.CreateDecryptor(decryptedAESKey, IV);
+
+                //decrypt file and write to output path
+                FileStream fileStream_out = null;
+                try
+                {
+                    fileStream_out = new FileStream(outputpath, FileMode.Create, FileAccess.Write);
+                    int count = 0;
+                    int offset = 0;
+
+                    //block size is 1/8 of the aes block size
+                    int blockSize = aes.BlockSize / 8;
+                    byte[] data = new byte[blockSize];
+
+                    //decrypt a chunk at a time
+                    fileStream_in.Seek(startC, SeekOrigin.Begin);
+                    CryptoStream cryptoStream = new CryptoStream(fileStream_out, transform, CryptoStreamMode.Write);
+                    do
+                    {
+                        count = fileStream_in.Read(data, 0, blockSize);
+                        offset += count;
+                        cryptoStream.Write(data, 0, count);
+                    }
+                    while (count > 0);
+
+                    cryptoStream.FlushFinalBlock();
+                }
+                catch
+                {
+                    return null;
+                }
+                fileStream_in.Close();
+                fileStream_out.Close();
+                return outputpath;
+            });
 
         }
 
-        private object Deserialize(byte[] data)
-        {
-            MemoryStream stream = new MemoryStream(data);
-            BinaryFormatter formatter = new BinaryFormatter();
-            object obj = formatter.Deserialize(stream);
-            stream.Close();
-            return obj;
-        }
 
+
+
+        //private byte[] Serialize(object obj)
+        //{
+        //    MemoryStream stream = new MemoryStream();
+        //    BinaryFormatter formatter = new BinaryFormatter();
+        //    formatter.Serialize(stream, obj);
+        //    byte[] data = stream.ToArray();
+        //    stream.Close();
+        //    return data;
+
+        //}
+
+        //private object Deserialize(byte[] data)
+        //{
+        //    MemoryStream stream = new MemoryStream(data);
+        //    BinaryFormatter formatter = new BinaryFormatter();
+        //    object obj = formatter.Deserialize(stream);
+        //    stream.Close();
+        //    return obj;
+        //}
+
+        RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
         private void ButtonTest_Click(object sender, EventArgs e)
         {
-            string output = null;
-            EncryptFileAES(TextBoxPathTest.Text, output);
+            string output= null;
+            EncryptFileAES(TextBoxPathTest.Text,output, rsa);
+            MessageBox.Show(output);
         }
 
-        
+        private void ButtonTest2_Click(object sender, EventArgs e)
+        {
+            string output = null;
+            DecryptFileAES(Path.ChangeExtension(TextBoxPathTest.Text, ".enc"), "test.png", output, rsa);
+            MessageBox.Show(output);
+        }
     }
 }

@@ -71,6 +71,7 @@
             this.ButtonTest2.TabIndex = 7;
             this.ButtonTest2.Text = "Test2";
             this.ButtonTest2.UseVisualStyleBackColor = true;
+            this.ButtonTest2.Click += new System.EventHandler(this.ButtonTest2_Click);
             // 
             // TextBoxPathTest
             // 
