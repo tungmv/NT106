@@ -12,12 +12,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Security.Cryptography;
 
 namespace RemoteFileManagement
 {
     public partial class Server : Form
     {
         TcpListener server;
+        RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
         public Server()
         {
             CheckForIllegalCrossThreadCalls = false;
@@ -34,40 +36,130 @@ namespace RemoteFileManagement
 
         }
 
-        private void ClientThread(object obj)
+        private async void ClientThread(object obj)
         {
             TcpClient client = (TcpClient)obj;
             NetworkStream stream = client.GetStream();
             while(true)
             {
-                StreamReader reader = new StreamReader(stream);
-                string path = reader.ReadLine();
+                byte[] buffer = new byte[1024];
+                stream.Read(buffer, 0, buffer.Length);
+                string path = Encoding.ASCII.GetString(buffer);
 
                 //hard buffer for incoming file path request is 1024 bytes
                 //send requested file to client
                 if (path != null)
                 {
-                    byte[] buffer = new byte[1024];
+                    //send file
                     try
                     {
                         FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read);
                         int bytesRead = 0;
-                        while ((bytesRead = file.Read(buffer, 0, buffer.Length)) > 0)
-                        {
-                            stream.Write(buffer, 0, bytesRead);
-                        }
+                        //stream file directly to client
+                        await file.CopyToAsync(stream);
                         file.Close();
+                    }
+                    catch
+                    {
 
                     }
 
+                    //send file name
+                    try
+                    {
+                        string fileName = Path.GetFileName(path);
+                        byte[] fileNameBytes = Encoding.ASCII.GetBytes(fileName);
+                        stream.Read(fileNameBytes, 0, fileNameBytes.Length);
+                        
+
+                    }
                     catch
                     {
-                        
+                                                
                     }
                 }
             }
         }
 
+        private async void EncryptFileAES(string path, string result)
+        {
+            result = await Task.Run(() => {
+                //string path = (string)obj;
+                string outputpath = Path.ChangeExtension(path, ".enc");
+                if (!File.Exists(path))
+                {
+                    outputpath = null;
+                    return outputpath;
+                }
+                if (File.Exists(outputpath))
+                {
+                    File.Delete(outputpath);
+                }
+                //handle input file not found
+                Aes aes = Aes.Create();
+                ICryptoTransform transform = aes.CreateEncryptor();
+                int aesIVLength = aes.IV.Length;
+                byte[] aesIVlen = BitConverter.GetBytes(aesIVLength);
+
+                //encrypt aes key with rsa for secure transfer
+                byte[] encryptedAESKey = rsa.Encrypt(aes.Key, false);
+                byte[] encryptedAESKeyLength = BitConverter.GetBytes(encryptedAESKey.Length);
+
+                FileStream filestream_out = null;
+                try
+                {
+                    filestream_out = new FileStream(outputpath, FileMode.Create, FileAccess.Write);
+                    //write encrypted aes key length to file
+                    filestream_out.Write(encryptedAESKeyLength, 0, 4);
+                    // 0 to 4 bytes are IV length
+                    filestream_out.Write(aesIVlen, 0, 4);
+                    //write encrypted aes key to file
+                    filestream_out.Write(encryptedAESKey, 0, encryptedAESKey.Length);
+                    //write IV to file
+                    filestream_out.Write(aes.IV, 0, aesIVLength);
+                }
+                catch
+                {
+                    outputpath = null;
+                    return outputpath;
+                }
+
+                try
+                {
+                    CryptoStream cryptoStream = new CryptoStream(filestream_out, transform, CryptoStreamMode.Write);
+                    //encrypt a chunk at a time
+                    int count = 0;
+                    int offset = 0;
+
+                    //set block size to 1/8 of the aes block size
+                    int blockSize = aes.BlockSize / 8;
+                    byte[] data = new byte[blockSize];
+                    int bytesRead = 0;
+
+                    FileStream fileStream_in = new FileStream(path, FileMode.Open, FileAccess.Read);
+                    do
+                    {
+                        count = fileStream_in.Read(data, 0, blockSize);
+                        offset += count;
+                        cryptoStream.Write(data, 0, count);
+                        bytesRead += blockSize;
+                    }
+                    while (count > 0);
+
+                    cryptoStream.FlushFinalBlock();
+                    filestream_out.Close();
+                    fileStream_in.Close();
+                }
+                catch
+                {
+                    outputpath = null;
+                    return outputpath;
+                }
+
+                return outputpath;
+            });
+            
+        }
 
         private void ListenThread()
         {
@@ -79,6 +171,8 @@ namespace RemoteFileManagement
                 client_thread.Start(client);
                
             }
+
+
         }
 
         private byte[] Serialize(object obj)
@@ -100,5 +194,13 @@ namespace RemoteFileManagement
             stream.Close();
             return obj;
         }
+
+        private void ButtonTest_Click(object sender, EventArgs e)
+        {
+            string output = null;
+            EncryptFileAES(TextBoxPathTest.Text, output);
+        }
+
+        
     }
 }

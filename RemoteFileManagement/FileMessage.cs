@@ -9,7 +9,16 @@ namespace RemoteFileManagement
     [Serializable]
     internal class FileMessage
     {
-        private string filename;
-        private byte[] data;
+        public string filename
+        {
+            get; set;
+        }
+        public byte[] data
+        {
+            get; set;
+        }
+
+        //get set
+        
     }
 }
