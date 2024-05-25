@@ -49,6 +49,7 @@
             this.ButtonConnect.TabIndex = 1;
             this.ButtonConnect.Text = "Connect";
             this.ButtonConnect.UseVisualStyleBackColor = true;
+            this.ButtonConnect.Click += new System.EventHandler(this.ButtonConnect_Click);
             // 
             // RichTextBoxOutput
             // 
@@ -67,6 +68,7 @@
             this.ButtonSendRequest.TabIndex = 3;
             this.ButtonSendRequest.Text = "Send Request";
             this.ButtonSendRequest.UseVisualStyleBackColor = true;
+            this.ButtonSendRequest.Click += new System.EventHandler(this.ButtonSendRequest_Click);
             // 
             // Client
             // 

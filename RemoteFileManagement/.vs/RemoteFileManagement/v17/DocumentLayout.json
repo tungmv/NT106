@@ -11,8 +11,8 @@
       "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\filemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:filemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,6 +42,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Client.cs [Design]",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
+              "RelativeDocumentMoniker": "Client.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs [Design]",
+              "RelativeToolTip": "Client.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T14:21:02.594Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Server.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
@@ -60,21 +72,10 @@
               "RelativeDocumentMoniker": "Client.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
               "RelativeToolTip": "Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAAAKUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T13:31:10.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileMessage.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\FileMessage.cs",
-              "RelativeDocumentMoniker": "FileMessage.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\FileMessage.cs",
-              "RelativeToolTip": "FileMessage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T13:10:28.105Z"
+              "WhenOpened": "2024-05-24T13:31:10.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -84,7 +85,7 @@
               "RelativeDocumentMoniker": "Server.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
               "RelativeToolTip": "Server.cs",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAQwKMAAAAIAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAqwEUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T13:00:37.442Z",
               "EditorCaption": ""
