@@ -36,6 +36,7 @@ namespace RemoteFileManagement
             listen_thread.IsBackground = true;
             listen_thread.Start();
             RichTextBoxOutput.AppendText("Server started on port 2024\n");
+            ButtonListen.Enabled = false;
         }
 
         private async void ClientThread(object obj)
@@ -43,70 +44,108 @@ namespace RemoteFileManagement
             TcpClient client = (TcpClient)obj;
             NetworkStream stream = client.GetStream();
             RichTextBoxOutput.AppendText("Client connected: " + client.Client.RemoteEndPoint + "\n");
-            
+
             //receive public key from client
-            byte[] publickey_client_bytes = new byte[243];
-            stream.Read(publickey_client_bytes, 0, publickey_client_bytes.Length);
-            string publickey_client = Encoding.ASCII.GetString(publickey_client_bytes);
+            string publickey_client = null;
+            try
+            {
+                byte[] publickey_client_bytes = new byte[243];
+                stream.Read(publickey_client_bytes, 0, publickey_client_bytes.Length);
+                publickey_client = Encoding.ASCII.GetString(publickey_client_bytes);
+            }
+            catch
+            {
+                MessageBox.Show("Error receiving public key from client");
+                return;
+            }
+
+            RichTextBoxOutput.AppendText("Public key received from client: " + client.Client.RemoteEndPoint + "\n");
             
             //import public key
             RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
             rsa.FromXmlString(publickey_client);
 
-            while(true)
+            while(SocketConnected(client.Client))
             {
                 byte[] buffer = new byte[1024];
-                stream.Read(buffer, 0, buffer.Length);
+                try
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                catch
+                {
+                    return;
+                }
                 string path = (string)Deserialize(buffer);
+
 
                 //hard buffer for incoming file path request is 1024 bytes
                 //send requested file to client
-                if (path != null)
+                if (path != null && File.Exists(path))
                 {
+                    //RichTextBoxOutput.AppendText(Path.GetFileName(path) + " was requested by client" + client.Client.RemoteEndPoint + "\n");
                     //send file
                     try
                     {
                         string outputpath = await EncryptFileAES(path, rsa);
-                        
+
+                        //RichTextBoxOutput.AppendText(Path.GetFileName(path) + " was encrypted at" + outputpath + "\n");
+
                         //open encryted file
                         FileStream file = new FileStream(outputpath, FileMode.Open, FileAccess.Read);
                         byte[] fileBytes = new byte[file.Length];
 
+
                         //send file length
                         byte[] file_len = Serialize(fileBytes.Length.ToString());
-                        Console.WriteLine(file_len.Length);
-                        stream.Write(file_len, 0, file_len.Length);
+                        try
+                        {
+                            stream.Write(file_len, 0, file_len.Length);
+                        }
+
+                        catch
+                        {
+                            return;
+                        }
+
+                        //RichTextBoxOutput.AppendText("Sending " + file.Length.ToString() + " bytes to client " + client.Client.RemoteEndPoint + "\n");
 
                         byte[] fileBuffer = new byte[1024*5];
                         int count;
                         while ((count = file.Read(fileBuffer, 0, fileBuffer.Length)) > 0)
                         {
-                            stream.Write(fileBuffer, 0, count);
+                            try
+                            {
+                                stream.Write(fileBuffer, 0, count);
+                            }
+                            catch
+                            {
+                                return;
+                            }
                         }
-                            Console.WriteLine(count);
+                        RichTextBoxOutput.AppendText("Sent " + file.Length.ToString() + " bytes to client " + client.Client.RemoteEndPoint + "\n");
 
-                        stream.Flush();
 
+                        //delete file after sending
+                        file.Close();
+                        if (File.Exists(outputpath))
+                        {
+                            File.Delete(outputpath);
+                        }
                     }
                     catch
                     {
-
+                        return;
                     }
 
-                    ////send file name
-                    //try
-                    //{
-                    //    string fileName = Path.GetFileName(path);
-                    //    byte[] fileNameBytes = Encoding.ASCII.GetBytes(fileName);
-                    //    stream.Read(fileNameBytes, 0, fileNameBytes.Length);
-                        
-
-                    //}
-                    //catch
-                    //{
-                                                
-                    //}
                 }
+                else
+                {
+                    //send zero len to alert client file not found
+                    byte[] files_len = Serialize("0");
+                    stream.Write(files_len, 0, files_len.Length);
+                }
+                
             }
         }
 
@@ -240,6 +279,19 @@ namespace RemoteFileManagement
             //string output = null;
             //DecryptFileAES(Path.ChangeExtension(TextBoxPathTest.Text, ".enc"), "test.png", output, rsa);
             //MessageBox.Show(output);
+        }
+
+        bool SocketConnected(Socket s)
+        {
+            //poll the socket to check connection status, wait 1000ms
+            bool part1 = s.Poll(1000, SelectMode.SelectWrite);
+            bool part2 = s.Poll(1000, SelectMode.SelectRead);
+            // if there is no data and the socket is not receiving data
+            bool part3 = (s.Available == 0);
+            if (part1 && part2 && part3)
+                return false;
+            else
+                return true;
         }
     }
 }

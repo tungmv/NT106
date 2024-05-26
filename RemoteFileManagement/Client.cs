@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
@@ -135,8 +136,27 @@ namespace RemoteFileManagement
         private void ButtonConnect_Click(object sender, EventArgs e)
         {
             client = new TcpClient();
-            client.Connect("127.0.0.1", 2024);
-            MessageBox.Show("Connected to server");
+            IPEndPoint iPEndPoint = null;
+            try
+            {
+                iPEndPoint = new IPEndPoint(IPAddress.Parse(TextBoxIPAddress.Text), int.Parse(TextBoxPort.Text));
+            }
+            catch
+            {
+                MessageBox.Show("Invalid IP Address or Port");
+                return;
+            }
+            try
+            {
+                client.Connect(iPEndPoint);
+            }
+            catch
+            {
+                MessageBox.Show("Failed to connect to server");
+                return;
+            }
+            //MessageBox.Show("Connected to server");
+            RichTextBoxOutput.Text = "Connected to server\n";
             ButtonConnect.Enabled = false;
             ButtonSendRequest.Enabled = true;
 
@@ -165,11 +185,20 @@ namespace RemoteFileManagement
             path_bytes = Serialize(TextBoxPath.Text);
             NetworkStream stream = client.GetStream();
             stream.Write(path_bytes, 0, path_bytes.Length);
+            
+            RichTextBoxOutput.Text += "Requested " + Path.GetFileName(TextBoxPath.Text) + " from server\n";
 
             //receive encrypted file length
             byte[] encrypted_file_length = new byte[54];
             stream.Read(encrypted_file_length, 0, encrypted_file_length.Length);
             long file_length = long.Parse((string)Deserialize(encrypted_file_length));
+            if (file_length == 0)
+            {
+                MessageBox.Show("File not found on server");
+                return;
+            }
+
+            RichTextBoxOutput.Text += "Receiving " + file_length.ToString() + " bytes from server\n";
 
             //output path in current directory
             string output_encryted = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(TextBoxPath.Text));
@@ -191,7 +220,9 @@ namespace RemoteFileManagement
                     fileStream.Write(buffer, 0, count);
                     bytesRead += count;
                 }
+            fileStream.Close();
 
+            RichTextBoxOutput.Text += "Received " + file_length.ToString() + " bytes from server\n";
 
             //decrypt file
             string outputpath = null;
@@ -202,6 +233,14 @@ namespace RemoteFileManagement
             catch
             {
                 MessageBox.Show("Error decrypting file");
+            }
+
+            RichTextBoxOutput.Text += "File has been decrypted at " + outputpath + "\n";
+
+            //remove encrypted file
+            if (File.Exists(output_encryted))
+            {
+                File.Delete(output_encryted);
             }
 
         }

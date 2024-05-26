@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\\u0111\u1ED3 \u00E1n\\nt106\\remotefilemanagement\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Server.cs [Design]",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
+              "RelativeDocumentMoniker": "Server.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs [Design]*",
+              "RelativeToolTip": "Server.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T08:57:54.826Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Client.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
               "RelativeDocumentMoniker": "Client.cs",
@@ -54,22 +70,22 @@
               "Title": "Server.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
               "RelativeDocumentMoniker": "Server.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
-              "RelativeToolTip": "Server.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFcAAAAYAAAA",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs*",
+              "RelativeToolTip": "Server.cs*",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAAAH0AAACTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T13:00:37.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
               "RelativeDocumentMoniker": "Client.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
               "RelativeToolTip": "Client.cs",
-              "ViewState": "AQIAALMAAAAAAAAAAAAAAL0AAAAQAAAA",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAAAJwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T13:31:10.29Z",
               "EditorCaption": ""
