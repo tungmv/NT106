@@ -25,9 +25,9 @@ namespace RemoteFileManagement
 
 
 
-        private async void DecryptFileAES(string path, string filename, string result, RSACryptoServiceProvider rsa)
+        private async Task<string> DecryptFileAES(string path, string filename, RSACryptoServiceProvider rsa)
         {
-            result = await Task.Run(() =>
+            return await Task.Run(() =>
             {
 
                 //combine file name with path
@@ -148,7 +148,7 @@ namespace RemoteFileManagement
 
         }
 
-        private void ButtonSendRequest_Click(object sender, EventArgs e)
+        private async void ButtonSendRequest_Click(object sender, EventArgs e)
         {
             byte[] path_bytes = Encoding.ASCII.GetBytes(TextBoxPath.Text);
             if(path_bytes.Length == 0)
@@ -166,6 +166,44 @@ namespace RemoteFileManagement
             NetworkStream stream = client.GetStream();
             stream.Write(path_bytes, 0, path_bytes.Length);
 
+            //receive encrypted file length
+            byte[] encrypted_file_length = new byte[54];
+            stream.Read(encrypted_file_length, 0, encrypted_file_length.Length);
+            long file_length = long.Parse((string)Deserialize(encrypted_file_length));
+
+            //output path in current directory
+            string output_encryted = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(TextBoxPath.Text));
+            output_encryted = Path.ChangeExtension(output_encryted, ".enc");
+
+            if(File.Exists(output_encryted))
+            {
+                File.Delete(output_encryted);
+            }
+
+            //receive encrypted file by chunks
+
+            FileStream fileStream = new FileStream(output_encryted, FileMode.Create, FileAccess.Write);
+                byte[] buffer = new byte[1024*5];
+                long bytesRead = 0;
+                int count;
+                while (bytesRead < file_length && (count = stream.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    fileStream.Write(buffer, 0, count);
+                    bytesRead += count;
+                }
+
+
+            //decrypt file
+            string outputpath = null;
+            try
+            {
+                outputpath = await DecryptFileAES(output_encryted, Path.GetFileName(TextBoxPath.Text), rsa);
+            }
+            catch
+            {
+                MessageBox.Show("Error decrypting file");
+            }
+
         }
         private byte[] Serialize(object obj)
         {
@@ -176,6 +214,15 @@ namespace RemoteFileManagement
             stream.Close();
             return data;
 
+        }
+
+        private object Deserialize(byte[] data)
+        {
+            MemoryStream stream = new MemoryStream(data);
+            BinaryFormatter formatter = new BinaryFormatter();
+            object obj = formatter.Deserialize(stream);
+            stream.Close();
+            return obj;
         }
     }
 }

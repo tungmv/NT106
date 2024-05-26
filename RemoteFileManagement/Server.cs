@@ -14,13 +14,14 @@ using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
 using static System.Windows.Forms.LinkLabel;
+using System.IO.Pipes;
 
 namespace RemoteFileManagement
 {
     public partial class Server : Form
     {
         TcpListener server;
-        RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+        //RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
         public Server()
         {
             CheckForIllegalCrossThreadCalls = false;
@@ -49,6 +50,7 @@ namespace RemoteFileManagement
             string publickey_client = Encoding.ASCII.GetString(publickey_client_bytes);
             
             //import public key
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
             rsa.FromXmlString(publickey_client);
 
             while(true)
@@ -64,17 +66,27 @@ namespace RemoteFileManagement
                     //send file
                     try
                     {
-                        string outputpath = null;
-                        EncryptFileAES(path, outputpath, rsa);
-
-                        //remove this line after testing
-                        return;
+                        string outputpath = await EncryptFileAES(path, rsa);
                         
-                        //FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read);
-                        //int bytesRead = 0;
-                        ////stream file directly to client
-                        //await file.CopyToAsync(stream);
-                        //file.Close();
+                        //open encryted file
+                        FileStream file = new FileStream(outputpath, FileMode.Open, FileAccess.Read);
+                        byte[] fileBytes = new byte[file.Length];
+
+                        //send file length
+                        byte[] file_len = Serialize(fileBytes.Length.ToString());
+                        Console.WriteLine(file_len.Length);
+                        stream.Write(file_len, 0, file_len.Length);
+
+                        byte[] fileBuffer = new byte[1024*5];
+                        int count;
+                        while ((count = file.Read(fileBuffer, 0, fileBuffer.Length)) > 0)
+                        {
+                            stream.Write(fileBuffer, 0, count);
+                        }
+                            Console.WriteLine(count);
+
+                        stream.Flush();
+
                     }
                     catch
                     {
@@ -98,9 +110,9 @@ namespace RemoteFileManagement
             }
         }
 
-        private async void EncryptFileAES(string path, string result, RSACryptoServiceProvider rsa)
+        private async Task<string> EncryptFileAES(string path, RSACryptoServiceProvider rsa)
         {
-            result = await Task.Run(() => {
+            return await Task.Run(() => {
                 //string path = (string)obj;
                 string outputpath = Path.ChangeExtension(path, ".enc");
                 if (!File.Exists(path))
@@ -176,7 +188,6 @@ namespace RemoteFileManagement
 
                 return outputpath;
             });
-            
         }
 
         private void ListenThread()
@@ -197,16 +208,16 @@ namespace RemoteFileManagement
 
 
 
-        //private byte[] Serialize(object obj)
-        //{
-        //    MemoryStream stream = new MemoryStream();
-        //    BinaryFormatter formatter = new BinaryFormatter();
-        //    formatter.Serialize(stream, obj);
-        //    byte[] data = stream.ToArray();
-        //    stream.Close();
-        //    return data;
+        private byte[] Serialize(object obj)
+        {
+            MemoryStream stream = new MemoryStream();
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(stream, obj);
+            byte[] data = stream.ToArray();
+            stream.Close();
+            return data;
 
-        //}
+        }
 
         private object Deserialize(byte[] data)
         {
@@ -220,7 +231,7 @@ namespace RemoteFileManagement
         private void ButtonTest_Click(object sender, EventArgs e)
         {
             string output= null;
-            EncryptFileAES(TextBoxPathTest.Text,output, rsa);
+            //EncryptFileAES(TextBoxPathTest.Text,output, rsa);
             MessageBox.Show(output);
         }
 
