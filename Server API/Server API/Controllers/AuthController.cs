@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Logging;
 using System.Linq.Expressions;
+using Server_API.DBContext;
 
 
 namespace Server_API.Controllers
@@ -27,6 +28,7 @@ namespace Server_API.Controllers
         private readonly UserDBContext _context;
         private readonly IConfiguration _configuration;
         private readonly AdminDBContext _adminContext;
+        private readonly TrainDBContext _trainContext;
 
         public AuthController(UserDBContext context, AdminDBContext adminContext, IConfiguration configuration, ILogger<AuthController> logger)
         {
@@ -147,4 +149,135 @@ namespace Server_API.Controllers
             return Ok();
         }
     }
+
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UserController : ControllerBase
+    {
+        private readonly TrainDBContext _trainContext;
+        private readonly UserDBContext _context;
+        private readonly IConfiguration _configuration;
+        public UserController(TrainDBContext trainContext, UserDBContext context, IConfiguration configuration)
+        {
+            _trainContext = trainContext;
+            _context = context;
+            _configuration = configuration;
+        }
+
+        // [Authorize]
+        [HttpGet("ticketHistory/{email}")]
+        public async Task<ActionResult> UserHistoryQuery(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+                return BadRequest("Missing user's Email");
+
+            if (email.Contains(" ") || !email.Contains("@"))
+                return BadRequest("Invalid user's Email");
+
+            var queryNam = from kh in _context.khachhang
+                        join ls in _context.LichSuDatVeNam on kh.ID_KhachHang equals ls.ID_KhachHang
+                        where kh.Email == email
+                        select new { 
+                            ID_VeNam = ls.ID_VeNam,
+                            };
+
+            var id_veNam = queryNam.ToString().ToList();
+            var resultVeNam = from venam in _trainContext.VeNam
+                         where venam.ID_VeNam.Equals(id_veNam)
+                         select new
+                         {
+                            ID_VeNam = venam.ID_VeNam,
+                            ID_LichTrinh = venam.ID_LichTrinh,
+                            ID_Giuong = venam.ID_Giuong,
+                            ID_Phong = venam.ID_Phong,
+                            DonGia = venam.DonGia,
+                            HoTen = venam.HoTen,
+                            NamSinh = venam.NamSinh
+                        };
+
+            var queryNgoi = from kh in _context.khachhang
+                           join ls in _context.LichSuDatVeNgoi on kh.ID_KhachHang equals ls.ID_KhachHang
+                           where kh.ID_KhachHang == email
+                           select new
+                           {
+                               ID_VeNam = ls.ID_VeNgoi,
+                           };
+
+            var id_veNgoi = queryNam.ToString().ToList();
+            var resultVeNgoi = from vengoi in _trainContext.VeNgoi
+                              where vengoi.ID_VeNgoi.Equals(id_veNgoi)
+                              select new
+                              {
+                                  ID_VeNam = vengoi.ID_VeNgoi,
+                                  ID_LichTrinh = vengoi.ID_LichTrinh,
+                                  ID_Giuong = vengoi.ID_Ghe,
+                                  DonGia = vengoi.DonGia,
+                                  HoTen = vengoi.HoTen,
+                                  NamSinh = vengoi.NamSinh
+                              };
+
+            var result = new
+            {
+                email = email,
+                veNgoi = queryNgoi,
+                veNam = queryNam
+            };
+
+            return Ok(result);
+        }
+
+        [HttpPost("createAccount")]
+        [AllowAnonymous]
+        public async Task<ActionResult> CreateAccount([FromBody] CreateAccount input)
+        {
+            var check_exist = _context.khachhang
+                .Where(e => e.Email.Equals(input.Email))
+                .Count();
+            if (check_exist != 0)
+                return BadRequest("Email already exists.");
+            else
+            {
+                string hashDigest = new string("");
+                string hashID = new string("");
+                using (SHA256 sha256 = SHA256.Create())
+                {
+                    byte[] hashByte = sha256.ComputeHash(Encoding.UTF8.GetBytes(input.Password));
+                    hashDigest = Convert.ToHexString(hashByte);
+                    hashByte = sha256.ComputeHash(Encoding.UTF8.GetBytes(input.HoTen + input.Email));
+                    hashID = Convert.ToHexString(hashByte);
+                }
+
+                var handler = new User
+                {
+                    Email = input.Email,
+                    HoTen = input.HoTen,
+                    NamSinh = input.NamSinh,
+                    NgayTao = DateTime.Now,
+                    ID_KhachHang = hashID
+                };
+                _context.khachhang.Add(handler);
+
+                var passHandler = new PW
+                {
+                    ID_KhachHang = handler.ID_KhachHang,
+                    Hashed = hashDigest,
+                    salt = hashID
+                };
+                _context.Passwords.Add(passHandler);
+
+                await _context.SaveChangesAsync();
+
+                return Ok();
+            }
+        }
+    }
+
+    public class CreateAccount
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string HoTen { get; set; }
+        public int NamSinh {  get; set; }        
+    }
+
 }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Server_API.DBContext;
 
@@ -10,9 +11,11 @@ using Server_API.DBContext;
 namespace Server_API.Migrations.TrainDB
 {
     [DbContext(typeof(TrainDBContext))]
-    partial class TrainDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240526071623_TrainFinal")]
+    partial class TrainFinal
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.5");

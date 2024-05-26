@@ -6,17 +6,17 @@ namespace Server_API.DBContext
     public class TrainDBContext : DbContext
     {
         public TrainDBContext(DbContextOptions<TrainDBContext> options) : base(options) { } 
-        DbSet <Tau> Tau {  get; set; }
-        DbSet <Toa> Toa { get; set; }
-        DbSet <Ghe> Ghe { get; set; }
-        DbSet <Phong> Phong { get; set; }
-        DbSet <Giuong> Giuong { get; set; }
-        DbSet <Tram> Tram { get; set; }
-        DbSet <Tuyen> Tuyen { get; set; }
-        DbSet <DiemDi> DiemDi { get; set; }
-        DbSet <LichTrinh> lichTrinh { get; set; }
-        DbSet <VeNgoi> VeNgoi { get; set; }
-        DbSet <VeNam> VeNam { get; set; }
+        public DbSet <Tau> Tau {  get; set; }
+        public DbSet <Toa> Toa { get; set; }
+        public DbSet <Ghe> Ghe { get; set; }
+        public DbSet <Phong> Phong { get; set; }
+        public DbSet <Giuong> Giuong { get; set; }
+        public DbSet <Tram> Tram { get; set; }
+        public DbSet <Tuyen> Tuyen { get; set; }
+        public DbSet <DiemDi> DiemDi { get; set; }
+        public DbSet <LichTrinh> LichTrinh { get; set; }
+        public DbSet <VeNgoi> VeNgoi { get; set; }
+        public DbSet <VeNam> VeNam { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -104,9 +104,9 @@ namespace Server_API.DBContext
                 .HasForeignKey<VeNgoi>(v => new { v.ID_Ghe, v.ID_Toa })
                 .HasPrincipalKey<Ghe>(g => new { g.ID_Ghe, g.ID_Toa});
             modelBuilder.Entity<VeNgoi>()
-                .HasOne(v => v.Tuyen)
+                .HasOne(v => v.LichTrinh)
                 .WithMany()
-                .HasForeignKey(v => v.ID_Tuyen);
+                .HasForeignKey(v => v.ID_LichTrinh);
             modelBuilder.Entity<VeNam>().ToTable("VeNam");      // =====VeNam=====
             modelBuilder.Entity<VeNam>()
                 .HasKey(v => v.ID_VeNam);
@@ -116,9 +116,9 @@ namespace Server_API.DBContext
                 .HasForeignKey<VeNam>(v => new { v.ID_Giuong, v.ID_Phong })
                 .HasPrincipalKey<Giuong>(g => new { g.ID_Giuong, g.ID_Phong });
             modelBuilder.Entity<VeNam>()                        // Ve nam n - 1 tuyen
-                .HasOne(v => v.Tuyen)
+                .HasOne(v => v.LichTrinh)
                 .WithMany()
-                .HasForeignKey(v => v.ID_Tuyen);
+                .HasForeignKey(v => v.ID_LichTrinh);
         }
     }
 }
