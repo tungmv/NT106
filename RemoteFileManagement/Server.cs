@@ -159,6 +159,8 @@ namespace RemoteFileManagement
                         return;
                     }
                 }
+
+                file.Close();
             });
         }
         private async Task<string> EncryptFileAES(string path, RSACryptoServiceProvider rsa)

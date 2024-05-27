@@ -189,6 +189,7 @@ namespace RemoteFileManagement
                 return;
             }
             ButtonSendRequest.Enabled = false;
+            TextBoxPath.Enabled = false;
 
             path_bytes = Serialize(TextBoxPath.Text);
             NetworkStream stream = client.GetStream();
@@ -210,7 +211,8 @@ namespace RemoteFileManagement
             RichTextBoxOutput.Text += "Receiving " + file_length.ToString() + " bytes from server\n";
 
             //output path in current directory
-            string output_encryted = Path.Combine(Path.GetDirectoryName(TextBoxPath.Text), Path.GetFileName(TextBoxPath.Text) + DateTime.Now.ToString("yyyyMMddHHmmss") + new Random().Next(1000, 9999).ToString() + "encrypted");
+            string output_encryted = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(TextBoxPath.Text) + DateTime.Now.ToString("yyyyMMddHHmmss") + new Random().Next(1000, 9999).ToString() + "encrypted");
+            //get currrnt directory
 
 
             //receive encrypted file by chunks
@@ -234,7 +236,7 @@ namespace RemoteFileManagement
             string outputpath = null;
             try
             {
-                outputpath = await DecryptFileAES(output_encryted, Path.GetFileName(TextBoxPath.Text), rsa);
+                outputpath = await DecryptFileAES(output_encryted,DateTime.Now.ToString("yyyyMMddHHmmss") + new Random().Next(1000, 9999).ToString() + Path.GetFileName(TextBoxPath.Text), rsa);
             }
             catch
             {
@@ -250,6 +252,7 @@ namespace RemoteFileManagement
             }
 
             ButtonSendRequest.Enabled = true;
+            TextBoxPath.Enabled = true;
         }
         private byte[] Serialize(object obj)
         {
