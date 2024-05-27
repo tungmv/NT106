@@ -36,7 +36,14 @@ namespace RemoteFileManagement
 
                 if (File.Exists(outputpath))
                 {
-                    File.Delete(outputpath);
+                    try
+                    {
+                        File.Delete(outputpath);
+                    }
+                    catch
+                    {
+
+                    }
                 }
 
                 Aes aes = Aes.Create();
@@ -181,6 +188,7 @@ namespace RemoteFileManagement
                 MessageBox.Show("Path is too long");
                 return;
             }
+            ButtonSendRequest.Enabled = false;
 
             path_bytes = Serialize(TextBoxPath.Text);
             NetworkStream stream = client.GetStream();
@@ -190,7 +198,8 @@ namespace RemoteFileManagement
 
             //receive encrypted file length
             byte[] encrypted_file_length = new byte[54];
-            stream.Read(encrypted_file_length, 0, encrypted_file_length.Length);
+            //await here because server encrypt file first then send encrypted file length
+            await stream.ReadAsync(encrypted_file_length, 0, encrypted_file_length.Length);
             long file_length = long.Parse((string)Deserialize(encrypted_file_length));
             if (file_length == 0)
             {
@@ -201,26 +210,23 @@ namespace RemoteFileManagement
             RichTextBoxOutput.Text += "Receiving " + file_length.ToString() + " bytes from server\n";
 
             //output path in current directory
-            string output_encryted = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(TextBoxPath.Text));
-            output_encryted = Path.ChangeExtension(output_encryted, ".enc");
+            string output_encryted = Path.Combine(Path.GetDirectoryName(TextBoxPath.Text), Path.GetFileName(TextBoxPath.Text) + DateTime.Now.ToString("yyyyMMddHHmmss") + new Random().Next(1000, 9999).ToString() + "encrypted");
 
-            if(File.Exists(output_encryted))
-            {
-                File.Delete(output_encryted);
-            }
 
             //receive encrypted file by chunks
-
-            FileStream fileStream = new FileStream(output_encryted, FileMode.Create, FileAccess.Write);
-                byte[] buffer = new byte[1024*5];
-                long bytesRead = 0;
-                int count;
-                while (bytesRead < file_length && (count = stream.Read(buffer, 0, buffer.Length)) > 0)
-                {
-                    fileStream.Write(buffer, 0, count);
-                    bytesRead += count;
-                }
-            fileStream.Close();
+            //buffer 131072 and write asynchronously
+            //FileStream fileStream = new FileStream(output_encryted, FileMode.Create, FileAccess.Write,FileShare.None, 131072,true);
+            //byte[] buffer = new byte[131072];
+            //long bytesRead = 0;
+            //int count;
+            //while (bytesRead < file_length && (count = await stream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+            //{
+            //    await fileStream.WriteAsync(buffer, 0, count);
+            //    bytesRead += count;
+            //}
+            //fileStream.Close();
+            //call receive file function
+            await ReceiveFile(stream, output_encryted, file_length);
 
             RichTextBoxOutput.Text += "Received " + file_length.ToString() + " bytes from server\n";
 
@@ -243,6 +249,7 @@ namespace RemoteFileManagement
                 File.Delete(output_encryted);
             }
 
+            ButtonSendRequest.Enabled = true;
         }
         private byte[] Serialize(object obj)
         {
@@ -262,6 +269,26 @@ namespace RemoteFileManagement
             object obj = formatter.Deserialize(stream);
             stream.Close();
             return obj;
+        }
+
+        private async Task ReceiveFile(NetworkStream stream, string path, long file_length)
+        {
+            await Task.Run(() =>
+            {
+                //FileStream fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, 131072, true);
+                FileStream fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None);
+
+                byte[] buffer = new byte[131072];
+                long bytesRead = 0;
+                int count;
+                while (bytesRead < file_length && (count = stream.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    fileStream.Write(buffer, 0, count);
+                    bytesRead += count;
+                }
+                fileStream.Close();
+
+            });
         }
     }
 }

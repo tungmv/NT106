@@ -92,7 +92,7 @@ namespace RemoteFileManagement
                         //RichTextBoxOutput.AppendText(Path.GetFileName(path) + " was encrypted at" + outputpath + "\n");
 
                         //open encryted file
-                        FileStream file = new FileStream(outputpath, FileMode.Open, FileAccess.Read);
+                        FileStream file = new FileStream(outputpath, FileMode.Open, FileAccess.Read,FileShare.Read);
                         byte[] fileBytes = new byte[file.Length];
 
 
@@ -110,19 +110,12 @@ namespace RemoteFileManagement
 
                         //RichTextBoxOutput.AppendText("Sending " + file.Length.ToString() + " bytes to client " + client.Client.RemoteEndPoint + "\n");
 
-                        byte[] fileBuffer = new byte[1024*5];
-                        int count;
-                        while ((count = file.Read(fileBuffer, 0, fileBuffer.Length)) > 0)
-                        {
-                            try
-                            {
-                                stream.Write(fileBuffer, 0, count);
-                            }
-                            catch
-                            {
-                                return;
-                            }
-                        }
+                        ///
+                        /// call send file function here
+                        ///
+                        ///
+                        //
+                        await SendFile(stream, outputpath);
                         RichTextBoxOutput.AppendText("Sent " + file.Length.ToString() + " bytes to client " + client.Client.RemoteEndPoint + "\n");
 
 
@@ -130,7 +123,7 @@ namespace RemoteFileManagement
                         file.Close();
                         if (File.Exists(outputpath))
                         {
-                            File.Delete(outputpath);
+                           File.Delete(outputpath);
                         }
                     }
                     catch
@@ -148,20 +141,35 @@ namespace RemoteFileManagement
                 
             }
         }
-
+        private async Task SendFile(NetworkStream stream, string path)
+        {
+            await Task.Run(() =>
+            {
+                FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read);
+                byte[] fileBuffer = new byte[131072];
+                int count;
+                while ((count = file.Read(fileBuffer, 0, fileBuffer.Length)) > 0)
+                {
+                    try
+                    {
+                        stream.Write(fileBuffer, 0, count);
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            });
+        }
         private async Task<string> EncryptFileAES(string path, RSACryptoServiceProvider rsa)
         {
-            return await Task.Run(() => {
+            return await Task.Run(async () => {
                 //string path = (string)obj;
-                string outputpath = Path.ChangeExtension(path, ".enc");
+                string outputpath = Path.Combine(Path.GetDirectoryName(path), Path.GetFileName(path) + DateTime.Now.ToString("yyyyMMddHHmmss") + new Random().Next(1000, 9999).ToString() + "encrypted");
                 if (!File.Exists(path))
                 {
                     outputpath = null;
                     return outputpath;
-                }
-                if (File.Exists(outputpath))
-                {
-                    File.Delete(outputpath);
                 }
                 //handle input file not found
                 Aes aes = Aes.Create();
@@ -176,7 +184,7 @@ namespace RemoteFileManagement
                 FileStream filestream_out = null;
                 try
                 {
-                    filestream_out = new FileStream(outputpath, FileMode.Create, FileAccess.Write);
+                    filestream_out = new FileStream(outputpath, FileMode.Create, FileAccess.Write,FileShare.None, 131072,true);
                     filestream_out.Seek(0, SeekOrigin.Begin);
                     //write encrypted aes key length to file
                     filestream_out.Write(encryptedAESKeyLength, 0, 4);
@@ -200,12 +208,12 @@ namespace RemoteFileManagement
                     int count = 0;
                     int offset = 0;
 
-                    //set block size to 1/8 of the aes block size
-                    int blockSize = aes.BlockSize / 8;
+                    int blockSize = 131072;
+
                     byte[] data = new byte[blockSize];
                     int bytesRead = 0;
 
-                    FileStream fileStream_in = new FileStream(path, FileMode.Open, FileAccess.Read);
+                    FileStream fileStream_in = new FileStream(path, FileMode.Open, FileAccess.Read,FileShare.Read);
                     do
                     {
                         count = fileStream_in.Read(data, 0, blockSize);
@@ -243,10 +251,6 @@ namespace RemoteFileManagement
         }
 
 
-
-
-
-
         private byte[] Serialize(object obj)
         {
             MemoryStream stream = new MemoryStream();
@@ -267,19 +271,6 @@ namespace RemoteFileManagement
             return obj;
         }
 
-        private void ButtonTest_Click(object sender, EventArgs e)
-        {
-            string output= null;
-            //EncryptFileAES(TextBoxPathTest.Text,output, rsa);
-            MessageBox.Show(output);
-        }
-
-        private void ButtonTest2_Click(object sender, EventArgs e)
-        {
-            //string output = null;
-            //DecryptFileAES(Path.ChangeExtension(TextBoxPathTest.Text, ".enc"), "test.png", output, rsa);
-            //MessageBox.Show(output);
-        }
 
         bool SocketConnected(Socket s)
         {
