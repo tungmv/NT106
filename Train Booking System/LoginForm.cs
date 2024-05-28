@@ -23,8 +23,8 @@ namespace Train_Booking_System
             string email = TextBoxEmail.Text;
             string password = TextBoxPassword.Text;
 
-            //string email = "22521115@gm.uit.edu.vn"; // Replace "string" with actual value
-            //string password = "password"; // Replace "string" with actual value
+            //string email = "22521115@gm.uit.edu.vn";
+            //string password = "password"; 
 
             // Create JSON request body
             string jsonBody = $"{{\"email\":\"{email}\",\"password\":\"{password}\"}}";
@@ -41,13 +41,19 @@ namespace Train_Booking_System
                     {
                         // Read response content
                         string responseContent = await response.Content.ReadAsStringAsync();
-                        MessageBox.Show("Login successful: " + responseContent, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("Login successful: " + responseContent, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Open mainform
+                        Mainform bookingForm = new Mainform();
+                        bookingForm.Show();
                     }
                     else
                     {
                         // Read response content for error message
                         string responseContent = await response.Content.ReadAsStringAsync();
-                        MessageBox.Show("Login failed: " + responseContent, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //MessageBox.Show("Login failed: " + responseContent, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Login failed: Invalid email and password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     }
                 }
                 catch (Exception ex)
@@ -58,16 +64,12 @@ namespace Train_Booking_System
 
         }
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
-        {
+        private void kryptonButton1_Click(object sender, EventArgs e) {
+            UserReg f = new UserReg();
+            f.Show();
+        } 
+        private void TextBoxEmail_TextChanged(object sender, EventArgs e) { } 
 
-        }
-
-        private void TextBoxEmail_TextChanged(object sender, EventArgs e) { 
-        }
-
-
-        private void TextBoxPassword_TextChanged(object sender, EventArgs e) {
-        }
+        private void TextBoxPassword_TextChanged(object sender, EventArgs e) { }
     }
 }
