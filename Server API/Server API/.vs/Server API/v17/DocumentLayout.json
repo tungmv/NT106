@@ -3,12 +3,51 @@
   "WorkspaceRootPath": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|a:\\programs\\vs 2022\\trainbookingproject\\server api\\server api\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|a:\\programs\\vs 2022\\trainbookingproject\\server api\\server api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\server api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:server api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\server api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:server api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\dockerfile.original||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:dockerfile.original||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\models\\venam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:models\\venam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\migrations\\traindb\\20240528063902_trainfinal3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:migrations\\traindb\\20240528063902_trainfinal3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\models\\vengoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:models\\vengoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\dbcontext\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +66,8 @@
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:models\\toa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\models\\venam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:models\\venam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\models\\lichsudatvengoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:models\\lichsudatvengoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\models\\vengoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:models\\vengoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\dbcontext\\traindbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,13 +94,6 @@
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:models\\giuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240526071623_TrainFinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\TrainDB\\20240526071623_TrainFinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\migrations\\traindb\\20240525143300_train8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:migrations\\traindb\\20240525143300_train8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -84,10 +108,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240523164116_Train6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,24 +138,12 @@
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:migrations\\20240522103505_addlichsuve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\dockerfile.original||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:dockerfile.original||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\server api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:server api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\migrations\\admindb\\20240521100618_admininit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:migrations\\admindb\\20240521100618_admininit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\authentication\\tokengen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -163,6 +171,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240523105949_TrainInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:Migrations\\TrainDB\\20240523105949_TrainInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240526071623_TrainFinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2EA575-8529-4E7B-9A09-8D503C790882}|Server API.csproj|solutionrelative:Migrations\\TrainDB\\20240526071623_TrainFinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -172,30 +184,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAGAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T05:38:19.115Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAPoAAAAAAAAAAAAAwBABAAAFAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAAADkAAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T05:50:59.863Z",
               "IsPinned": true,
@@ -203,13 +215,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DataController.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Controllers\\DataController.cs",
               "RelativeDocumentMoniker": "Controllers\\DataController.cs",
               "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Controllers\\DataController.cs",
               "RelativeToolTip": "Controllers\\DataController.cs",
-              "ViewState": "AQIAANkAAAAAAAAAAAAAABQBAABEAAAA",
+              "ViewState": "AQIAAF8BAAAAAAAAAAAAwHYBAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T04:33:53.643Z",
               "IsPinned": true,
@@ -217,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "TrainDBContext.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\DBContext\\TrainDBContext.cs",
               "RelativeDocumentMoniker": "DBContext\\TrainDBContext.cs",
@@ -226,12 +238,11 @@
               "ViewState": "AQIAAFUAAAAAAAAAAAAAAGwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T08:07:48.022Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "UserDBContext.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\DBContext\\UserDBContext.cs",
               "RelativeDocumentMoniker": "DBContext\\UserDBContext.cs",
@@ -240,8 +251,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T07:43:15.629Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -273,33 +283,91 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Server API",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Server API.csproj",
+              "RelativeDocumentMoniker": "Server API.csproj",
+              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Server API.csproj",
+              "RelativeToolTip": "Server API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-28T12:31:30.032Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "VeNam.cs",
-              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\VeNam.cs",
-              "RelativeDocumentMoniker": "Models\\VeNam.cs",
-              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\VeNam.cs",
-              "RelativeToolTip": "Models\\VeNam.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T08:33:58.189Z",
+              "Title": "Server API",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Server API.csproj",
+              "RelativeDocumentMoniker": "Server API.csproj",
+              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Server API.csproj",
+              "RelativeToolTip": "Server API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-28T10:57:28.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dockerfile.original",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile.original",
+              "RelativeDocumentMoniker": "Dockerfile.original",
+              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile.original",
+              "RelativeToolTip": "Dockerfile.original",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-19T11:46:36.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-19T10:40:24.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-19T10:42:45.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "VeNgoi.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\VeNgoi.cs",
               "RelativeDocumentMoniker": "Models\\VeNgoi.cs",
               "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\VeNgoi.cs",
               "RelativeToolTip": "Models\\VeNgoi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T08:31:39.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T08:31:39.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "A:\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "A:\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAHUSAAAAAAAAAAASwIASAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-05-26T04:42:56.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Tuyen.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Tuyen.cs",
               "RelativeDocumentMoniker": "Models\\Tuyen.cs",
@@ -307,12 +375,35 @@
               "RelativeToolTip": "Models\\Tuyen.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T09:21:58.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T09:21:58.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "VeNam.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\VeNam.cs",
+              "RelativeDocumentMoniker": "Models\\VeNam.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\VeNam.cs",
+              "RelativeToolTip": "Models\\VeNam.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T08:33:58.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240528063902_TrainFinal3.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240528063902_TrainFinal3.cs",
+              "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240528063902_TrainFinal3.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240528063902_TrainFinal3.cs",
+              "RelativeToolTip": "Migrations\\TrainDB\\20240528063902_TrainFinal3.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:39:03.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "LichSuDatVeNgoi.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\LichSuDatVeNgoi.cs",
               "RelativeDocumentMoniker": "Models\\LichSuDatVeNgoi.cs",
@@ -320,12 +411,11 @@
               "RelativeToolTip": "Models\\LichSuDatVeNgoi.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T09:44:47.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T09:44:47.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "Toa.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Toa.cs",
               "RelativeDocumentMoniker": "Models\\Toa.cs",
@@ -333,12 +423,11 @@
               "RelativeToolTip": "Models\\Toa.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T08:48:32.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T08:48:32.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Tau.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Tau.cs",
               "RelativeDocumentMoniker": "Models\\Tau.cs",
@@ -346,12 +435,11 @@
               "RelativeToolTip": "Models\\Tau.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T08:35:44.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T08:35:44.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "LichTrinh.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\LichTrinh.cs",
               "RelativeDocumentMoniker": "Models\\LichTrinh.cs",
@@ -359,12 +447,11 @@
               "RelativeToolTip": "Models\\LichTrinh.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T09:34:00.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T09:34:00.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Ghe.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Ghe.cs",
               "RelativeDocumentMoniker": "Models\\Ghe.cs",
@@ -372,12 +459,11 @@
               "RelativeToolTip": "Models\\Ghe.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T08:56:49.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T08:56:49.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -385,12 +471,11 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T07:38:43.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T07:38:43.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "LichSuDatVeNam.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\LichSuDatVeNam.cs",
               "RelativeDocumentMoniker": "Models\\LichSuDatVeNam.cs",
@@ -398,12 +483,11 @@
               "RelativeToolTip": "Models\\LichSuDatVeNam.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T09:36:23.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T09:36:23.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Giuong.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Giuong.cs",
               "RelativeDocumentMoniker": "Models\\Giuong.cs",
@@ -411,12 +495,11 @@
               "RelativeToolTip": "Models\\Giuong.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T09:07:53.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T09:07:53.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 43,
               "Title": "20240526071623_TrainFinal.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240526071623_TrainFinal.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240526071623_TrainFinal.cs",
@@ -424,12 +507,11 @@
               "RelativeToolTip": "Migrations\\TrainDB\\20240526071623_TrainFinal.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T07:16:23.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T07:16:23.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "Phong.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Phong.cs",
               "RelativeDocumentMoniker": "Models\\Phong.cs",
@@ -441,20 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "A:\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "A:\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\IDE\\Microsoft Visual Studio 2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AQIAAGYSAAAAAAAAAAASwH0SAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-05-26T04:42:56.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "20240523164311_Train6.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240523164311_Train6.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240523164311_Train6.cs",
@@ -466,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "20240525143300_Train8.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240525143300_Train8.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240525143300_Train8.cs",
@@ -478,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "20240524033758_Train7.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240524033758_Train7.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240524033758_Train7.cs",
@@ -490,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -502,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "20240523164116_Train6.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240523164116_Train6.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240523164116_Train6.cs",
@@ -514,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "20240523152821_Train3.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240523152821_Train3.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240523152821_Train3.cs",
@@ -526,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "20240523110546_Train2.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240523110546_Train2.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240523110546_Train2.cs",
@@ -538,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "20240523105949_TrainInit.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\TrainDB\\20240523105949_TrainInit.cs",
               "RelativeDocumentMoniker": "Migrations\\TrainDB\\20240523105949_TrainInit.cs",
@@ -550,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "AdminDBContext.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\DBContext\\AdminDBContext.cs",
               "RelativeDocumentMoniker": "DBContext\\AdminDBContext.cs",
@@ -562,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "Tram.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Tram.cs",
               "RelativeDocumentMoniker": "Models\\Tram.cs",
@@ -574,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "PW.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\PW.cs",
               "RelativeDocumentMoniker": "Models\\PW.cs",
@@ -586,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "DiemDi.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\DiemDi.cs",
               "RelativeDocumentMoniker": "Models\\DiemDi.cs",
@@ -598,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "Admin.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "Models\\Admin.cs",
@@ -610,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "20240522103505_AddLichSuVe.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\20240522103505_AddLichSuVe.cs",
               "RelativeDocumentMoniker": "Migrations\\20240522103505_AddLichSuVe.cs",
@@ -622,31 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-19T10:40:24.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAkwB0AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-19T10:42:45.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "Server API.http",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Server API.http",
               "RelativeDocumentMoniker": "Server API.http",
@@ -658,19 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Dockerfile.original",
-              "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile.original",
-              "RelativeDocumentMoniker": "Dockerfile.original",
-              "ToolTip": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Dockerfile.original",
-              "RelativeToolTip": "Dockerfile.original",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-19T11:46:36.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "20240521100618_AdminInit.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\AdminDB\\20240521100618_AdminInit.cs",
               "RelativeDocumentMoniker": "Migrations\\AdminDB\\20240521100618_AdminInit.cs",
@@ -682,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "TokenGen.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Authentication\\TokenGen.cs",
               "RelativeDocumentMoniker": "Authentication\\TokenGen.cs",
@@ -694,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "20240520140105_InitUser.cs",
               "DocumentMoniker": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Migrations\\20240520140105_InitUser.cs",
               "RelativeDocumentMoniker": "Migrations\\20240520140105_InitUser.cs",
@@ -706,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Container.targets",
               "DocumentMoniker": "C:\\Users\\EVGA Fan Boi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
               "ToolTip": "C:\\Users\\EVGA Fan Boi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",

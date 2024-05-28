@@ -102,7 +102,8 @@ namespace Server_API.Controllers
                             LichTrinh.ID_LichTrinh,
                             LichTrinh.ID_Tau,
                             LichTrinh.Gio,
-                            LichTrinh.Thu
+                            LichTrinh.Thu,
+                            LichTrinh.Chieu
                         };
 
             var content = query.Distinct().ToList();
@@ -200,7 +201,7 @@ namespace Server_API.Controllers
         {
             if (ticket == null)
                 return BadRequest("Empty ticket!");
-            if (string.IsNullOrEmpty(ticket.ID_KhachHang) || string.IsNullOrEmpty(ticket.ID_LichTrinh) || string.IsNullOrEmpty(ticket.ID_picked) || string.IsNullOrEmpty(ticket.HoTen) || string.IsNullOrEmpty(ticket.ID_Phong))
+            if (string.IsNullOrEmpty(ticket.ID_KhachHang) || string.IsNullOrEmpty(ticket.ID_LichTrinh) || string.IsNullOrEmpty(ticket.ID_GiuongorGhe) || string.IsNullOrEmpty(ticket.HoTen) || string.IsNullOrEmpty(ticket.ID_PhongorToa))
                 return BadRequest("Missing properties");
             if (ticket.isVeNam < 0 || ticket.isVeNam > 1)
                 return BadRequest("Invalid isVeNam property, set 0 for VeNgoi, 1 for VeNam");
@@ -211,24 +212,67 @@ namespace Server_API.Controllers
                             .Where (lt => lt.ID_LichTrinh ==  ticket.ID_LichTrinh)
                            .Select(lt => new {thu = lt.Thu.ToString(), gio = lt.Gio }).FirstOrDefaultAsync();
 
-            int daysDifference = ((int)Enum.Parse<DayOfWeek>(targetDay.thu) - (int)DateTime.Now.DayOfWeek + 7) % 7;
-
-            DateTime targetDateTime = DateTime.Now.AddDays(daysDifference).Add(targetDay.gio);
+            int daysDifference;
+            DateTime targetDateTime;
+            if (targetDay.thu != null)      // Danh cho cac lich trinh hang tuan
+            {
+                daysDifference = ((int)Enum.Parse<DayOfWeek>(targetDay.thu) - (int)DateTime.Now.DayOfWeek + 7) % 7;
+                targetDateTime = DateTime.Now.AddDays(daysDifference).Add(targetDay.gio);
+            }
+            else
+                targetDateTime = DateTime.Now.AddDays(7);
             if (ticket.isVeNam == 1)        // =========== For VeNam
             {
-                var input = new VeNam
-                {
-                    ID_LichTrinh = ticket.ID_LichTrinh,
-                    ID_Giuong = ticket.ID_picked,
-                    ID_Phong = ticket.ID_Phong,
-                    HoTen = ticket.HoTen,
-                    NamSinh = ticket.NamSinh,
-                    ExpireDate = targetDateTime
-                };
+                // Get the train's class and the distance 
+                var phongQuery = from phong in _context.Phong
+                                 join toa in _context.Toa on phong.ID_Toa equals toa.ID_Toa
+                                 where phong.ID_Phong.Equals(ticket.ID_PhongorToa)
+                                 select phong.ID_Toa;
 
-                _context.VeNam.Add(input);
+                var classQuery = from tau in _context.Tau
+                                 join toa in _context.Toa on tau.ID_Tau equals toa.ID_Tau
+                                 where toa.ID_Toa.Equals(phongQuery)
+                                 select tau.Lop;
 
-                var hashPayload = $"{input.ID_Giuong}|{input.ID_Phong}|{input.HoTen}|{input.NamSinh}|{input.ExpireDate}";
+                var classString = classQuery.FirstOrDefault();
+
+                double multiplier = 0;
+                if (classString == "C")
+                    multiplier = 1;
+                else if (classString == "B")
+                    multiplier = 1.5;
+                else if (classString == "A")
+                    multiplier = 2.0;
+
+                //Get ID_Tuyen
+                var tuyenQuery = from lichtrinh in _context.LichTrinh
+                                 where lichtrinh.ID_LichTrinh.Equals(ticket.ID_LichTrinh)
+                                 select lichtrinh.ID_Tuyen;
+
+                // Get the total distance
+                var originQuery = from tram in _context.Tram
+                                  where tram.TenTram.Equals(ticket.XuatPhat)
+                                  select tram.ID_Tram;
+
+                var destinationQuery = from tram in _context.Tram
+                                       where tram.TenTram.Equals(ticket.DiemDen)
+                                       select tram.ID_Tram;
+
+                var originMilestone = from diemdi in _context.DiemDi
+                                      where diemdi.ID_Tram.Equals(originQuery.FirstOrDefault()) && diemdi.ID_Tuyen.Equals(tuyenQuery.FirstOrDefault())
+                                      select diemdi.KhoangCach;
+                float originFloat = originMilestone.FirstOrDefault();
+
+                var destinationMilestone = from diemdi in _context.DiemDi
+                                           where diemdi.ID_Tram.Equals(destinationQuery.FirstOrDefault()) && diemdi.ID_Tuyen.Equals(tuyenQuery)
+                                           select diemdi.KhoangCach;
+                float destinationFloat = destinationMilestone.FirstOrDefault();
+
+                float dist = Math.Abs(destinationFloat - originFloat);    // The result is the effective distance.
+                // Fair price configuration:
+                double Fare = dist * 250 + 50000;    // 1000 vnd/km * dist (km) + base fare
+                Fare *= multiplier; // nhan voi he so class cua tau: hang thuong/thuong gia/first class vv
+                var hashPayload = $"{ticket.ID_GiuongorGhe}|{ticket.ID_PhongorToa}|{ticket.HoTen}|{ticket.NamSinh}";
                 var hashDigest = new string("");
                 using (SHA256 sha256 = SHA256.Create())
                 {
@@ -236,6 +280,22 @@ namespace Server_API.Controllers
                     hashDigest = Convert.ToHexString(hashByte);
                 }
 
+                var input = new VeNam
+                {
+                    ID_VeNam = hashDigest,
+                    ID_LichTrinh = ticket.ID_LichTrinh,
+                    ID_Giuong = ticket.ID_GiuongorGhe,
+                    ID_Phong = ticket.ID_PhongorToa,
+                    HoTen = ticket.HoTen,
+                    NamSinh = ticket.NamSinh,
+                    ExpireDate = targetDateTime,
+                    DonGia = (int)Fare,
+                    XuatPhat = ticket.XuatPhat,
+                    DiemDen = ticket.DiemDen
+                };
+
+                _context.VeNam.Add(input);
+                await _context.SaveChangesAsync();
                 _userContext.LichSuDatVeNam.Add(new LichSuDatVeNam
                 {
                     ID_KhachHang = ticket.ID_KhachHang,
@@ -249,30 +309,91 @@ namespace Server_API.Controllers
                 {
                     Success = true,
                     ID_Ve = hashDigest,
-                    Expire = input.ExpireDate
+                    ID_Giuong = ticket.ID_GiuongorGhe,
+                    ID_Phong = ticket.ID_PhongorToa,
+                    ID_Toa = phongQuery.FirstOrDefault(),
+                    HoTen = ticket.HoTen,
+                    NamSinh = ticket.NamSinh,
+                    DonGia = (int)Fare,
+                    XuatPhat = ticket.XuatPhat,
+                    DiemDen = ticket.DiemDen,
+                    ExpireDay = input.ExpireDate.Day,
+                    ExpireTime = input.ExpireDate.Hour
                 };
 
                 return Ok(response);
             }
             else
             {                              // =========== For VeNgoi
-                var input = new VeNgoi
-                {
-                    ID_LichTrinh = ticket.ID_LichTrinh,
-                    ID_Ghe = ticket.ID_picked,
-                    HoTen = ticket.HoTen,
-                    NamSinh = ticket.NamSinh,
-                    ExpireDate = targetDateTime
-                };
+                // Get the train's class and the distance 
+                var classQuery = from tau in _context.Tau
+                                 join toa in _context.Toa on tau.ID_Tau equals toa.ID_Tau
+                                 where toa.ID_Toa.Equals(ticket.ID_PhongorToa)
+                                 select tau.Lop;
 
-                _context.VeNgoi.Add(input);
-                var hashPayload = $"{input.ID_Ghe}|{input.HoTen}|{input.NamSinh}|{input.ExpireDate}";
+                var classString = classQuery.FirstOrDefault();
+
+                double multiplier = 0;
+                if (classString == "C")
+                    multiplier = 1;
+                else if (classString == "B")
+                    multiplier = 1.5;
+                else if (classString == "A")
+                    multiplier = 2.0;
+
+                //Get ID_Tuyen
+                var tuyenQuery = from lichtrinh in _context.LichTrinh
+                                 where lichtrinh.ID_LichTrinh.Equals(ticket.ID_LichTrinh)
+                                 select lichtrinh.ID_Tuyen;
+
+                // Get the total distance
+                var originQuery = from tram in _context.Tram
+                                  where tram.TenTram.Equals(ticket.XuatPhat)
+                                  select tram.ID_Tram;
+
+                var destinationQuery = from tram in _context.Tram
+                                       where tram.TenTram.Equals(ticket.DiemDen)
+                                       select tram.ID_Tram;
+
+                var originMilestone = from diemdi in _context.DiemDi
+                                      where diemdi.ID_Tram.Equals(originQuery.FirstOrDefault()) && diemdi.ID_Tuyen.Equals(tuyenQuery.FirstOrDefault())
+                                      select diemdi.KhoangCach;
+                float originFloat = originMilestone.FirstOrDefault();
+
+                var destinationMilestone = from diemdi in _context.DiemDi
+                                           where diemdi.ID_Tram.Equals(destinationQuery.FirstOrDefault()) && diemdi.ID_Tuyen.Equals(tuyenQuery.FirstOrDefault())
+                                           select diemdi.KhoangCach;
+                float destinationFloat = destinationMilestone.FirstOrDefault();
+
+                float dist = Math.Abs(destinationFloat - originFloat);    // The result is the effective distance.
+                // Fair price configuration:
+                double Fare = dist * 250 + 25000;    // 250 vnd/km * dist (km) + base fare
+                Fare *= multiplier; // nhan voi he so class cua tau: hang thuong/thuong gia/first class vv
+
+                var hashPayload = $"{ticket.ID_GiuongorGhe}|{ticket.ID_PhongorToa}|{ticket.HoTen}|{ticket.NamSinh}";
                 var hashDigest = new string("");
                 using (SHA256 sha256 = SHA256.Create())
                 {
                     byte[] hashByte = sha256.ComputeHash(Encoding.UTF8.GetBytes(hashPayload));
                     hashDigest = Convert.ToHexString(hashByte);
                 }
+
+                var input = new VeNgoi
+                {
+                    ID_VeNgoi = hashDigest,
+                    ID_LichTrinh = ticket.ID_LichTrinh,
+                    ID_Toa = ticket.ID_PhongorToa,
+                    ID_Ghe = ticket.ID_GiuongorGhe,
+                    HoTen = ticket.HoTen,
+                    NamSinh = ticket.NamSinh,
+                    ExpireDate = targetDateTime,
+                    DonGia = (int)Fare,
+                    XuatPhat = ticket.XuatPhat,
+                    DiemDen = ticket.DiemDen
+                };
+
+                _context.VeNgoi.Add(input);
+                await _context.SaveChangesAsync();
 
                 _userContext.LichSuDatVeNgoi.Add(new LichSuDatVeNgoi
                 {
@@ -286,7 +407,15 @@ namespace Server_API.Controllers
                 {
                     Success = true,
                     ID_Ve = hashDigest,
-                    Expire = input.ExpireDate
+                    ID_Toa = ticket.ID_PhongorToa,
+                    ID_Ghe = ticket.ID_GiuongorGhe,
+                    HoTen = ticket.HoTen,
+                    NamSinh = ticket.NamSinh,
+                    DonGia = (int)Fare,
+                    XuatPhat = ticket.XuatPhat,
+                    DiemDen = ticket.DiemDen,
+                    ExpireDay = input.ExpireDate.Day,
+                    ExpireTime = input.ExpireDate.Hour
                 };
 
                 return Ok(response);
@@ -306,10 +435,11 @@ namespace Server_API.Controllers
         public string ID_KhachHang { get; set; }
         public int isVeNam { get; set; } // 0 = Ngoi, 1 = Nam
         public string ID_LichTrinh { get; set; }
-        public string ID_Phong { get; set; }
-        public string ID_picked { get; set; }   // Hoac la cho nam hoac la cho ngoi
-        public int KhaDung { get; set; }
+        public string ID_PhongorToa { get; set; }
+        public string ID_GiuongorGhe { get; set; }   // Hoac la cho nam hoac la cho ngoi
         public string HoTen { get; set; }
         public int NamSinh { get; set; }
+        public string XuatPhat { get; set; } // ten tram vd: Ga Hoan Kiem
+        public string DiemDen { get; set; } // ten tram
     }
 }

@@ -219,6 +219,10 @@ namespace Server_API.Migrations.TrainDB
                     b.Property<string>("ID_VeNam")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("DiemDen")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("DonGia")
                         .HasColumnType("INTEGER");
 
@@ -233,20 +237,24 @@ namespace Server_API.Migrations.TrainDB
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ID_LichTrinh")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("ID_Phong")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ID_Tuyen")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("NamSinh")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("NamSinh")
+                    b.Property<string>("XuatPhat")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID_VeNam");
 
-                    b.HasIndex("ID_Tuyen");
+                    b.HasIndex("ID_LichTrinh");
 
                     b.HasIndex("ID_Giuong", "ID_Phong")
                         .IsUnique();
@@ -257,6 +265,10 @@ namespace Server_API.Migrations.TrainDB
             modelBuilder.Entity("Server_API.Models.VeNgoi", b =>
                 {
                     b.Property<string>("ID_VeNgoi")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DiemDen")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("DonGia")
@@ -273,20 +285,24 @@ namespace Server_API.Migrations.TrainDB
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ID_LichTrinh")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("ID_Toa")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ID_Tuyen")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("NamSinh")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("NamSinh")
+                    b.Property<string>("XuatPhat")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID_VeNgoi");
 
-                    b.HasIndex("ID_Tuyen");
+                    b.HasIndex("ID_LichTrinh");
 
                     b.HasIndex("ID_Ghe", "ID_Toa")
                         .IsUnique();
@@ -389,9 +405,9 @@ namespace Server_API.Migrations.TrainDB
 
             modelBuilder.Entity("Server_API.Models.VeNam", b =>
                 {
-                    b.HasOne("Server_API.Models.Tuyen", "Tuyen")
+                    b.HasOne("Server_API.Models.LichTrinh", "LichTrinh")
                         .WithMany()
-                        .HasForeignKey("ID_Tuyen")
+                        .HasForeignKey("ID_LichTrinh")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -403,14 +419,14 @@ namespace Server_API.Migrations.TrainDB
 
                     b.Navigation("Giuong");
 
-                    b.Navigation("Tuyen");
+                    b.Navigation("LichTrinh");
                 });
 
             modelBuilder.Entity("Server_API.Models.VeNgoi", b =>
                 {
-                    b.HasOne("Server_API.Models.Tuyen", "Tuyen")
+                    b.HasOne("Server_API.Models.LichTrinh", "LichTrinh")
                         .WithMany()
-                        .HasForeignKey("ID_Tuyen")
+                        .HasForeignKey("ID_LichTrinh")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -422,7 +438,7 @@ namespace Server_API.Migrations.TrainDB
 
                     b.Navigation("Ghe");
 
-                    b.Navigation("Tuyen");
+                    b.Navigation("LichTrinh");
                 });
 
             modelBuilder.Entity("Server_API.Models.Ghe", b =>

@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Net.Http;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Train_Booking_System {
+    public partial class AdminLogin : Form
+    {
+        public AdminLogin()
+        {
+            InitializeComponent();
+            textBox2.PasswordChar = '*';
+        }
+        static string HashPasswordSHA256(string password) {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // ComputeHash - returns byte array
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                // Convert byte array to a string
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+        static void AuthenticateUser(string username, string password)
+        {
+            using (var client = new HttpClient())
+            {
+                var loginInfo = new { Username = username, Password = password };
+                //var json = JsonConvert.SerializeObject(loginInfo);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = client.PostAsync("https://9696-2402-800-6312-4844-392a-e065-739a-694f.ngrok-free.app", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    var jwt = JsonConvert.DeserializeObject<JwtResponse>(responseString);
+                    return jwt.Token;
+                }
+                return null;
+            }
+        }
+        private void button1_Click(object sender, EventArgs e) {
+            // Retrieve the password entered by the user
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+            string hashedPassword = HashPasswordSHA256(password);
+
+            // DEBUG
+            MessageBox.Show($"Password entered: {password} and hashed pwd: {hashedPassword}");
+        }
+    }
+}

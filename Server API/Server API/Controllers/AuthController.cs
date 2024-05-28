@@ -55,7 +55,7 @@ namespace Server_API.Controllers
             var token = GenerateJwtToken(user.Email, true);
             Response.Headers.Add("Authorization", "Bearer " + token);
 
-            return Ok(new { Token = token });   // Accept, return OK + token
+            return Ok(new { Token = token, ID = user.ID_KhachHang });   // Accept, return OK + token
         }
 
         private string HashPassword(string password, string salt)
@@ -241,10 +241,10 @@ namespace Server_API.Controllers
                 string hashID = new string("");
                 using (SHA256 sha256 = SHA256.Create())
                 {
-                    byte[] hashByte = sha256.ComputeHash(Encoding.UTF8.GetBytes(input.Password));
+                    byte[] hashByte = sha256.ComputeHash(Encoding.UTF8.GetBytes(input.HoTen + input.Email));
+                    hashID = Convert.ToBase64String(hashByte);
+                    hashByte = sha256.ComputeHash(Encoding.UTF8.GetBytes(input.Password + hashID));   // hash ID là salt
                     hashDigest = Convert.ToHexString(hashByte);
-                    hashByte = sha256.ComputeHash(Encoding.UTF8.GetBytes(input.HoTen + input.Email));
-                    hashID = Convert.ToHexString(hashByte);
                 }
 
                 var handler = new User
@@ -267,7 +267,14 @@ namespace Server_API.Controllers
 
                 await _context.SaveChangesAsync();
 
-                return Ok();
+                var result = new
+                {
+                    Email = input.Email,
+                    HoTen = input.HoTen,
+                    ID_KhachHang = hashID
+                };
+
+                return Ok(result);
             }
         }
     }
