@@ -212,9 +212,15 @@ namespace Server_API.Controllers
                             .Where (lt => lt.ID_LichTrinh ==  ticket.ID_LichTrinh)
                            .Select(lt => new {thu = lt.Thu.ToString(), gio = lt.Gio }).FirstOrDefaultAsync();
 
-            int daysDifference = ((int)Enum.Parse<DayOfWeek>(targetDay.thu) - (int)DateTime.Now.DayOfWeek + 7) % 7;
-
-            DateTime targetDateTime = DateTime.Now.AddDays(daysDifference).Add(targetDay.gio);
+            int daysDifference;
+            DateTime targetDateTime;
+            if (targetDay.thu != null)      // Danh cho cac lich trinh hang tuan
+            {
+                daysDifference = ((int)Enum.Parse<DayOfWeek>(targetDay.thu) - (int)DateTime.Now.DayOfWeek + 7) % 7;
+                targetDateTime = DateTime.Now.AddDays(daysDifference).Add(targetDay.gio);
+            }
+            else
+                targetDateTime = DateTime.Now.AddDays(7);
             if (ticket.isVeNam == 1)        // =========== For VeNam
             {
                 // Get the train's class and the distance 
@@ -359,7 +365,7 @@ namespace Server_API.Controllers
                                            select diemdi.KhoangCach;
                 float destinationFloat = destinationMilestone.FirstOrDefault();
 
-                float dist = Math.Abs(destinationFloat-originFloat);    // The result is the effective distance.
+                float dist = Math.Abs(destinationFloat - originFloat);    // The result is the effective distance.
                 // Fair price configuration:
                 double Fare = dist * 250 + 25000;    // 250 vnd/km * dist (km) + base fare
                 Fare *= multiplier; // nhan voi he so class cua tau: hang thuong/thuong gia/first class vv
