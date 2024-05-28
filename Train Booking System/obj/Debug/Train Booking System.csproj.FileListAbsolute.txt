@@ -56,3 +56,6 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\De
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.Dashboard.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.TicketForm.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\Train Booking System\obj\Debug\Train_Booking_System.HistoryForm.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.HistoryForm.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.TicketForm.resources
+D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.UserReg.resources

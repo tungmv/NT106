@@ -4,39 +4,28 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
-using System.Net.Http;
->>>>>>> b6df0e31abd7ca40665a713f19d15a1cb8699606
 
 namespace Train_Booking_System
 {
     public partial class UserReg : Form
     {
-<<<<<<< HEAD
-=======
-        private const string createAccountUrl = "http://localhost:5009/api/User/createAccount";
-
->>>>>>> b6df0e31abd7ca40665a713f19d15a1cb8699606
         public UserReg()
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-=======
+        private const string createAccountUrl = "http://localhost:5009/api/User/createAccount";
 
-        // REGISTE button
         private async void button1_Click(object sender, EventArgs e)
         {
             // get data
             string email = textBox1.Text;
-            string password = textBox2.Text;    
+            string password = textBox2.Text;
             string hoTen = textBox3.Text;
             int namSinh;
-
             // Validate namSinh is an integer
             if (!int.TryParse(textBox4.Text, out namSinh))
             {
@@ -69,13 +58,10 @@ namespace Train_Booking_System
                         MessageBox.Show("Account creation failed: " + responseContent, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                catch (Exception ex)
-                {
+                catch (Exception ex) {
                     MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
-
->>>>>>> b6df0e31abd7ca40665a713f19d15a1cb8699606
     }
 }

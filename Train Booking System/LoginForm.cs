@@ -18,16 +18,12 @@ namespace Train_Booking_System
 
         private async void ButtonLogin_Click(object sender, EventArgs e)
         {
-            //string email = TextBoxEmail.Text;
-            //string password = TextBoxPassword.Text;
+            string email = TextBoxEmail.Text;
+            string password = TextBoxPassword.Text;
 
-<<<<<<< HEAD
-            string email = "22521115@gm.uit.edu.vn"; 
-            string password = "password";
-=======
-            //string email = "22521115@gm.uit.edu.vn";
-            //string password = "password"; 
->>>>>>> b6df0e31abd7ca40665a713f19d15a1cb8699606
+            //string email = "22521115@gm.uit.edu.vn"; 
+            //string password = "password";
+
 
             // Create JSON request body
             string jsonBody = $"{{\"email\":\"{email}\",\"password\":\"{password}\"}}";
@@ -46,10 +42,10 @@ namespace Train_Booking_System
                         string responseContent = await response.Content.ReadAsStringAsync();
                         //MessageBox.Show("Login successful: " + responseContent, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-<<<<<<< HEAD
 
-=======
->>>>>>> b6df0e31abd7ca40665a713f19d15a1cb8699606
+
+
+
                         // Open mainform
                         Mainform bookingForm = new Mainform();
                         bookingForm.Show();
@@ -60,10 +56,7 @@ namespace Train_Booking_System
                         string responseContent = await response.Content.ReadAsStringAsync();
                         //MessageBox.Show("Login failed: " + responseContent, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         MessageBox.Show("Login failed: Invalid email and password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-<<<<<<< HEAD
-=======
 
->>>>>>> b6df0e31abd7ca40665a713f19d15a1cb8699606
                     }
                 }
                 catch (Exception ex)
