@@ -9,6 +9,9 @@
         public int DonGia { get; set; }
         public string HoTen { get; set; }
         public int NamSinh { get; set; }
+        public string XuatPhat { get; set; }
+        public string DiemDen { get; set; }
+        // navigation props
         public Ghe Ghe { get; set; }
 
         public LichTrinh LichTrinh { get; set;}
