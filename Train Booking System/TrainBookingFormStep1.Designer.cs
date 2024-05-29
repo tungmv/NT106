@@ -59,20 +59,22 @@
             // 
             // LabelDepatureDate
             // 
-            this.LabelDepatureDate.Location = new System.Drawing.Point(62, 113);
+            this.LabelDepatureDate.Location = new System.Drawing.Point(83, 139);
+            this.LabelDepatureDate.Margin = new System.Windows.Forms.Padding(4);
             this.LabelDepatureDate.Name = "LabelDepatureDate";
-            this.LabelDepatureDate.Size = new System.Drawing.Size(132, 27);
-            this.LabelDepatureDate.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDepatureDate.Size = new System.Drawing.Size(119, 23);
+            this.LabelDepatureDate.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelDepatureDate.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.LabelDepatureDate.TabIndex = 10;
             this.LabelDepatureDate.Values.Text = "Depature Date";
             // 
             // LabelDepature
             // 
-            this.LabelDepature.Location = new System.Drawing.Point(62, 80);
+            this.LabelDepature.Location = new System.Drawing.Point(83, 98);
+            this.LabelDepature.Margin = new System.Windows.Forms.Padding(4);
             this.LabelDepature.Name = "LabelDepature";
-            this.LabelDepature.Size = new System.Drawing.Size(89, 27);
-            this.LabelDepature.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDepature.Size = new System.Drawing.Size(80, 23);
+            this.LabelDepature.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelDepature.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.LabelDepature.TabIndex = 9;
             this.LabelDepature.Values.Text = "Depature";
@@ -80,29 +82,32 @@
             // DateTimePickerDepatureDate
             // 
             this.DateTimePickerDepatureDate.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.DateTimePickerDepatureDate.Location = new System.Drawing.Point(200, 113);
+            this.DateTimePickerDepatureDate.Location = new System.Drawing.Point(267, 139);
+            this.DateTimePickerDepatureDate.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePickerDepatureDate.Name = "DateTimePickerDepatureDate";
             this.DateTimePickerDepatureDate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.DateTimePickerDepatureDate.Size = new System.Drawing.Size(165, 27);
-            this.DateTimePickerDepatureDate.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePickerDepatureDate.Size = new System.Drawing.Size(220, 20);
+            this.DateTimePickerDepatureDate.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTimePickerDepatureDate.TabIndex = 8;
             // 
             // LabelReturnDate
             // 
-            this.LabelReturnDate.Location = new System.Drawing.Point(62, 196);
+            this.LabelReturnDate.Location = new System.Drawing.Point(83, 241);
+            this.LabelReturnDate.Margin = new System.Windows.Forms.Padding(4);
             this.LabelReturnDate.Name = "LabelReturnDate";
-            this.LabelReturnDate.Size = new System.Drawing.Size(109, 27);
-            this.LabelReturnDate.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelReturnDate.Size = new System.Drawing.Size(100, 23);
+            this.LabelReturnDate.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelReturnDate.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.LabelReturnDate.TabIndex = 14;
             this.LabelReturnDate.Values.Text = "Return Date";
             // 
             // LabelReturn
             // 
-            this.LabelReturn.Location = new System.Drawing.Point(62, 163);
+            this.LabelReturn.Location = new System.Drawing.Point(83, 201);
+            this.LabelReturn.Margin = new System.Windows.Forms.Padding(4);
             this.LabelReturn.Name = "LabelReturn";
-            this.LabelReturn.Size = new System.Drawing.Size(65, 27);
-            this.LabelReturn.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelReturn.Size = new System.Drawing.Size(61, 23);
+            this.LabelReturn.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelReturn.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.LabelReturn.TabIndex = 13;
             this.LabelReturn.Values.Text = "Return";
@@ -110,28 +115,31 @@
             // DateTimePickerReturnDate
             // 
             this.DateTimePickerReturnDate.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.DateTimePickerReturnDate.Location = new System.Drawing.Point(200, 196);
+            this.DateTimePickerReturnDate.Location = new System.Drawing.Point(267, 241);
+            this.DateTimePickerReturnDate.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePickerReturnDate.Name = "DateTimePickerReturnDate";
             this.DateTimePickerReturnDate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.DateTimePickerReturnDate.Size = new System.Drawing.Size(165, 27);
-            this.DateTimePickerReturnDate.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePickerReturnDate.Size = new System.Drawing.Size(220, 20);
+            this.DateTimePickerReturnDate.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTimePickerReturnDate.TabIndex = 12;
             // 
             // CheckBoxRoundTrip
             // 
             this.CheckBoxRoundTrip.Checked = true;
             this.CheckBoxRoundTrip.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBoxRoundTrip.Location = new System.Drawing.Point(71, 54);
+            this.CheckBoxRoundTrip.Location = new System.Drawing.Point(95, 66);
+            this.CheckBoxRoundTrip.Margin = new System.Windows.Forms.Padding(4);
             this.CheckBoxRoundTrip.Name = "CheckBoxRoundTrip";
-            this.CheckBoxRoundTrip.Size = new System.Drawing.Size(83, 19);
-            this.CheckBoxRoundTrip.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBoxRoundTrip.Size = new System.Drawing.Size(79, 16);
+            this.CheckBoxRoundTrip.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckBoxRoundTrip.TabIndex = 16;
             this.CheckBoxRoundTrip.Values.Text = "Round Trip";
             this.CheckBoxRoundTrip.CheckedChanged += new System.EventHandler(this.CheckBoxRoundTrip_CheckedChanged);
             // 
             // ButtonLogin
             // 
-            this.ButtonLogin.Location = new System.Drawing.Point(383, 249);
+            this.ButtonLogin.Location = new System.Drawing.Point(511, 306);
+            this.ButtonLogin.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonLogin.Name = "ButtonLogin";
             this.ButtonLogin.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ButtonLogin.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -140,7 +148,7 @@
             this.ButtonLogin.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonLogin.OverrideFocus.Back.ColorAngle = 45F;
             this.ButtonLogin.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ButtonLogin.Size = new System.Drawing.Size(123, 37);
+            this.ButtonLogin.Size = new System.Drawing.Size(164, 46);
             this.ButtonLogin.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonLogin.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ButtonLogin.StateCommon.Back.ColorAngle = 135F;
@@ -155,7 +163,7 @@
             this.ButtonLogin.StateCommon.Border.Rounding = 10;
             this.ButtonLogin.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.ButtonLogin.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.ButtonLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLogin.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonLogin.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonLogin.StatePressed.Back.ColorAngle = 135F;
@@ -166,6 +174,7 @@
             this.ButtonLogin.StateTracking.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.ButtonLogin.TabIndex = 17;
             this.ButtonLogin.Values.Text = "Find";
+            this.ButtonLogin.Click += new System.EventHandler(this.ButtonLogin_Click);
             // 
             // DataGridViewTrainList
             // 
@@ -178,10 +187,11 @@
             this.Route,
             this.Arrival_Date,
             this.Available_Seats});
-            this.DataGridViewTrainList.Location = new System.Drawing.Point(72, 305);
+            this.DataGridViewTrainList.Location = new System.Drawing.Point(96, 375);
+            this.DataGridViewTrainList.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridViewTrainList.Name = "DataGridViewTrainList";
             this.DataGridViewTrainList.ReadOnly = true;
-            this.DataGridViewTrainList.Size = new System.Drawing.Size(761, 191);
+            this.DataGridViewTrainList.Size = new System.Drawing.Size(1015, 235);
             this.DataGridViewTrainList.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.DataGridViewTrainList.StateCommon.Background.ColorAngle = 45F;
             this.DataGridViewTrainList.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -230,42 +240,48 @@
             // ComboBoxReturn
             // 
             this.ComboBoxReturn.DropDownWidth = 165;
-            this.ComboBoxReturn.Location = new System.Drawing.Point(200, 169);
+            this.ComboBoxReturn.Location = new System.Drawing.Point(267, 205);
+            this.ComboBoxReturn.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxReturn.Name = "ComboBoxReturn";
             this.ComboBoxReturn.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComboBoxReturn.Size = new System.Drawing.Size(165, 23);
-            this.ComboBoxReturn.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxReturn.Size = new System.Drawing.Size(220, 19);
+            this.ComboBoxReturn.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBoxReturn.TabIndex = 21;
+            this.ComboBoxReturn.SelectedIndexChanged += new System.EventHandler(this.ComboBoxReturn_SelectedIndexChanged);
             // 
             // ComboBoxDeparture
             // 
             this.ComboBoxDeparture.DropDownWidth = 165;
-            this.ComboBoxDeparture.Location = new System.Drawing.Point(200, 84);
+            this.ComboBoxDeparture.Location = new System.Drawing.Point(267, 103);
+            this.ComboBoxDeparture.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxDeparture.Name = "ComboBoxDeparture";
             this.ComboBoxDeparture.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComboBoxDeparture.Size = new System.Drawing.Size(165, 23);
-            this.ComboBoxDeparture.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxDeparture.Size = new System.Drawing.Size(220, 19);
+            this.ComboBoxDeparture.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBoxDeparture.TabIndex = 22;
+            this.ComboBoxDeparture.SelectedIndexChanged += new System.EventHandler(this.ComboBoxDeparture_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(595, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(793, 91);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 149);
+            this.pictureBox1.Size = new System.Drawing.Size(277, 183);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(383, 513);
+            this.kryptonButton2.Location = new System.Drawing.Point(511, 631);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton2.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton2.OverrideFocus.Back.ColorAngle = 45F;
             this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2.Size = new System.Drawing.Size(123, 37);
+            this.kryptonButton2.Size = new System.Drawing.Size(164, 46);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Back.ColorAngle = 135F;
@@ -280,30 +296,31 @@
             this.kryptonButton2.StateCommon.Border.Rounding = 10;
             this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.kryptonButton2.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.TabIndex = 25;
             this.kryptonButton2.Values.Text = "Next";
             this.kryptonButton2.Click += new System.EventHandler(this.ButtonNext);
             // 
             // LabelAccountInfo
             // 
-            this.LabelAccountInfo.Location = new System.Drawing.Point(369, 12);
+            this.LabelAccountInfo.Location = new System.Drawing.Point(492, 15);
+            this.LabelAccountInfo.Margin = new System.Windows.Forms.Padding(4);
             this.LabelAccountInfo.Name = "LabelAccountInfo";
             this.LabelAccountInfo.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.LabelAccountInfo.Size = new System.Drawing.Size(149, 33);
+            this.LabelAccountInfo.Size = new System.Drawing.Size(138, 28);
             this.LabelAccountInfo.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.LabelAccountInfo.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.LabelAccountInfo.StateCommon.ShortText.ColorAngle = 45F;
-            this.LabelAccountInfo.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelAccountInfo.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAccountInfo.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.LabelAccountInfo.TabIndex = 26;
             this.LabelAccountInfo.Values.Text = "Train Booking";
             // 
             // TrainBookingFormStep1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 611);
+            this.ClientSize = new System.Drawing.Size(1193, 752);
             this.Controls.Add(this.LabelAccountInfo);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.pictureBox1);
@@ -319,6 +336,7 @@
             this.Controls.Add(this.ComboBoxReturn);
             this.Controls.Add(this.ComboBoxDeparture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TrainBookingFormStep1";
             this.Text = "BookingForm";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTrainList)).EndInit();

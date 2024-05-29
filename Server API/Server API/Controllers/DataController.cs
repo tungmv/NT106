@@ -46,12 +46,12 @@ namespace Server_API.Controllers
 
             var throughA = from DiemDi in _context.DiemDi
                            join Tram in _context.Tram on DiemDi.ID_Tram equals Tram.ID_Tram
-                           where Tram.Thanhpho.Equals(Origin)
+                           where Tram.TenTram.Equals(Origin)
                            select DiemDi.ID_Tuyen; // Tim cac ID_Tuyen di qua {Origin}
 
             var throughB = from DiemDi in _context.DiemDi
                            join Tram in _context.Tram on DiemDi.ID_Tram equals Tram.ID_Tram
-                           where Tram.Thanhpho.Equals(Destination)
+                           where Tram.TenTram.Equals(Destination)
                            select DiemDi.ID_Tuyen;  // Tim cac ID_Tuyen di qua {Destination}
 
             var throughAandB = throughA.Intersect(throughB).Distinct();
