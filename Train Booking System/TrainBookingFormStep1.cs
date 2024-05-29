@@ -24,6 +24,7 @@ namespace Train_Booking_System
         private Mainform mainform;
         private const string fetchStationUrl = "http://localhost:5009/api/Route/fetchStation";
         private const string FindRoutesUrl = "http://localhost:5009/api/Route/FindRoutes";
+        private const string RouteIdUrl = "http://localhost:5009/api/Route/";
 
 
         public TrainBookingFormStep1(Mainform mainform)
@@ -31,8 +32,10 @@ namespace Train_Booking_System
             //accept reference to mainform
             this.mainform = mainform;
             GetStationInfo();
-
             InitializeComponent();
+            ComboBoxDeparture.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboBoxReturn.DropDownStyle = ComboBoxStyle.DropDownList;
+            combobox_date.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private async void GetStationInfo()
@@ -86,7 +89,8 @@ namespace Train_Booking_System
             }
 
         }
-
+        
+/* Comment rountrip && old date combobox
         private void CheckBoxRoundTrip_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxRoundTrip.Checked)
@@ -100,7 +104,7 @@ namespace Train_Booking_System
                 DateTimePickerReturnDate.Enabled = false;
             }
         }
-
+*/
         private void ButtonNext(object sender, EventArgs e)
         {
             // insert check here
@@ -131,6 +135,8 @@ namespace Train_Booking_System
         // FIND button
         private async void ButtonLogin_Click(object sender, EventArgs e)
         {
+            // Clear select combobox
+            combobox_date.Items.Clear();
 
             // Tokenize the input strings based on the delimiter
             string d1 = ComboBoxDeparture.SelectedItem.ToString();
@@ -162,20 +168,68 @@ namespace Train_Booking_System
                         // Parse JSON response
                         var jsonResponse = JObject.Parse(responseContent);
                         var routesArray = (JArray)jsonResponse["routes"];
+
+                        // using regex to match id route
                         string pattern = @"[A-Z]{2}-[A-Z]{3}";
                         Regex regex = new Regex(pattern);
                         Match match = regex.Match(routesArray.ToString());
 
-                        //string routescontent = routesArray.ToString().Trim('[', ']', ' ', '\"');
+                        // If match success convert into result route
                         if (match.Success)
                         {
                             string resRoute = match.Value;
+                            using (HttpClient client1 = new HttpClient())
+                            {
+                                // Set the Accept header
+                                client.DefaultRequestHeaders.Add("accept", "text/plain");
+                                try
+                                {
+                                    // Send the GET request
+                                    HttpResponseMessage response1 = await client.GetAsync(RouteIdUrl+resRoute);
+
+                                    // Check if the request was successful
+                                    if (response1.IsSuccessStatusCode)
+                                    {
+                                        // Read and display the response content
+                                        string response1Content = await response1.Content.ReadAsStringAsync();
+
+                                        // Parse JSON response
+                                        var jsonResponse1 = JObject.Parse(response1Content);
+                                        var routeidarray = (JArray)jsonResponse1["lichtrinh"];
+                                        List<LichTrinh> lt = routeidarray.ToObject<List<LichTrinh>>();
+                                        foreach (var ltt in lt)
+                                        {
+                                             combobox_date.Items.Add($"{ltt.idlt}--Train:{ltt.idtau}--Time:{ltt.gio}--Thu':{ltt.thu}");
+                                            // MB debug
+                                            //MessageBox.Show($"{ltt.idlt}--Train:{ltt.idtau}--Time:{ltt.gio}--Thu':{ltt.thu}");
+                                        }
+                                        MessageBox.Show("Get data success!");
+
+                                        // MB debug
+                                        //MessageBox.Show("Response Content: " + response1Content);
+
+                                    }
+                                    else
+                                    {
+                                        // Handle the error response
+                                        string error1Content = await response1.Content.ReadAsStringAsync();
+                                        MessageBox.Show("Error: " + error1Content);
+                                    }
+                                }
+                                catch (Exception ex1)
+                                {
+                                    // Handle any exceptions that occur
+                                    MessageBox.Show("Exception: " + ex1.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                            
                             // MB debug
-                            MessageBox.Show(resRoute, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            //MessageBox.Show(resRoute, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            
                         }
                         else
                         {
-                        MessageBox.Show("Find failed! Check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Invalid request!! Check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
@@ -200,6 +254,20 @@ namespace Train_Booking_System
             public string province { get; set; }
 
         }
+        public class LichTrinh 
+        {
+            [JsonProperty("iD_LichTrinh")]
+            public string idlt { get; set; } 
+            [JsonProperty("iD_Tau")]
+            public string idtau { get; set; }
+            [JsonProperty("gio")]
+            public string gio { get; set; }
+            [JsonProperty("thu")]
+            public int thu { get; set; }
+            [JsonProperty("chieu")]
+            public int chieu { get; set; }
+        }
 
+        private void LabelDepatureDate_Paint(object sender, PaintEventArgs e) { }
     }
 }
