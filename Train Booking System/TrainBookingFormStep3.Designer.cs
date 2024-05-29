@@ -208,6 +208,7 @@
             this.ButtonFinish.StateTracking.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.ButtonFinish.TabIndex = 34;
             this.ButtonFinish.Values.Text = "Finish";
+            this.ButtonFinish.Click += new System.EventHandler(this.ButtonFinish_Click);
             // 
             // TextBoxBirthday
             // 

@@ -87,7 +87,7 @@ namespace Train_Booking_System
                 TrainBookingFormStep1.Dock = DockStyle.Fill;
                 TrainBookingFormStep1.PData0 = DataProperty;
                 //MessageBox.Show(DataProperty, TrainBookingFormStep1.PData0);
-                TrainBookingFormStep1.ShowDialog();
+                TrainBookingFormStep1.Show();
             }
             else
             {

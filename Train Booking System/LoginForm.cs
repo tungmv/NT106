@@ -54,7 +54,7 @@ namespace Train_Booking_System
                         Mainform mainform = new Mainform();
                         mainform.DataProperty = id_user;
                         MessageBox.Show(mainform.DataProperty, id_user);
-                        mainform.ShowDialog();
+                        mainform.Show();
                     }
                     else
                     {
