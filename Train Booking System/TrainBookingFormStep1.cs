@@ -12,7 +12,10 @@ using System.Security.AccessControl;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
 using System.Data.SqlClient;
+using System.Security.Policy;
+using System.IO;
 
 namespace Train_Booking_System
 {
@@ -20,6 +23,7 @@ namespace Train_Booking_System
     {
         private Mainform mainform;
         private const string fetchStationUrl = "http://localhost:5009/api/Route/fetchStation";
+        private const string FindRoutesUrl = "http://localhost:5009/api/Route/FindRoutes";
 
 
         public TrainBookingFormStep1(Mainform mainform)
@@ -53,18 +57,17 @@ namespace Train_Booking_System
 
                         // Deserialize JSON string to StationData object
                         List<Tram> Stations = stationsArray.ToObject<List<Tram>>();
-                        foreach (Tram Station in Stations )
+                        foreach (Tram Station in Stations)
                         {
                             //MessageBox.Show(Station.name + Station.city + Station.province);
-                            ComboBoxDeparture.Items.Add($"{Station.name} - {Station.city} - {Station.province}");
+                            ComboBoxDeparture.Items.Add($"{Station.name}-{Station.city}-{Station.province}");
                         }
-                        foreach (Tram Station in Stations )
+                        foreach (Tram Station in Stations)
                         {
                             //MessageBox.Show(Station.name + Station.city + Station.province);
-                            ComboBoxReturn.Items.Add($"{Station.name} - {Station.city} - {Station.province}");
+                            ComboBoxReturn.Items.Add($"{Station.name}-{Station.city}-{Station.province}");
                         }
 
-                        //var stationData = JsonConvert.DeserializeObject<StationData>(stationsArray.ToString());
                         // MB debug
                         //MessageBox.Show("Fetch successful: " + stationsArray, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -82,7 +85,7 @@ namespace Train_Booking_System
 
             }
 
-        } 
+        }
 
         private void CheckBoxRoundTrip_CheckedChanged(object sender, EventArgs e)
         {
@@ -103,11 +106,6 @@ namespace Train_Booking_System
             // insert check here
 
 
-
-
-
-
-
             //open TrainBookingFormStep2
             TrainBookingFormStep2 trainBookingFormStep2 = new TrainBookingFormStep2(mainform);
             //reference to mainform
@@ -117,9 +115,78 @@ namespace Train_Booking_System
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) { }
+      
+        private void ComboBoxReturn_SelectedIndexChanged(object sender, EventArgs e) {
+            //GetStationInfo();
+
+        }
+
+        private void ComboBoxDeparture_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //ComboBoxReturn.Items.Remove(ComboBoxDeparture.SelectedIndex);
+        }
+
+
+        // FIND button
+        private async void ButtonLogin_Click(object sender, EventArgs e)
         {
 
+            // Tokenize the input strings based on the delimiter
+            string d1 = ComboBoxDeparture.SelectedItem.ToString();
+            string d2 = ComboBoxReturn.SelectedItem.ToString();
+
+            string[] t1 = d1.Split('-');
+            string[] t2 = d2.Split('-');
+
+
+            string destination = t1[0];
+            string origin = t2[0];
+
+
+            // Client request 
+
+            // Create JSON request body
+            string jsonBody = $"{{\"destination\":\"{destination}\",\"origin\":\"{origin}\"}}";
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("accept", "text/plain");
+                var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+                try
+                {
+                    var response = await client.PostAsync(FindRoutesUrl, content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseContent = await response.Content.ReadAsStringAsync();
+                        // Parse JSON response
+                        var jsonResponse = JObject.Parse(responseContent);
+                        var routesArray = (JArray)jsonResponse["routes"];
+                        string pattern = @"[A-Z]{2}-[A-Z]{3}";
+                        Regex regex = new Regex(pattern);
+                        Match match = regex.Match(routesArray.ToString());
+
+                        //string routescontent = routesArray.ToString().Trim('[', ']', ' ', '\"');
+                        if (match.Success)
+                        {
+                            string resRoute = match.Value;
+                            // MB debug
+                            MessageBox.Show(resRoute, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                        MessageBox.Show("Find failed! Check again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            // MB debug
+            //MessageBox.Show(t1[0] + t2[0]);
         }
         public class Tram
         {
@@ -128,33 +195,11 @@ namespace Train_Booking_System
             [JsonProperty("tenTram")]
             public string name { get; set; }
             [JsonProperty("thanhpho")]
-            public string  city { get; set; }
+            public string city { get; set; }
             [JsonProperty("tinh")]
             public string province { get; set; }
-            
-        }
-
-        private void ComboBoxReturn_SelectedIndexChanged(object sender, EventArgs e) {
-            //GetStationInfo();
-        }
-
-        private void ComboBoxDeparture_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //ComboBoxReturn.Items.Remove(ComboBoxDeparture.SelectedIndex);
-        }
-
-        private void ButtonLogin_Click(object sender, EventArgs e)
-        {
-            string d1 = ComboBoxDeparture.SelectedIndex.ToString();
-            string d2 = ComboBoxReturn.SelectedIndex.ToString();
-
-            // Tokenize the input strings based on the delimiter
-            string delimiter = " - ";
-
-            string[] t1 = d1.Split(delimiter.ToCharArray());
-            string[] t2 = d2.Split(delimiter.ToCharArray());
-
 
         }
+
     }
 }

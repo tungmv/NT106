@@ -51,10 +51,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.LabelAccountInfo = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.combox_ga1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.combox_ga2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTrainList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxReturn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxDeparture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_ga1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_ga2)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelDepatureDate
@@ -240,11 +244,11 @@
             // ComboBoxReturn
             // 
             this.ComboBoxReturn.DropDownWidth = 165;
-            this.ComboBoxReturn.Location = new System.Drawing.Point(267, 205);
+            this.ComboBoxReturn.Location = new System.Drawing.Point(267, 201);
             this.ComboBoxReturn.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxReturn.Name = "ComboBoxReturn";
             this.ComboBoxReturn.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComboBoxReturn.Size = new System.Drawing.Size(220, 19);
+            this.ComboBoxReturn.Size = new System.Drawing.Size(274, 19);
             this.ComboBoxReturn.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBoxReturn.TabIndex = 21;
             this.ComboBoxReturn.SelectedIndexChanged += new System.EventHandler(this.ComboBoxReturn_SelectedIndexChanged);
@@ -252,11 +256,11 @@
             // ComboBoxDeparture
             // 
             this.ComboBoxDeparture.DropDownWidth = 165;
-            this.ComboBoxDeparture.Location = new System.Drawing.Point(267, 103);
+            this.ComboBoxDeparture.Location = new System.Drawing.Point(267, 99);
             this.ComboBoxDeparture.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxDeparture.Name = "ComboBoxDeparture";
             this.ComboBoxDeparture.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComboBoxDeparture.Size = new System.Drawing.Size(220, 19);
+            this.ComboBoxDeparture.Size = new System.Drawing.Size(274, 19);
             this.ComboBoxDeparture.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBoxDeparture.TabIndex = 22;
             this.ComboBoxDeparture.SelectedIndexChanged += new System.EventHandler(this.ComboBoxDeparture_SelectedIndexChanged);
@@ -316,11 +320,35 @@
             this.LabelAccountInfo.TabIndex = 26;
             this.LabelAccountInfo.Values.Text = "Train Booking";
             // 
+            // combox_ga1
+            // 
+            this.combox_ga1.DropDownWidth = 165;
+            this.combox_ga1.Location = new System.Drawing.Point(549, 98);
+            this.combox_ga1.Margin = new System.Windows.Forms.Padding(4);
+            this.combox_ga1.Name = "combox_ga1";
+            this.combox_ga1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.combox_ga1.Size = new System.Drawing.Size(220, 19);
+            this.combox_ga1.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combox_ga1.TabIndex = 27;
+            // 
+            // combox_ga2
+            // 
+            this.combox_ga2.DropDownWidth = 165;
+            this.combox_ga2.Location = new System.Drawing.Point(549, 201);
+            this.combox_ga2.Margin = new System.Windows.Forms.Padding(4);
+            this.combox_ga2.Name = "combox_ga2";
+            this.combox_ga2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.combox_ga2.Size = new System.Drawing.Size(220, 19);
+            this.combox_ga2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combox_ga2.TabIndex = 28;
+            // 
             // TrainBookingFormStep1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1193, 752);
+            this.Controls.Add(this.combox_ga2);
+            this.Controls.Add(this.combox_ga1);
             this.Controls.Add(this.LabelAccountInfo);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.pictureBox1);
@@ -343,6 +371,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxReturn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxDeparture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_ga1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combox_ga2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,5 +400,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Arrival_Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Available_Seats;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel LabelAccountInfo;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox combox_ga1;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox combox_ga2;
     }
 }

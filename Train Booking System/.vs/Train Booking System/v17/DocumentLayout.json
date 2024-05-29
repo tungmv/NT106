@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:trainbookingformstep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\uni\\NT106\\NT106\\Train Booking System\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\uni\\NT106\\NT106\\Train Booking System\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\uni\\NT106\\NT106\\Train Booking System\\trainbookingformstep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:trainbookingformstep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -51,14 +59,6 @@
       "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\uni\\NT106\\NT106\\Train Booking System\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\uni\\NT106\\NT106\\Train Booking System\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|D:\\uni\\NT106\\NT106\\Train Booking System\\historyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEFE2BA5-91A1-414E-AF01-0168DBBFDF21}|Train Booking System.csproj|solutionrelative:historyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,20 +90,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\uni\\NT106\\NT106\\Train Booking System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAcAAAA",
+              "DocumentIndex": 0,
+              "Title": "TrainBookingFormStep1.cs",
+              "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
+              "RelativeDocumentMoniker": "TrainBookingFormStep1.cs",
+              "ToolTip": "D:\\uni\\NT106\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
+              "RelativeToolTip": "TrainBookingFormStep1.cs",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAAwMwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T22:46:31.574Z",
+              "WhenOpened": "2024-05-28T22:46:42.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TrainBookingFormStep1.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
               "RelativeDocumentMoniker": "TrainBookingFormStep1.cs",
@@ -115,20 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrainBookingFormStep1.cs",
-              "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
-              "RelativeDocumentMoniker": "TrainBookingFormStep1.cs",
-              "ToolTip": "D:\\uni\\NT106\\NT106\\Train Booking System\\TrainBookingFormStep1.cs",
-              "RelativeToolTip": "TrainBookingFormStep1.cs",
-              "ViewState": "AQIAAHcAAABU/v///180wIcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T22:46:42.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
@@ -141,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TrainBookingFormStep2.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\TrainBookingFormStep2.cs",
               "RelativeDocumentMoniker": "TrainBookingFormStep2.cs",
@@ -153,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Mainform.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\Mainform.cs",
               "RelativeDocumentMoniker": "Mainform.cs",
@@ -165,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "TicketForm.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\TicketForm.cs",
               "RelativeDocumentMoniker": "TicketForm.cs",
@@ -177,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Mainform.cs",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\Mainform.cs",
               "RelativeDocumentMoniker": "Mainform.cs",
@@ -190,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "UserReg.cs",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\UserReg.cs",
               "RelativeDocumentMoniker": "UserReg.cs",
@@ -203,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "TrainBookingFormStep3.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\TrainBookingFormStep3.cs",
               "RelativeDocumentMoniker": "TrainBookingFormStep3.cs",
@@ -240,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "HistoryForm.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\HistoryForm.cs",
               "RelativeDocumentMoniker": "HistoryForm.cs",
@@ -252,20 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AdminLogin.cs",
-              "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\AdminLogin.cs",
-              "RelativeDocumentMoniker": "AdminLogin.cs",
-              "ToolTip": "D:\\uni\\NT106\\NT106\\Train Booking System\\AdminLogin.cs",
-              "RelativeToolTip": "AdminLogin.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T04:24:32.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "AdminLogin.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\AdminLogin.cs",
               "RelativeDocumentMoniker": "AdminLogin.cs",
@@ -277,7 +251,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
+              "Title": "AdminLogin.cs",
+              "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\AdminLogin.cs",
+              "RelativeDocumentMoniker": "AdminLogin.cs",
+              "ToolTip": "D:\\uni\\NT106\\NT106\\Train Booking System\\AdminLogin.cs",
+              "RelativeToolTip": "AdminLogin.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T04:24:32.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\uni\\NT106\\NT106\\Train Booking System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T22:46:31.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Dashboard.cs [Design]",
               "DocumentMoniker": "D:\\uni\\NT106\\NT106\\Train Booking System\\Dashboard.cs",
               "RelativeDocumentMoniker": "Dashboard.cs",
