@@ -18,5 +18,7 @@ namespace Train_Booking_System
             this.mainform = mainform;
             InitializeComponent();
         }
+
+        private void TextBoxPhoneNumber_TextChanged(object sender, EventArgs e) { }
     }
 }

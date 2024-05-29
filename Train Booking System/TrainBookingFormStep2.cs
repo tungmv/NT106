@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace Train_Booking_System
 {
+
     public partial class TrainBookingFormStep2 : Form
     {
+        public string DataProperty { get; set; }
+        public string PData1 { get; set; }
         private Mainform mainform;
         public TrainBookingFormStep2(Mainform mainform)
         {

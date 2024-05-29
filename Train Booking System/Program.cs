@@ -19,9 +19,9 @@ namespace Train_Booking_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
+            Application.Run(new LoginForm());
             //Application.Run(new AdminLogin());
-            Application.Run(new Mainform());
+            //Application.Run(new Mainform());
             //Application.Run(new Dashboard());
             
         }

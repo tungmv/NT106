@@ -22,6 +22,7 @@ namespace Train_Booking_System
     public partial class TrainBookingFormStep1 : Form
     {
         private Mainform mainform;
+        public string PData0{ get; set; }
         private const string fetchStationUrl = "http://localhost:5009/api/Route/fetchStation";
         private const string FindRoutesUrl = "http://localhost:5009/api/Route/FindRoutes";
         private const string RouteIdUrl = "http://localhost:5009/api/Route/";
@@ -36,6 +37,7 @@ namespace Train_Booking_System
             ComboBoxDeparture.DropDownStyle = ComboBoxStyle.DropDownList;
             ComboBoxReturn.DropDownStyle = ComboBoxStyle.DropDownList;
             combobox_date.DropDownStyle = ComboBoxStyle.DropDownList;
+            //MessageBox.Show(DataProperty);
         }
 
         private async void GetStationInfo()
@@ -105,6 +107,8 @@ namespace Train_Booking_System
             }
         }
 */
+
+        // Next button on step 1
         private void ButtonNext(object sender, EventArgs e)
         {
             // insert check here
@@ -115,6 +119,10 @@ namespace Train_Booking_System
             //reference to mainform
             trainBookingFormStep2.MdiParent = mainform;
             trainBookingFormStep2.Dock = DockStyle.Fill;
+            trainBookingFormStep2.PData1 = PData0;
+            // MB debug
+            //MessageBox.Show(PData0, trainBookingFormStep2.PData1);
+            //MessageBox.Show(PData0);
             trainBookingFormStep2.Show();
 
         }

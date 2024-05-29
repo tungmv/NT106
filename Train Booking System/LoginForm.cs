@@ -39,17 +39,22 @@ namespace Train_Booking_System
 
                     if (response.IsSuccessStatusCode)
                     {
-                        // Read response content
+                        // Read response content astored id user
                         string responseContent = await response.Content.ReadAsStringAsync();
-                        //MessageBox.Show("Login successful: " + responseContent, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        var responseContentjson = JObject.Parse(responseContent);
 
+                        string id_user = responseContentjson["id"].ToString();
 
+                        //MessageBox.Show(id_user, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        //MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                         // Open mainform
-                        Mainform bookingForm = new Mainform();
-                        bookingForm.Show();
+                        Mainform mainform = new Mainform();
+                        mainform.DataProperty = id_user;
+                        MessageBox.Show(mainform.DataProperty, id_user);
+                        mainform.ShowDialog();
                     }
                     else
                     {
