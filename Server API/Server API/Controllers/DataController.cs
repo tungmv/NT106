@@ -46,12 +46,12 @@ namespace Server_API.Controllers
 
             var throughA = from DiemDi in _context.DiemDi
                            join Tram in _context.Tram on DiemDi.ID_Tram equals Tram.ID_Tram
-                           where Tram.Thanhpho.Equals(Origin)
+                           where Tram.TenTram.Equals(Origin)
                            select DiemDi.ID_Tuyen; // Tim cac ID_Tuyen di qua {Origin}
 
             var throughB = from DiemDi in _context.DiemDi
                            join Tram in _context.Tram on DiemDi.ID_Tram equals Tram.ID_Tram
-                           where Tram.Thanhpho.Equals(Destination)
+                           where Tram.TenTram.Equals(Destination)
                            select DiemDi.ID_Tuyen;  // Tim cac ID_Tuyen di qua {Destination}
 
             var throughAandB = throughA.Intersect(throughB).Distinct();
@@ -231,7 +231,7 @@ namespace Server_API.Controllers
 
                 var classQuery = from tau in _context.Tau
                                  join toa in _context.Toa on tau.ID_Tau equals toa.ID_Tau
-                                 where toa.ID_Toa.Equals(phongQuery)
+                                 where toa.ID_Toa.Equals(phongQuery.FirstOrDefault())
                                  select tau.Lop;
 
                 var classString = classQuery.FirstOrDefault();
@@ -264,7 +264,7 @@ namespace Server_API.Controllers
                 float originFloat = originMilestone.FirstOrDefault();
 
                 var destinationMilestone = from diemdi in _context.DiemDi
-                                           where diemdi.ID_Tram.Equals(destinationQuery.FirstOrDefault()) && diemdi.ID_Tuyen.Equals(tuyenQuery)
+                                           where diemdi.ID_Tram.Equals(destinationQuery.FirstOrDefault()) && diemdi.ID_Tuyen.Equals(tuyenQuery.FirstOrDefault())
                                            select diemdi.KhoangCach;
                 float destinationFloat = destinationMilestone.FirstOrDefault();
 
