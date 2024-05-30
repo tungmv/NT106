@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Text;
 using System.Windows.Forms;
+using Newtonsoft.Json.Linq;
 
 namespace Train_Booking_System
 {
@@ -11,20 +12,19 @@ namespace Train_Booking_System
         public LoginForm()
         {
             InitializeComponent();
-            //Mainform bookingForm = new Mainform();
-            //bookingForm.Show();
             TextBoxPassword.PasswordChar = '*';
 
 
         }
 
-                private async void ButtonLogin_Click(object sender, EventArgs e)
+        private async void ButtonLogin_Click(object sender, EventArgs e)
         {
             string email = TextBoxEmail.Text;
             string password = TextBoxPassword.Text;
 
-            //string email = "22521115@gm.uit.edu.vn";
-            //string password = "password"; 
+            //string email = "22521115@gm.uit.edu.vn"; 
+            //string password = "password";
+
 
             // Create JSON request body
             string jsonBody = $"{{\"email\":\"{email}\",\"password\":\"{password}\"}}";
@@ -39,13 +39,22 @@ namespace Train_Booking_System
 
                     if (response.IsSuccessStatusCode)
                     {
-                        // Read response content
+                        // Read response content astored id user
                         string responseContent = await response.Content.ReadAsStringAsync();
-                        //MessageBox.Show("Login successful: " + responseContent, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        var responseContentjson = JObject.Parse(responseContent);
+
+                        string id_user = responseContentjson["id"].ToString();
+
+                        //MessageBox.Show(id_user, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        //MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
                         // Open mainform
-                        Mainform bookingForm = new Mainform();
-                        bookingForm.Show();
+                        Mainform mainform = new Mainform();
+                        mainform.DataProperty = id_user;
+                        MessageBox.Show(mainform.DataProperty, id_user);
+                        mainform.Show();
                     }
                     else
                     {

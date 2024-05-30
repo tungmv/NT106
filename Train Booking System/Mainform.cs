@@ -13,6 +13,7 @@ namespace Train_Booking_System
 {
     public partial class Mainform : Form
     {
+        public string DataProperty { get; set; }
         MyAccountForm MyAccountForm;
         TrainBookingFormStep1 TrainBookingFormStep1;
         TicketForm TicketForm;
@@ -84,6 +85,8 @@ namespace Train_Booking_System
                 TrainBookingFormStep1.FormClosed += AccountForm_FormClosed;
                 TrainBookingFormStep1.MdiParent = this;
                 TrainBookingFormStep1.Dock = DockStyle.Fill;
+                TrainBookingFormStep1.PData0 = DataProperty;
+                //MessageBox.Show(DataProperty, TrainBookingFormStep1.PData0);
                 TrainBookingFormStep1.Show();
             }
             else
