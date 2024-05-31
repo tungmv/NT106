@@ -12,12 +12,15 @@ namespace Train_Booking_System
 {
     public partial class TrainBookingFormStep3 : Form
     {
+        // get string id_user
         public string PData2 { get; set; }
         private Mainform mainform;
         public TrainBookingFormStep3(Mainform mainform)
         {
             this.mainform = mainform;
             InitializeComponent();
+            string id_user = PData2;
+            MessageBox.Show(id_user);
         }
 
         private void TextBoxPhoneNumber_TextChanged(object sender, EventArgs e) { }
@@ -29,7 +32,7 @@ namespace Train_Booking_System
             var email = TextBoxEmail.Text;
             var passwd = TextBoxPassword.Text;
             var nsinh = TextBoxBirthday.Text;
-            // Check if any field is null or empty
+            // Check if any field is/**/ null or empty
             if (string.IsNullOrEmpty(name))
             {
                 MessageBox.Show("Full Name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);

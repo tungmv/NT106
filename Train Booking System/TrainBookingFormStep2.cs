@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComponentFactory.Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,10 @@ namespace Train_Booking_System
         {
             this.mainform = mainform;
             InitializeComponent();
+            InitializeKryptonButtons();
         }
+        private KryptonButton selectedButton;
+
 
         private void ButtonNext_Click(object sender, EventArgs e)
         {
@@ -35,8 +39,38 @@ namespace Train_Booking_System
             //MessageBox.Show(trainBookingFormStep3.PData2);
             
             trainBookingFormStep3.Show();
+        }
 
+        private void InitializeKryptonButtons()
+        {
+            for (int i = 1; i <= 40; i++)
+            {
+                KryptonButton button = this.Controls.Find($"g{i}", true).FirstOrDefault() as KryptonButton;
+                if (button != null)
+                {
+                    button.Click += KryptonButton_Click;
+                }
+            }
+        }
 
+        private void KryptonButton_Click(object sender, EventArgs e)
+        {
+            KryptonButton clickedButton = sender as KryptonButton;
+
+            if (clickedButton != null)
+            {
+                // Deselect the previously selected button
+                if (selectedButton != null && selectedButton != clickedButton)
+                {
+                    selectedButton.StateNormal.Back.Color1 = SystemColors.Control; // default color
+                }
+
+                // Select the new button
+                clickedButton.StateNormal.Back.Color1 = Color.LightBlue; // selected color
+                selectedButton = clickedButton;
+
+                MessageBox.Show($"Button {clickedButton.Name} was clicked.", "Button Clicked", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void TrainBookingFormStep2_Load(object sender, EventArgs e)

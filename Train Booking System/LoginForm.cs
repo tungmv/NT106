@@ -53,7 +53,7 @@ namespace Train_Booking_System
                         // Open mainform
                         Mainform mainform = new Mainform();
                         mainform.DataProperty = id_user;
-                        MessageBox.Show(mainform.DataProperty, id_user);
+                        //MessageBox.Show(mainform.DataProperty, id_user);
                         mainform.Show();
                     }
                     else
