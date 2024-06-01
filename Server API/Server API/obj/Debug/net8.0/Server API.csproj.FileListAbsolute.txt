@@ -1,9 +1,6 @@
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\appsettings.Development.json
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\appsettings.json
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Server API.exe
-A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Controllers\ADooDooTrain.sqlite3
-A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Controllers\ScammedPeople.sqlite3
-A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Controllers\Scammer.sqlite3
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Server API.deps.json
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Server API.runtimeconfig.json
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Server API.dll
@@ -143,3 +140,6 @@ A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\t
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Newtonsoft.Json.dll
+A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Controllers\Admin.sqlite3
+A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Controllers\Train.sqlite3
+A:\Programs\VS 2022\TrainBookingProject\Server API\Server API\bin\Debug\net8.0\Controllers\User.sqlite3

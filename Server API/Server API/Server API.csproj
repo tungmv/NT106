@@ -32,13 +32,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Controllers\ADooDooTrain.sqlite3">
+    <None Update="Controllers\Train.sqlite3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Controllers\ScammedPeople.sqlite3">
+    <None Update="Controllers\User.sqlite3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Controllers\Scammer.sqlite3">
+    <None Update="Controllers\Admin.sqlite3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

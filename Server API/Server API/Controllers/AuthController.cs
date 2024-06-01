@@ -132,23 +132,23 @@ namespace Server_API.Controllers
         public string Id { get; set; }
         public string Password { get; set; }
     }
-    [ApiController]
-    [Route("api/[controller]")]         // =========== For testing ===============
-    public class ServerController : ControllerBase
-    {
-        [HttpGet("test")]
-        [Authorize(Policy = "ValidJwt")]
-        public IActionResult Get()
-        {
-            var header = Request.Headers["Authorization"].FirstOrDefault();
+    //[ApiController]
+    //[Route("api/[controller]")]         // =========== For testing ===============
+    //public class ServerController : ControllerBase
+    //{
+    //    [HttpGet("test")]
+    //    [Authorize(Policy = "ValidJwt")]
+    //    public IActionResult Get()
+    //    {
+    //        var header = Request.Headers["Authorization"].FirstOrDefault();
 
-            if (header == null)
-                return BadRequest();
+    //        if (header == null)
+    //            return BadRequest();
 
-            //var token = header.Substring("Bearer ".Length).Trim();  // get the token
-            return Ok();
-        }
-    }
+    //        //var token = header.Substring("Bearer ".Length).Trim();  // get the token
+    //        return Ok();
+    //    }
+    //}
 
     [ApiController]
     [Route("api/[controller]")]
