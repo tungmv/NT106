@@ -24,10 +24,12 @@ namespace Train_Booking_System
         private Mainform mainform;
         public string id_user { get; set; }
         public string origin { get; set; }  
-        public string destination { get; set; } 
+        public string destination { get; set; }
+        public string TrainId;
         private const string fetchStationUrl = "http://localhost:5009/api/Route/fetchStation";
         private const string FindRoutesUrl = "http://localhost:5009/api/Route/FindRoutes";
         private const string RouteIdUrl = "http://localhost:5009/api/Route/";
+        private const string TrainIdUrl = "http://localhost:5009/api/Train/SH1";
 
 
         public TrainBookingFormStep1(Mainform mainform)
@@ -111,9 +113,53 @@ namespace Train_Booking_System
 */
 
         // Next button on step 1
-        private void ButtonNext(object sender, EventArgs e)
+        private async void ButtonNext(object sender, EventArgs e)
         {
             // insert check here
+            string TrainIdData = combobox_date.SelectedItem.ToString();
+            string pattern = @"(.*)--Time";
+            // Create a Regex object with the pattern
+            Regex regex = new Regex(pattern);
+
+            // Match the pattern in the input string
+            Match match = regex.Match(TrainIdData);
+
+            if (match.Success)
+            {
+
+                TrainId = match.Groups[1].Value;
+                MessageBox.Show(TrainId);
+
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Add("accept", "*/*");
+                    try
+                    {
+                        // Send the GET request
+                        HttpResponseMessage response = await client.GetAsync(TrainIdUrl);
+
+                        // Check if the request was successful
+                        if (response.IsSuccessStatusCode)
+                        {
+                            // Read and display the response content
+                            string responseContent = await response.Content.ReadAsStringAsync();
+                            MessageBox.Show("Response: " + responseContent, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            // Handle the error response
+                            string errorContent = await response.Content.ReadAsStringAsync();
+                            MessageBox.Show("Error: " + errorContent, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Handle any exceptions that occur
+                        MessageBox.Show("Exception: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+
 
 
             //open TrainBookingFormStep2
@@ -211,7 +257,8 @@ namespace Train_Booking_System
                                         List<LichTrinh> lt = routeidarray.ToObject<List<LichTrinh>>();
                                         foreach (var ltt in lt)
                                         {
-                                             combobox_date.Items.Add($"{ltt.idlt}--Train:{ltt.idtau}--Time:{ltt.gio}--Thu':{ltt.thu}");
+                                             //combobox_date.Items.Add($"{ltt.idlt}--{ltt.idtau}");//--{ltt.gio}--{ltt.thu}");
+                                             combobox_date.Items.Add($"{ltt.idtau}--Time:{ltt.gio}--Thu:{ltt.thu}");
                                             // MB debug
                                             //MessageBox.Show($"{ltt.idlt}--Train:{ltt.idtau}--Time:{ltt.gio}--Thu':{ltt.thu}");
                                         }

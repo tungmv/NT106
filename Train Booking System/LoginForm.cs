@@ -45,9 +45,10 @@ namespace Train_Booking_System
 
                         string id_user = responseContentjson["id"].ToString();
 
+                        // MB debug
                         //MessageBox.Show(id_user, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        //MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"Login successful! Your id is: {id_user}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                         // Open mainform
