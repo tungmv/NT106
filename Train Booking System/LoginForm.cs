@@ -19,11 +19,11 @@ namespace Train_Booking_System
 
         private async void ButtonLogin_Click(object sender, EventArgs e)
         {
-            string email = TextBoxEmail.Text;
-            string password = TextBoxPassword.Text;
+            //string email = TextBoxEmail.Text;
+            //string password = TextBoxPassword.Text;
 
-            //string email = "22521115@gm.uit.edu.vn"; 
-            //string password = "password";
+            string email = "22521115@gm.uit.edu.vn"; 
+            string password = "password";
 
 
             // Create JSON request body

@@ -22,7 +22,9 @@ namespace Train_Booking_System
     public partial class TrainBookingFormStep1 : Form
     {
         private Mainform mainform;
-        public string PData0{ get; set; }
+        public string id_user { get; set; }
+        public string origin { get; set; }  
+        public string destination { get; set; } 
         private const string fetchStationUrl = "http://localhost:5009/api/Route/fetchStation";
         private const string FindRoutesUrl = "http://localhost:5009/api/Route/FindRoutes";
         private const string RouteIdUrl = "http://localhost:5009/api/Route/";
@@ -119,7 +121,9 @@ namespace Train_Booking_System
             //reference to mainform
             trainBookingFormStep2.MdiParent = mainform;
             trainBookingFormStep2.Dock = DockStyle.Fill;
-            trainBookingFormStep2.PData1 = PData0;
+            trainBookingFormStep2.id_user = id_user; // id_user
+            trainBookingFormStep2.origin = origin;
+            trainBookingFormStep2.destination = destination;
             // MB debug
             //MessageBox.Show(PData0, trainBookingFormStep2.PData1);
             //MessageBox.Show(PData0);
@@ -154,8 +158,8 @@ namespace Train_Booking_System
             string[] t2 = d2.Split('-');
 
 
-            string destination = t1[0];
-            string origin = t2[0];
+            destination = t1[0];
+            origin = t2[0];
 
 
             // Client request 

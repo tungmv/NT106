@@ -85,7 +85,7 @@ namespace Train_Booking_System
                 TrainBookingFormStep1.FormClosed += AccountForm_FormClosed;
                 TrainBookingFormStep1.MdiParent = this;
                 TrainBookingFormStep1.Dock = DockStyle.Fill;
-                TrainBookingFormStep1.PData0 = DataProperty;
+                TrainBookingFormStep1.id_user = DataProperty;
                 //MessageBox.Show(DataProperty, TrainBookingFormStep1.PData0);
                 TrainBookingFormStep1.Show();
             }
