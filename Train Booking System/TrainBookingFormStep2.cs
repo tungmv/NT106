@@ -14,8 +14,12 @@ namespace Train_Booking_System
 
     public partial class TrainBookingFormStep2 : Form
     {
-        public string DataProperty { get; set; }
-        public string PData1 { get; set; }
+        public string id_user { get; set; } // id user
+        public string origin { get; set; }
+        public string destination { get; set; }
+        
+        public string ghe;
+
         private Mainform mainform;
         public TrainBookingFormStep2(Mainform mainform)
         {
@@ -34,9 +38,12 @@ namespace Train_Booking_System
             trainBookingFormStep3.MdiParent = mainform;
             trainBookingFormStep3.Dock = DockStyle.Fill;
             // Pass args
-            trainBookingFormStep3.PData2 = PData1; // id_Khachhang
+            trainBookingFormStep3.id_user = id_user; // id_Khachhang
+            trainBookingFormStep3.get_ghe = ghe;
+            trainBookingFormStep3.origin = origin;
+            trainBookingFormStep3.destination = destination;
             // MB debug
-            //MessageBox.Show(trainBookingFormStep3.PData2);
+            MessageBox.Show(trainBookingFormStep3.id_user);
             
             trainBookingFormStep3.Show();
         }
@@ -68,8 +75,10 @@ namespace Train_Booking_System
                 // Select the new button
                 clickedButton.StateNormal.Back.Color1 = Color.LightBlue; // selected color
                 selectedButton = clickedButton;
+                ghe = clickedButton.Name.Substring(1);
+                
 
-                MessageBox.Show($"Button {clickedButton.Name} was clicked.", "Button Clicked", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Ghe {ghe} was selected.", "Button Clicked", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
