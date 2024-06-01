@@ -222,11 +222,40 @@ namespace Server_API.Controllers
                 targetDateTime = DateTime.Now.AddDays(7);
             if (ticket.isVeNam == 1)        // =========== For VeNam
             {
+
+                // Check if exists a ticket of the same properties and has not yet expired:
+                var existQuery = await _context.VeNam 
+                                .Where(vn => vn.ID_Giuong == ticket.ID_GiuongorGhe && vn.ID_Phong == ticket.ID_PhongorToa && vn.ExpireDate > DateTime.Now)
+                                .Select(vn => new {id = vn.ID_VeNam }).FirstOrDefaultAsync();
+                if (existQuery != null)
+                    return BadRequest("A ticket of the same properties is booked but not expired yet or the properties of the ticket don't exist.");
+
                 // Get the train's class and the distance 
                 var phongQuery = from phong in _context.Phong
-                                 join toa in _context.Toa on phong.ID_Toa equals toa.ID_Toa
                                  where phong.ID_Phong.Equals(ticket.ID_PhongorToa)
                                  select phong.ID_Toa;
+                // Check if the properties set is valid
+                // Then we get id_tau
+                var validateSubQuery2 = from tau in _context.Tau
+                                        join toa in _context.Toa on tau.ID_Tau equals toa.ID_Tau
+                                        where toa.ID_Toa.Equals(phongQuery.FirstOrDefault())
+                                        select toa.ID_Tau;
+
+                // Explanation: a valid ticket is a ticket such that its id_lichtrinh and id_tau matches so we check if there exists a lichtrinh that satisfy this condition
+                var validateQuery = await _context.LichTrinh
+                                .Where(lt => lt.ID_LichTrinh == ticket.ID_LichTrinh && lt.ID_Tau == validateSubQuery2.FirstOrDefault())
+                                .Select(lt => lt.ID_LichTrinh).FirstOrDefaultAsync();
+
+                if (validateQuery == null)
+                {
+                    var error = new
+                    {
+                        msg = "The given train does not operate on the given schedule ID.",
+                        id_tau = validateSubQuery2.FirstOrDefault(),
+                        id_lichtrinh = ticket.ID_LichTrinh,
+                    };
+                    return BadRequest(error);
+                }
 
                 var classQuery = from tau in _context.Tau
                                  join toa in _context.Toa on tau.ID_Tau equals toa.ID_Tau
@@ -267,7 +296,16 @@ namespace Server_API.Controllers
                                            select diemdi.KhoangCach;
                 float destinationFloat = destinationMilestone.FirstOrDefault();
 
-                float dist = Math.Abs(destinationFloat - originFloat);    // The result is the effective distance.
+                // If such condition fails or the chosen LichTrinh has a different 'Chieu', throws a bad request response.
+                float dist = destinationFloat - originFloat;
+                var chieuQuery = from lt in _context.LichTrinh
+                                 where lt.ID_LichTrinh == ticket.ID_LichTrinh
+                                 select lt.Chieu;
+                if (chieuQuery.FirstOrDefault() == 1 && dist > 0 || chieuQuery.FirstOrDefault() == 0 && dist < 0)
+                    return BadRequest("The order of Departure and Desination is wrong. Consider reverse it and try again.");
+
+                // After checking, overwrite dist with its effective value
+                dist = Math.Abs(dist);
                 // Fair price configuration:
                 double Fare = dist * 250 + 50000;    // 1000 vnd/km * dist (km) + base fare
                 Fare *= multiplier; // nhan voi he so class cua tau: hang thuong/thuong gia/first class vv
@@ -294,6 +332,11 @@ namespace Server_API.Controllers
                 };
 
                 _context.VeNam.Add(input);
+
+                // Also set KhaDung of the booked bed to 0.
+                var booked_bed = _context.Giuong.SingleOrDefault(g => g.ID_Giuong == ticket.ID_GiuongorGhe && g.ID_Phong == ticket.ID_PhongorToa);
+                booked_bed.KhaDung = 0;
+
                 await _context.SaveChangesAsync();
                 _userContext.LichSuDatVeNam.Add(new LichSuDatVeNam
                 {
@@ -302,7 +345,6 @@ namespace Server_API.Controllers
                 });
 
                 await _userContext.SaveChangesAsync();
-
 
                 var response = new
                 {
@@ -316,14 +358,45 @@ namespace Server_API.Controllers
                     DonGia = (int)Fare,
                     XuatPhat = ticket.XuatPhat,
                     DiemDen = ticket.DiemDen,
-                    ExpireDay = input.ExpireDate.Day,
-                    ExpireTime = input.ExpireDate.Hour
+                    ExpireDay = input.ExpireDate.Date.ToString("dd-MM-yyyy"),
+                    ExpireTime = input.ExpireDate.ToString("H-mm-ss")
                 };
 
                 return Ok(response);
             }
             else
-            {                              // =========== For VeNgoi
+            {                              // =========== For VeNgoi ============
+
+                // Check if exists a ticket of the same properties and has not yet expired:
+                var existQuery = await _context.VeNgoi
+                                .Where(vn => vn.ID_Ghe == ticket.ID_GiuongorGhe && vn.ID_Toa == ticket.ID_PhongorToa && vn.ExpireDate > DateTime.Now)
+                                .Select(vn => new { id = vn.ID_VeNgoi }).FirstOrDefaultAsync();
+                if (existQuery != null)
+                    return BadRequest("A ticket of the same properties is booked but not expired yet or the properties of the ticket don't exist.");
+
+                // Check if the properties set is valid
+                // Get id_tau first
+                var validateSubQuery = from tau in _context.Tau
+                                        join toa in _context.Toa on tau.ID_Tau equals toa.ID_Tau
+                                        where toa.ID_Toa.Equals(ticket.ID_PhongorToa)
+                                        select toa.ID_Tau.ToString();
+
+                // Explanation: a valid ticket is a ticket such that its id_lichtrinh and id_tau matches so we check if there exists a lichtrinh that satisfy this condition
+                var validateQuery = await _context.LichTrinh
+                                .Where(lt => lt.ID_LichTrinh == ticket.ID_LichTrinh && lt.ID_Tau == validateSubQuery.FirstOrDefault())
+                                .Select(lt => lt.ID_LichTrinh).FirstOrDefaultAsync();
+
+                if (validateQuery == null)
+                {
+                    var error = new
+                    {
+                        msg = "The given train does not operate on the given schedule ID.",
+                        id_tau = validateSubQuery.FirstOrDefault(),
+                        id_lichtrinh = ticket.ID_LichTrinh,
+                    };
+                    return BadRequest(error);
+                }
+
                 // Get the train's class and the distance 
                 var classQuery = from tau in _context.Tau
                                  join toa in _context.Toa on tau.ID_Tau equals toa.ID_Tau
@@ -363,8 +436,18 @@ namespace Server_API.Controllers
                                            where diemdi.ID_Tram.Equals(destinationQuery.FirstOrDefault()) && diemdi.ID_Tuyen.Equals(tuyenQuery.FirstOrDefault())
                                            select diemdi.KhoangCach;
                 float destinationFloat = destinationMilestone.FirstOrDefault();
+                // Before proceeding, we check if the 'Chieu' of the LichTrinh matches the order of Origin and Destination stations. dist must hold negative if Chieu is 1 and vice versa.
+                // If such condition fails or the chosen LichTrinh has a different 'Chieu', throws a bad request response.
+                float dist = destinationFloat - originFloat;
+                var chieuQuery = from lt in _context.LichTrinh
+                                 where lt.ID_LichTrinh == ticket.ID_LichTrinh
+                                 select lt.Chieu;
+                if (chieuQuery.FirstOrDefault() == 1 && dist > 0 || chieuQuery.FirstOrDefault() == 0 && dist < 0)
+                    return BadRequest("The order of Departure and Desination is wrong. Consider reverse it and try again.");
+                
+                // After checking, overwrite dist with its effective value
+                dist = Math.Abs(dist);
 
-                float dist = Math.Abs(destinationFloat - originFloat);    // The result is the effective distance.
                 // Fair price configuration:
                 double Fare = dist * 250 + 25000;    // 250 vnd/km * dist (km) + base fare
                 Fare *= multiplier; // nhan voi he so class cua tau: hang thuong/thuong gia/first class vv
@@ -392,6 +475,11 @@ namespace Server_API.Controllers
                 };
 
                 _context.VeNgoi.Add(input);
+
+                // Also set KhaDung of the booked bed to 0.
+                var booked_seat = _context.Ghe.SingleOrDefault(g => g.ID_Ghe == ticket.ID_GiuongorGhe && g.ID_Toa == ticket.ID_PhongorToa);
+                booked_seat.KhaDung = 0;
+
                 await _context.SaveChangesAsync();
 
                 _userContext.LichSuDatVeNgoi.Add(new LichSuDatVeNgoi
@@ -413,8 +501,8 @@ namespace Server_API.Controllers
                     DonGia = (int)Fare,
                     XuatPhat = ticket.XuatPhat,
                     DiemDen = ticket.DiemDen,
-                    ExpireDay = input.ExpireDate.Day,
-                    ExpireTime = input.ExpireDate.Hour
+                    ExpireDay = input.ExpireDate.Date.ToString("dd-MM-yyyy"),
+                    ExpireTime = input.ExpireDate.ToString("H-mm-ss")
                 };
 
                 return Ok(response);

@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Server_API.DBContext;
+using Server_API.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,8 @@ builder.Services.AddDbContext<AdminDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Admins")));
 builder.Services.AddDbContext<TrainDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("TrainSystem")));
+
+builder.Services.AddHostedService<BedAndSeatUpdate>();
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
