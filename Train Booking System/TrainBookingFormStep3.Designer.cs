@@ -29,14 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainBookingFormStep3));
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.LabelDepature = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.LabelPassengerInfo = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.TextBoxPassword = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TextBoxEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.TextBoxPhoneNumber = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.ButtonFinish = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.TextBoxBirthday = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -48,45 +44,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonLabel4
-            // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(33, 373);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(104, 28);
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel4.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel4.TabIndex = 44;
-            this.kryptonLabel4.Values.Text = "Password";
-            // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(33, 454);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel3.Location = new System.Drawing.Point(26, 329);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(127, 28);
+            this.kryptonLabel3.Size = new System.Drawing.Size(103, 23);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.kryptonLabel3.TabIndex = 43;
             this.kryptonLabel3.Values.Text = "Year of Birth";
             // 
-            // kryptonLabel2
-            // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(36, 297);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(65, 28);
-            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel2.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel2.TabIndex = 42;
-            this.kryptonLabel2.Values.Text = "Email";
-            // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(33, 223);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(26, 229);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(151, 28);
+            this.kryptonLabel1.Size = new System.Drawing.Size(122, 23);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.kryptonLabel1.TabIndex = 41;
@@ -94,10 +66,9 @@
             // 
             // LabelDepature
             // 
-            this.LabelDepature.Location = new System.Drawing.Point(32, 146);
-            this.LabelDepature.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LabelDepature.Location = new System.Drawing.Point(26, 137);
             this.LabelDepature.Name = "LabelDepature";
-            this.LabelDepature.Size = new System.Drawing.Size(107, 28);
+            this.LabelDepature.Size = new System.Drawing.Size(87, 23);
             this.LabelDepature.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelDepature.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.LabelDepature.TabIndex = 40;
@@ -105,11 +76,10 @@
             // 
             // LabelPassengerInfo
             // 
-            this.LabelPassengerInfo.Location = new System.Drawing.Point(399, 58);
-            this.LabelPassengerInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LabelPassengerInfo.Location = new System.Drawing.Point(299, 47);
             this.LabelPassengerInfo.Name = "LabelPassengerInfo";
             this.LabelPassengerInfo.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.LabelPassengerInfo.Size = new System.Drawing.Size(283, 34);
+            this.LabelPassengerInfo.Size = new System.Drawing.Size(228, 28);
             this.LabelPassengerInfo.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.LabelPassengerInfo.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.LabelPassengerInfo.StateCommon.ShortText.ColorAngle = 45F;
@@ -118,46 +88,11 @@
             this.LabelPassengerInfo.TabIndex = 39;
             this.LabelPassengerInfo.Values.Text = "Passenger Informations";
             // 
-            // TextBoxPassword
-            // 
-            this.TextBoxPassword.Location = new System.Drawing.Point(237, 362);
-            this.TextBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TextBoxPassword.Name = "TextBoxPassword";
-            this.TextBoxPassword.Size = new System.Drawing.Size(351, 37);
-            this.TextBoxPassword.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.TextBoxPassword.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.TextBoxPassword.StateCommon.Border.Rounding = 20;
-            this.TextBoxPassword.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.TextBoxPassword.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxPassword.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.TextBoxPassword.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxPassword.TabIndex = 37;
-            // 
-            // TextBoxEmail
-            // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(237, 287);
-            this.TextBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TextBoxEmail.Name = "TextBoxEmail";
-            this.TextBoxEmail.Size = new System.Drawing.Size(351, 39);
-            this.TextBoxEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.TextBoxEmail.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.TextBoxEmail.StateCommon.Border.Rounding = 20;
-            this.TextBoxEmail.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.TextBoxEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxEmail.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.TextBoxEmail.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxEmail.TabIndex = 36;
-            // 
             // TextBoxPhoneNumber
             // 
-            this.TextBoxPhoneNumber.Location = new System.Drawing.Point(237, 215);
-            this.TextBoxPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxPhoneNumber.Location = new System.Drawing.Point(179, 223);
             this.TextBoxPhoneNumber.Name = "TextBoxPhoneNumber";
-            this.TextBoxPhoneNumber.Size = new System.Drawing.Size(351, 39);
+            this.TextBoxPhoneNumber.Size = new System.Drawing.Size(263, 33);
             this.TextBoxPhoneNumber.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -172,8 +107,7 @@
             // 
             // ButtonFinish
             // 
-            this.ButtonFinish.Location = new System.Drawing.Point(521, 577);
-            this.ButtonFinish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonFinish.Location = new System.Drawing.Point(624, 506);
             this.ButtonFinish.Name = "ButtonFinish";
             this.ButtonFinish.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ButtonFinish.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -182,7 +116,7 @@
             this.ButtonFinish.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonFinish.OverrideFocus.Back.ColorAngle = 45F;
             this.ButtonFinish.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ButtonFinish.Size = new System.Drawing.Size(164, 46);
+            this.ButtonFinish.Size = new System.Drawing.Size(123, 37);
             this.ButtonFinish.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonFinish.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ButtonFinish.StateCommon.Back.ColorAngle = 135F;
@@ -212,10 +146,9 @@
             // 
             // TextBoxBirthday
             // 
-            this.TextBoxBirthday.Location = new System.Drawing.Point(237, 444);
-            this.TextBoxBirthday.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxBirthday.Location = new System.Drawing.Point(179, 321);
             this.TextBoxBirthday.Name = "TextBoxBirthday";
-            this.TextBoxBirthday.Size = new System.Drawing.Size(351, 39);
+            this.TextBoxBirthday.Size = new System.Drawing.Size(263, 33);
             this.TextBoxBirthday.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -229,10 +162,9 @@
             // 
             // TextBoxFullName
             // 
-            this.TextBoxFullName.Location = new System.Drawing.Point(237, 139);
-            this.TextBoxFullName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxFullName.Location = new System.Drawing.Point(180, 131);
             this.TextBoxFullName.Name = "TextBoxFullName";
-            this.TextBoxFullName.Size = new System.Drawing.Size(351, 39);
+            this.TextBoxFullName.Size = new System.Drawing.Size(263, 33);
             this.TextBoxFullName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -248,23 +180,21 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(759, 146);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(530, 77);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 183);
+            this.pictureBox1.Size = new System.Drawing.Size(208, 149);
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(763, 442);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonButton1.Location = new System.Drawing.Point(533, 317);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton1.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton1.OverrideFocus.Back.ColorAngle = 45F;
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(75, 46);
+            this.kryptonButton1.Size = new System.Drawing.Size(56, 37);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Back.ColorAngle = 135F;
@@ -285,14 +215,13 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(945, 442);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonButton2.Location = new System.Drawing.Point(670, 317);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton2.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton2.OverrideFocus.Back.ColorAngle = 45F;
             this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2.Size = new System.Drawing.Size(75, 46);
+            this.kryptonButton2.Size = new System.Drawing.Size(56, 37);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Back.ColorAngle = 135F;
@@ -313,10 +242,9 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(884, 449);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel5.Location = new System.Drawing.Point(624, 323);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(25, 28);
+            this.kryptonLabel5.Size = new System.Drawing.Size(21, 23);
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.kryptonLabel5.TabIndex = 47;
@@ -324,27 +252,22 @@
             // 
             // TrainBookingFormStep3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 752);
+            this.ClientSize = new System.Drawing.Size(775, 564);
             this.Controls.Add(this.kryptonLabel5);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonButton1);
-            this.Controls.Add(this.kryptonLabel4);
             this.Controls.Add(this.kryptonLabel3);
-            this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.LabelDepature);
             this.Controls.Add(this.LabelPassengerInfo);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.TextBoxPassword);
-            this.Controls.Add(this.TextBoxEmail);
             this.Controls.Add(this.TextBoxPhoneNumber);
             this.Controls.Add(this.ButtonFinish);
             this.Controls.Add(this.TextBoxBirthday);
             this.Controls.Add(this.TextBoxFullName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TrainBookingFormStep3";
             this.Text = "TrainBookingFormStep3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -354,16 +277,11 @@
         }
 
         #endregion
-
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel LabelDepature;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel LabelPassengerInfo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox TextBoxPassword;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox TextBoxEmail;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TextBoxPhoneNumber;
         private ComponentFactory.Krypton.Toolkit.KryptonButton ButtonFinish;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TextBoxBirthday;

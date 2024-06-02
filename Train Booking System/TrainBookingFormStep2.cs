@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +19,9 @@ namespace Train_Booking_System
         public string id_user { get; set; } // id user
         public string origin { get; set; }
         public string destination { get; set; }
+        public string TrainId { get; set; }
         
+        private const string TrainIdUrl = "http://localhost:5009/api/Train/";
         public string ghe;
 
         private Mainform mainform;
@@ -28,6 +32,7 @@ namespace Train_Booking_System
             InitializeKryptonButtons();
         }
         private KryptonButton selectedButton;
+
 
 
         private void ButtonNext_Click(object sender, EventArgs e)
@@ -43,7 +48,9 @@ namespace Train_Booking_System
             trainBookingFormStep3.origin = origin;
             trainBookingFormStep3.destination = destination;
             // MB debug
-            MessageBox.Show(trainBookingFormStep3.id_user);
+            MessageBox.Show(trainBookingFormStep3.get_ghe);
+            MessageBox.Show(trainBookingFormStep3.origin);
+            MessageBox.Show(trainBookingFormStep3.destination);
             
             trainBookingFormStep3.Show();
         }
@@ -52,7 +59,8 @@ namespace Train_Booking_System
         {
             for (int i = 1; i <= 40; i++)
             {
-                KryptonButton button = this.Controls.Find($"g{i}", true).FirstOrDefault() as KryptonButton;
+                //KryptonButton button = this.Controls.Find($"g{i}", true).FirstOrDefault() as KryptonButton;
+                KryptonButton button = this.Controls.Find($"g{i:00}", true).FirstOrDefault() as KryptonButton;
                 if (button != null)
                 {
                     button.Click += KryptonButton_Click;

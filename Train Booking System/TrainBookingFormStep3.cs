@@ -25,7 +25,7 @@ namespace Train_Booking_System
         {
             this.mainform = mainform;
             InitializeComponent();
-            //MessageBox.Show(id_user);
+            //MessageBox.Show(get_ghe + origin + destination);
         }
 
         private void TextBoxPhoneNumber_TextChanged(object sender, EventArgs e) { }
@@ -34,8 +34,6 @@ namespace Train_Booking_System
         {
             var name = TextBoxFullName.Text;
             var pnumber = TextBoxPhoneNumber.Text;
-            var email = TextBoxEmail.Text;
-            var passwd = TextBoxPassword.Text;
             var nsinh = TextBoxBirthday.Text;
             // Check if any field is null or empty
             if (string.IsNullOrEmpty(name))
@@ -50,18 +48,6 @@ namespace Train_Booking_System
                 return;
             }
 
-            if (string.IsNullOrEmpty(email))
-            {
-                MessageBox.Show("Email is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (string.IsNullOrEmpty(passwd))
-            {
-                MessageBox.Show("Password is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             if (string.IsNullOrEmpty(nsinh))
             {
                 MessageBox.Show("Birthday is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -73,8 +59,8 @@ namespace Train_Booking_System
             {
                 { "iD_KhachHang", id_user },
                 { "isVeNam", 0 },
-                { "iD_LichTrinh", "HN-HCM9" }, // Replace with actual data if needed
-                { "iD_PhongorToa", "SH1S02" }, // Replace with actual data if needed
+                { "iD_LichTrinh", "HN-HCM3" }, // Replace with actual data if needed
+                { "iD_PhongorToa", "SE1G01" }, // Replace with actual data if needed
                 { "iD_GiuongorGhe", get_ghe },
                 { "hoTen", name },
                 { "namSinh", nsinh },
