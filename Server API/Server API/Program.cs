@@ -24,13 +24,13 @@ builder.Services.AddDbContext<UserDBContext>(options =>
 builder.Services.AddDbContext<AdminDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Admins")));
 builder.Services.AddDbContext<TrainDBContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("TrainSystem")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("TrainSystem")), ServiceLifetime.Scoped);
 
 builder.Services.AddHostedService<BedAndSeatUpdate>();
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
-//Authentication config-------------------------------------------------------------------------------------Authentication config
+//Authentication config (reserved, not used)
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
