@@ -72,7 +72,7 @@ namespace Server_API.Controllers
         }
         private string GenerateJwtToken(string input, bool isUser)
         {
-            var jwtSettings = _configuration.GetSection("Jwt");
+            var jwtSettings = _configuration.GetSection("JwtSettings");
             var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
             var tokenHandler = new JwtSecurityTokenHandler();
             if (isUser)
@@ -166,7 +166,7 @@ namespace Server_API.Controllers
             _configuration = configuration;
         }
 
-        // [Authorize]
+        //[Authorize(AuthenticationSchemes = "Bearer")]
         [HttpGet("ticketHistory/{email}")]
         public async Task<ActionResult> UserHistoryQuery(string email)
         {
@@ -278,6 +278,17 @@ namespace Server_API.Controllers
 
                 return Ok(result);
             }
+        }
+
+        [HttpGet("details/{email}")]
+        public async Task<ActionResult> GetUserDetails(string email)
+        {
+            // Implement future token validating here
+            var query = from user in _context.khachhang
+                        where user.Email == email
+                        select new { id = user.ID_KhachHang, email = user.Email, HoTen = user.HoTen, NamSinh = user.NamSinh, NgayTao = user.NgayTao };
+
+            return Ok(query.FirstOrDefault());
         }
     }
 
