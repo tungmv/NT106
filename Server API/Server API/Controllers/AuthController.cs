@@ -17,6 +17,8 @@ using System.Linq.Expressions;
 using Server_API.DBContext;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json.Linq;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 
 namespace Server_API.Controllers
@@ -170,62 +172,83 @@ namespace Server_API.Controllers
         [HttpGet("ticketHistory/{email}")]
         public async Task<ActionResult> UserHistoryQuery(string email)
         {
-            if (string.IsNullOrEmpty(email))
-                return BadRequest("Missing user's Email");
+            // Validate token
+            string token = Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();    // Exclude 'bearer' prefix to get the token itself
 
-            if (email.Contains(" ") || !email.Contains("@"))
-                return BadRequest("Invalid user's Email");
+            if (ValidateJwtToken(token) == 0)
+                return Unauthorized("No token detected. Are you missing the bearer token?");
 
-            var queryNam = from kh in _context.khachhang
-                        join ls in _context.LichSuDatVeNam on kh.ID_KhachHang equals ls.ID_KhachHang
-                        where kh.Email == email
-                        select new { 
-                            ID_VeNam = ls.ID_VeNam,
-                            };
+            else if (ValidateJwtToken(token) == 2)
+                return BadRequest("User email does not exist.");
 
-            var id_veNam = queryNam.ToString().ToList();
-            var resultVeNam = from venam in _trainContext.VeNam
-                         where venam.ID_VeNam.Equals(id_veNam)
-                         select new
-                         {
-                            ID_VeNam = venam.ID_VeNam,
-                            ID_LichTrinh = venam.ID_LichTrinh,
-                            ID_Giuong = venam.ID_Giuong,
-                            ID_Phong = venam.ID_Phong,
-                            DonGia = venam.DonGia,
-                            HoTen = venam.HoTen,
-                            NamSinh = venam.NamSinh
-                        };
+            else if (ValidateJwtToken(token) == 3)
+                return BadRequest("Expired token. Consider refresh the token");
 
-            var queryNgoi = from kh in _context.khachhang
-                           join ls in _context.LichSuDatVeNgoi on kh.ID_KhachHang equals ls.ID_KhachHang
-                           where kh.ID_KhachHang == email
-                           select new
-                           {
-                               ID_VeNam = ls.ID_VeNgoi,
-                           };
+            else if (ValidateJwtToken(token) == 4)
+                return BadRequest("Invalid token");
 
-            var id_veNgoi = queryNam.ToString().ToList();
-            var resultVeNgoi = from vengoi in _trainContext.VeNgoi
-                              where vengoi.ID_VeNgoi.Equals(id_veNgoi)
-                              select new
-                              {
-                                  ID_VeNam = vengoi.ID_VeNgoi,
-                                  ID_LichTrinh = vengoi.ID_LichTrinh,
-                                  ID_Giuong = vengoi.ID_Ghe,
-                                  DonGia = vengoi.DonGia,
-                                  HoTen = vengoi.HoTen,
-                                  NamSinh = vengoi.NamSinh
-                              };
-
-            var result = new
+            else if (ValidateJwtToken(token) == 1)
             {
-                email = email,
-                veNgoi = queryNgoi,
-                veNam = queryNam
-            };
+                if (string.IsNullOrEmpty(email))
+                    return BadRequest("Missing user's Email");
 
-            return Ok(result);
+                if (email.Contains(" ") || !email.Contains("@"))
+                    return BadRequest("Invalid user's Email");
+
+                var queryNam = from kh in _context.khachhang
+                               join ls in _context.LichSuDatVeNam on kh.ID_KhachHang equals ls.ID_KhachHang
+                               where kh.Email == email
+                               select new
+                               {
+                                   ID_VeNam = ls.ID_VeNam,
+                               };
+
+                var id_veNam = queryNam.ToString().ToList();
+                var resultVeNam = from venam in _trainContext.VeNam
+                                  where venam.ID_VeNam.Equals(id_veNam)
+                                  select new
+                                  {
+                                      ID_VeNam = venam.ID_VeNam,
+                                      ID_LichTrinh = venam.ID_LichTrinh,
+                                      ID_Giuong = venam.ID_Giuong,
+                                      ID_Phong = venam.ID_Phong,
+                                      DonGia = venam.DonGia,
+                                      HoTen = venam.HoTen,
+                                      NamSinh = venam.NamSinh
+                                  };
+
+                var queryNgoi = from kh in _context.khachhang
+                                join ls in _context.LichSuDatVeNgoi on kh.ID_KhachHang equals ls.ID_KhachHang
+                                where kh.ID_KhachHang == email
+                                select new
+                                {
+                                    ID_VeNam = ls.ID_VeNgoi,
+                                };
+
+                var id_veNgoi = queryNam.ToString().ToList();
+                var resultVeNgoi = from vengoi in _trainContext.VeNgoi
+                                   where vengoi.ID_VeNgoi.Equals(id_veNgoi)
+                                   select new
+                                   {
+                                       ID_VeNam = vengoi.ID_VeNgoi,
+                                       ID_LichTrinh = vengoi.ID_LichTrinh,
+                                       ID_Giuong = vengoi.ID_Ghe,
+                                       DonGia = vengoi.DonGia,
+                                       HoTen = vengoi.HoTen,
+                                       NamSinh = vengoi.NamSinh
+                                   };
+
+                var result = new
+                {
+                    email = email,
+                    veNgoi = queryNgoi,
+                    veNam = queryNam
+                };
+
+                return Ok(result);
+            }
+            else
+                return StatusCode(StatusCodes.Status500InternalServerError, "Oops! Server is down");
         }
 
         [HttpPost("createAccount")]
@@ -283,12 +306,82 @@ namespace Server_API.Controllers
         [HttpGet("details/{email}")]
         public async Task<ActionResult> GetUserDetails(string email)
         {
-            // Implement future token validating here
-            var query = from user in _context.khachhang
-                        where user.Email == email
-                        select new { id = user.ID_KhachHang, email = user.Email, HoTen = user.HoTen, NamSinh = user.NamSinh, NgayTao = user.NgayTao };
+            // Validate token
+            string token = Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();    // Exclude 'bearer' prefix to get the token itself
 
-            return Ok(query.FirstOrDefault());
+            if (ValidateJwtToken(token) == 0)
+                return Unauthorized("No token detected. Are you missing the bearer token?");
+
+            else if (ValidateJwtToken(token) == 2)
+                return BadRequest("User email does not exist.");
+
+            else if (ValidateJwtToken(token) == 3)
+                return BadRequest("Expired token. Consider refresh the token");
+
+            else if (ValidateJwtToken(token) == 4)
+                return BadRequest("Invalid token");
+
+            else if (ValidateJwtToken(token) == 1)
+            {
+
+                var query = from user in _context.khachhang
+                            where user.Email == email
+                            select new { id = user.ID_KhachHang, email = user.Email, HoTen = user.HoTen, NamSinh = user.NamSinh, NgayTao = user.NgayTao.Date.ToString("dd-MM-yyyy H-mm-ss") };
+
+                return Ok(query.FirstOrDefault());
+            }
+
+            else
+                return StatusCode(StatusCodes.Status500InternalServerError, "Oops! Server is down");
+        }
+
+        private int ValidateJwtToken(string token)
+        {
+            if (string.IsNullOrEmpty(token))    // Token does not exist, returns 0
+                return 0;
+
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token); // Read the token
+            var email = jwtToken.Claims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value;
+
+            var challengeQuery1 = from user in _context.khachhang
+                                  where user.Email.Equals(email)
+                                  select user.ID_KhachHang;
+            if (challengeQuery1 == null)        // Email does not exist, returns 2
+                return 2;
+
+            var exp = jwtToken.Claims.FirstOrDefault(exp => exp.Type == Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames.Exp)?.Value;
+            if (exp != null && long.TryParse(exp, out long expValue))   // exp time in json is a long value formatted as string, so we convert it
+            {
+                var expTime = DateTimeOffset.FromUnixTimeSeconds(expValue);    // convert jwt expiration time (long) to DateTime type
+                if (expTime < DateTime.UtcNow)
+                    return 3;
+            }
+            // actual validation begins, still buggy so this will be wrapped with a try-catch
+            try
+            {
+                var validationParameters = new TokenValidationParameters    // validation parameters (must match program.cs)
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["JwtSettings:Key"]))
+                };
+
+                var principal = handler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
+                if (principal == null)                                      // token did not pass the built in validation, returns 4
+                    return 4;
+                return 1;
+            }
+            catch (SecurityTokenException) {
+                return 4;
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
+
         }
     }
 
@@ -299,78 +392,4 @@ namespace Server_API.Controllers
         public string HoTen { get; set; }
         public int NamSinh {  get; set; }        
     }
-
-    public class BedAndSeatUpdate : IHostedService, IDisposable     // This will be run every hour to refresh KhaDung of Ghe and Giuong
-    {
-        private readonly IServiceProvider _services;
-        private ILogger<BedAndSeatUpdate> _logger;
-        private Timer _timer;
-
-        public BedAndSeatUpdate(IServiceProvider services, ILogger<BedAndSeatUpdate> logger)
-        {
-            _services = services;
-            _logger = logger;
-        }
-
-        public Task StartAsync(CancellationToken cancellationToken)
-        {
-            _logger.LogInformation("Bed and Seats are being refreshed.");
-            _timer = new System.Threading.Timer(UpdateDataAsync, null, TimeSpan.Zero, TimeSpan.FromHours(1));
-            return Task.CompletedTask;
-        }
-
-        private async void UpdateDataAsync(object state)
-        {
-            using (var scope = _services.CreateScope()) // Create a scope to add database for updating
-            {
-                var _context = scope.ServiceProvider.GetRequiredService<TrainDBContext>();
-                // for seats
-                var seattickets = from vngoi in _context.VeNgoi
-                                  where vngoi.ExpireDate < DateTime.Now
-                                  select new { 
-                                    id_ghe = vngoi.ID_Ghe,
-                                    id_toa = vngoi.ID_Toa
-                                  };
-                foreach (var ticket in seattickets)
-                {
-                    var seatQuery = from ghe in _context.Ghe
-                                    where ghe.ID_Ghe.Equals(ticket.id_ghe) && ghe.ID_Toa.Equals(ticket.id_toa)
-                                    select ghe;
-                    seatQuery.FirstOrDefault().KhaDung = 1;
-                }
-
-                // for beds
-                var bedtickets = from vnam in _context.VeNam
-                                  where vnam.ExpireDate < DateTime.Now
-                                  select new
-                                  {
-                                      id_giuong = vnam.ID_Giuong,
-                                      id_phong = vnam.ID_Phong
-                                  };
-                foreach (var ticket in bedtickets)
-                {
-                    var bedQuery = from giuong in _context.Giuong
-                                    where giuong.ID_Giuong.Equals(ticket.id_giuong) && giuong.ID_Phong.Equals(ticket.id_phong)
-                                    select giuong;
-                    bedQuery.FirstOrDefault().KhaDung = 1;
-                }
-
-                // commit changes to database
-                await _context.SaveChangesAsync();
-            }
-        }
-
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            _logger.LogInformation("The update is stopping.");
-            _timer?.Change(Timeout.Infinite, 0);
-            return Task.CompletedTask;
-        }
-
-        public void Dispose()
-        {
-            _timer?.Dispose();
-        }
-    }
-
 }

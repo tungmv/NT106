@@ -529,4 +529,78 @@ namespace Server_API.Controllers
         public string XuatPhat { get; set; } // ten tram vd: Ga Hoan Kiem
         public string DiemDen { get; set; } // ten tram
     }
+
+    public class BedAndSeatUpdate : IHostedService, IDisposable     // This will be run every hour to refresh KhaDung of Ghe and Giuong
+    {
+        private readonly IServiceProvider _services;
+        private ILogger<BedAndSeatUpdate> _logger;
+        private Timer _timer;
+
+        public BedAndSeatUpdate(IServiceProvider services, ILogger<BedAndSeatUpdate> logger)
+        {
+            _services = services;
+            _logger = logger;
+        }
+
+        public Task StartAsync(CancellationToken cancellationToken)
+        {
+            _logger.LogInformation("Bed and Seats are being refreshed.");
+            _timer = new System.Threading.Timer(UpdateDataAsync, null, TimeSpan.Zero, TimeSpan.FromHours(1));
+            return Task.CompletedTask;
+        }
+
+        private async void UpdateDataAsync(object state)
+        {
+            using (var scope = _services.CreateScope()) // Create a scope to add database for updating
+            {
+                var _context = scope.ServiceProvider.GetRequiredService<TrainDBContext>();
+                // for seats
+                var seattickets = from vngoi in _context.VeNgoi
+                                  where vngoi.ExpireDate < DateTime.Now
+                                  select new
+                                  {
+                                      id_ghe = vngoi.ID_Ghe,
+                                      id_toa = vngoi.ID_Toa
+                                  };
+                foreach (var ticket in seattickets)
+                {
+                    var seatQuery = from ghe in _context.Ghe
+                                    where ghe.ID_Ghe.Equals(ticket.id_ghe) && ghe.ID_Toa.Equals(ticket.id_toa)
+                                    select ghe;
+                    seatQuery.FirstOrDefault().KhaDung = 1;
+                }
+
+                // for beds
+                var bedtickets = from vnam in _context.VeNam
+                                 where vnam.ExpireDate < DateTime.Now
+                                 select new
+                                 {
+                                     id_giuong = vnam.ID_Giuong,
+                                     id_phong = vnam.ID_Phong
+                                 };
+                foreach (var ticket in bedtickets)
+                {
+                    var bedQuery = from giuong in _context.Giuong
+                                   where giuong.ID_Giuong.Equals(ticket.id_giuong) && giuong.ID_Phong.Equals(ticket.id_phong)
+                                   select giuong;
+                    bedQuery.FirstOrDefault().KhaDung = 1;
+                }
+
+                // commit changes to database
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public Task StopAsync(CancellationToken cancellationToken)
+        {
+            _logger.LogInformation("The update is stopping.");
+            _timer?.Change(Timeout.Infinite, 0);
+            return Task.CompletedTask;
+        }
+
+        public void Dispose()
+        {
+            _timer?.Dispose();
+        }
+    }
 }

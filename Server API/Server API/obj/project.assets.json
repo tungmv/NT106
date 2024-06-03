@@ -3843,19 +3843,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\EVGA Fan Boi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\repo\\NT106\\Server API\\Server API\\Server API.csproj",
+      "projectUniqueName": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Server API.csproj",
       "projectName": "Server API",
-      "projectPath": "C:\\Users\\HP\\Documents\\repo\\NT106\\Server API\\Server API\\Server API.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\repo\\NT106\\Server API\\Server API\\obj\\",
+      "projectPath": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\Server API.csproj",
+      "packagesPath": "C:\\Users\\EVGA Fan Boi\\.nuget\\packages\\",
+      "outputPath": "A:\\Programs\\VS 2022\\TrainBookingProject\\Server API\\Server API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\EVGA Fan Boi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3876,11 +3876,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3955,7 +3950,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
