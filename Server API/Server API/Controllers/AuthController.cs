@@ -198,51 +198,37 @@ namespace Server_API.Controllers
                 var queryNam = from kh in _context.khachhang
                                join ls in _context.LichSuDatVeNam on kh.ID_KhachHang equals ls.ID_KhachHang
                                where kh.Email == email
-                               select new
-                               {
-                                   ID_VeNam = ls.ID_VeNam,
-                               };
+                               select ls.ID_VeNam;
 
-                var id_veNam = queryNam.ToString().ToList();
-                var resultVeNam = from venam in _trainContext.VeNam
-                                  where venam.ID_VeNam.Equals(id_veNam)
-                                  select new
-                                  {
-                                      ID_VeNam = venam.ID_VeNam,
-                                      ID_LichTrinh = venam.ID_LichTrinh,
-                                      ID_Giuong = venam.ID_Giuong,
-                                      ID_Phong = venam.ID_Phong,
-                                      DonGia = venam.DonGia,
-                                      HoTen = venam.HoTen,
-                                      NamSinh = venam.NamSinh
-                                  };
+                List<VeNam> returnVeNam = new List<VeNam>();
+                foreach (var v in queryNam)
+                {
+                    var resultVeNam = from venam in _trainContext.VeNam
+                                      where venam.ID_VeNam.Equals(v)
+                                      select venam;
+                    returnVeNam.Add(resultVeNam.FirstOrDefault());
+                }
 
                 var queryNgoi = from kh in _context.khachhang
                                 join ls in _context.LichSuDatVeNgoi on kh.ID_KhachHang equals ls.ID_KhachHang
-                                where kh.ID_KhachHang == email
-                                select new
-                                {
-                                    ID_VeNam = ls.ID_VeNgoi,
-                                };
+                                where kh.Email == email
+                                select ls.ID_VeNgoi;
+                List<VeNgoi> returnVeNgoi = new List<VeNgoi>();
 
-                var id_veNgoi = queryNam.ToString().ToList();
-                var resultVeNgoi = from vengoi in _trainContext.VeNgoi
-                                   where vengoi.ID_VeNgoi.Equals(id_veNgoi)
-                                   select new
-                                   {
-                                       ID_VeNam = vengoi.ID_VeNgoi,
-                                       ID_LichTrinh = vengoi.ID_LichTrinh,
-                                       ID_Giuong = vengoi.ID_Ghe,
-                                       DonGia = vengoi.DonGia,
-                                       HoTen = vengoi.HoTen,
-                                       NamSinh = vengoi.NamSinh
-                                   };
+                foreach (var v in queryNgoi)
+                {
+                    var resultVeNgoi = from vengoi in _trainContext.VeNgoi
+                                       where vengoi.ID_VeNgoi.Equals(v)
+                                       select vengoi;
+                    returnVeNgoi.Add(resultVeNgoi.FirstOrDefault());
+                }
+
 
                 var result = new
                 {
                     email = email,
-                    veNgoi = queryNgoi,
-                    veNam = queryNam
+                    veNgoi = returnVeNgoi,
+                    veNam = returnVeNam
                 };
 
                 return Ok(result);
@@ -335,6 +321,73 @@ namespace Server_API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Oops! Server is down");
         }
 
+        [HttpPost("details/update")]
+        public async Task<ActionResult> UpdateUserDetails([FromBody] CreateAccount input)
+        {
+            // Validate token
+            string token = Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();    // Exclude 'bearer' prefix to get the token itself
+
+            if (ValidateJwtToken(token) == 0)
+                return Unauthorized("No token detected. Are you missing the bearer token?");
+
+            else if (ValidateJwtToken(token) == 2)
+                return BadRequest("User email does not exist.");
+
+            else if (ValidateJwtToken(token) == 3)
+                return BadRequest("Expired token. Consider refresh the token");
+
+            else if (ValidateJwtToken(token) == 4)
+                return BadRequest("Invalid token");
+
+            else if (ValidateJwtToken(token) == 1)
+            {
+
+                var query = from user in _context.khachhang
+                            where user.Email == input.Email
+                            select user;
+
+                if (query == null)
+                {
+                    return BadRequest("No users with the given email found.");
+                }
+
+                else
+                {
+                    try {
+                        query.FirstOrDefault().HoTen = input.HoTen;
+                        query.FirstOrDefault().NamSinh = input.NamSinh;
+                        query.FirstOrDefault().Email = input.Email;
+
+                        var id = query.FirstOrDefault().ID_KhachHang;
+
+                        using (var sha256 = SHA256.Create())
+                        {
+                            var salted = input.Password + query.FirstOrDefault().ID_KhachHang;
+                            var saltedBytes = Encoding.UTF8.GetBytes(salted);
+                            var hashBytes = sha256.ComputeHash(saltedBytes);
+                            var hashed = Convert.ToHexString(hashBytes);
+
+                            var passQuery = from pw in _context.Passwords
+                                            where pw.ID_KhachHang == id
+                                            select pw;
+
+                            passQuery.First().Hashed = hashed;
+                        }
+
+                        await _context.SaveChangesAsync();
+                        return Ok("User detail changed successfully");
+                    }
+                    catch
+                    {
+                        return BadRequest();
+                    }
+                    }
+                
+            }
+
+            else
+                return StatusCode(StatusCodes.Status500InternalServerError, "Oops! Server is down");
+        }
         private int ValidateJwtToken(string token)
         {
             if (string.IsNullOrEmpty(token))    // Token does not exist, returns 0

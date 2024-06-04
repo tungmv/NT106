@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Server_API.Models
 {
@@ -10,7 +11,7 @@ namespace Server_API.Models
         public string Hashed {  get; set; }
         public string salt { get; set; }    // salt here is gonna be PK because why not
 
-        [Required]
+        [JsonIgnore]
         public User User { get; set; }
     }
 }
