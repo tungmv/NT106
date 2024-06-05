@@ -1,17 +1,10 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Net.Http;
-using System.Windows.Forms;
 using System.Net.Http.Headers;
-using Newtonsoft.Json.Linq;
-using System.Web.Caching;
+using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace Train_Booking_System
 {
@@ -19,11 +12,20 @@ namespace Train_Booking_System
     {
         public string TicketUrl = "http://localhost:5009/api/User/ticketHistory/";
         public string token_user { get; set; }
-        public string email { get; set;}
+        public string email { get; set; }
+
         public TicketForm()
         {
             InitializeComponent();
-            //GetTickets();
+            // GetTickets();
+            this.Load += new EventHandler(TicketForm_Load);
+        }
+
+        // This method will be called when the form is loaded
+        private void TicketForm_Load(object sender, EventArgs e)
+        {
+            // Call the ButtonRefresh_Click method to refresh the data
+            ButtonRefresh_Click(this, EventArgs.Empty);
         }
 
         private async void GetTickets()
@@ -32,18 +34,41 @@ namespace Train_Booking_System
             {
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token_user);
 
-                MessageBox.Show(email, "Email", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 try
                 {
-                    var response = await client.GetAsync(TicketUrl+email);
+                    var response = await client.GetAsync(TicketUrl + email);
                     string result = await response.Content.ReadAsStringAsync();
 
                     var contentType = response.Content.Headers.ContentType?.MediaType;
 
                     if (contentType == "application/json")
                     {
-                        var jsonResponse = JToken.Parse(result);
-                        MessageBox.Show(jsonResponse.ToString(), "Ticket History", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        var userData = JsonConvert.DeserializeObject<UserData>(result);
+                        if (userData != null && userData.VeNgoi.Count > 0)
+                        {
+                            // Clear the existing rows
+                            this.DataGridViewTrainList.Rows.Clear();
+
+                            // Add the new rows from the ticket data
+                            foreach (var ticket in userData.VeNgoi)
+                            {
+                                this.DataGridViewTrainList.Rows.Add(
+                                    ticket.ID_VeNgoi,
+                                    ticket.ID_LichTrinh,
+                                    //ticket.ID_Ghe,
+                                    //ticket.ID_Toa,
+                                    ticket.XuatPhat,
+                                    ticket.DiemDen,
+                                    ticket.ExpireDate,
+                                    ticket.DonGia);
+                            }
+
+                            MessageBox.Show("Tickets loaded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No tickets found.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                     else
                     {
@@ -56,6 +81,7 @@ namespace Train_Booking_System
                 }
             }
         }
+
         private void ButtonCancel_Click(object sender, EventArgs e)
         {
             // to cancel selected tickets
@@ -65,6 +91,59 @@ namespace Train_Booking_System
         {
             // refresh the ticket list
             GetTickets();
+        }
+
+        private void DataGridViewTrainList_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+
+        public class UserData
+        {
+            [JsonProperty("email")]
+            public string Email { get; set; }
+
+            [JsonProperty("veNgoi")]
+            public List<VeNgoi> VeNgoi { get; set; }
+
+            [JsonProperty("veNam")]
+            public List<object> VeNam { get; set; }
+        }
+
+        public class VeNgoi
+        {
+            [JsonProperty("iD_VeNgoi")]
+            public string ID_VeNgoi { get; set; }
+
+            [JsonProperty("iD_LichTrinh")]
+            public string ID_LichTrinh { get; set; }
+
+            [JsonProperty("iD_Ghe")]
+            public string ID_Ghe { get; set; }
+
+            [JsonProperty("iD_Toa")]
+            public string ID_Toa { get; set; }
+
+            [JsonProperty("donGia")]
+            public int DonGia { get; set; }
+
+            [JsonProperty("hoTen")]
+            public string HoTen { get; set; }
+
+            [JsonProperty("namSinh")]
+            public int NamSinh { get; set; }
+
+            [JsonProperty("xuatPhat")]
+            public string XuatPhat { get; set; }
+
+            [JsonProperty("diemDen")]
+            public string DiemDen { get; set; }
+
+            [JsonProperty("ghe")]
+            public object Ghe { get; set; }
+
+            [JsonProperty("lichTrinh")]
+            public object LichTrinh { get; set; }
+
+            [JsonProperty("expireDate")]
+            public string ExpireDate { get; set; }
         }
     }
 }
