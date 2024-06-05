@@ -16,6 +16,7 @@ namespace Train_Booking_System
         public UserReg()
         {
             InitializeComponent();
+            textBox2.PasswordChar = '*';
         }
         private const string createAccountUrl = "http://localhost:5009/api/User/createAccount";
 

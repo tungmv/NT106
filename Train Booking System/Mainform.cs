@@ -15,6 +15,7 @@ namespace Train_Booking_System
     {
         public string DataProperty { get; set; } // id_user
         public string token_user { get; set; }
+        public string email { get; set; }
         MyAccountForm MyAccountForm;
         TrainBookingFormStep1 TrainBookingFormStep1;
         TicketForm TicketForm;
@@ -58,12 +59,12 @@ namespace Train_Booking_System
             // Choose MyAccount option
             if(MyAccountForm == null || MyAccountForm.IsDisposed)
             {
-                MyAccountForm = new MyAccountForm();
-                MyAccountForm.FormClosed += AccountForm_FormClosed;
-                MyAccountForm.MdiParent = this;
-                MyAccountForm.Dock = DockStyle.Fill;
-                MyAccountForm.token_user = token_user;
-                MyAccountForm.Show();
+                MyAccountForm myaccform = new MyAccountForm();
+                myaccform.FormClosed += AccountForm_FormClosed;
+                myaccform.MdiParent = this;
+                myaccform.Dock = DockStyle.Fill;
+                myaccform.token_user = token_user;
+                myaccform.Show();
             }
             else
             {
@@ -106,11 +107,13 @@ namespace Train_Booking_System
         {
             if(TicketForm == null || TicketForm.IsDisposed)
             {
-                TicketForm = new TicketForm();
-                TicketForm.FormClosed += TicketFormCLosed;
-                TicketForm.MdiParent = this;
-                TicketForm.Dock = DockStyle.Fill;
-                TicketForm.Show();
+                TicketForm tkform = new TicketForm();
+                tkform.FormClosed += TicketFormCLosed;
+                tkform.MdiParent = this;
+                tkform.Dock = DockStyle.Fill;
+                tkform.token_user = token_user;
+                tkform.email = email;
+                tkform.Show();
             }
             else
             {
@@ -131,6 +134,7 @@ namespace Train_Booking_System
                 HistoryForm.FormClosed += HistoryFormClosed;
                 HistoryForm.MdiParent = this;
                 HistoryForm.Dock = DockStyle.Fill;
+                HistoryForm.token_user = token_user;
                 HistoryForm.Show();
             }
             else

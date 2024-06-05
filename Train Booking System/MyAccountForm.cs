@@ -23,6 +23,7 @@ namespace Train_Booking_System
         public MyAccountForm()
         {
             InitializeComponent();
+            TextBoxPassword.PasswordChar = '*';
         }
 
         private async void ButtonUpdate_Click(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace Train_Booking_System
             using (var client = new HttpClient())
             {
                 // Set the default request headers for the HttpClient instance to include the bearer token
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token_user);
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", $"{token_user}");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("*/*"));
 
                 try

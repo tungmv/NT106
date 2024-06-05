@@ -13,8 +13,6 @@ namespace Train_Booking_System
         {
             InitializeComponent();
             TextBoxPassword.PasswordChar = '*';
-
-
         }
 
         private async void ButtonLogin_Click(object sender, EventArgs e)
@@ -24,7 +22,6 @@ namespace Train_Booking_System
 
             //string email = "22521115@gm.uit.edu.vn"; 
             //string password = "password";
-
 
             // Create JSON request body
             string jsonBody = $"{{\"email\":\"{email}\",\"password\":\"{password}\"}}";
@@ -46,16 +43,15 @@ namespace Train_Booking_System
                         string id_user = responseContentjson["id"].ToString();
                         string token = responseContentjson["token"].ToString();
 
-                        // MB debug
-                        //MessageBox.Show(id_user, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        MessageBox.Show($"Login successful! \nYour id is: {id_user}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        //MessageBox.Show($"Login successful! \nYour id is: {id_user}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         // Open mainform
                         Mainform mainform = new Mainform();
                         mainform.DataProperty = id_user;
                         mainform.token_user = token;
+                        mainform.email = email;
+                        //MessageBox.Show(mainform.email, "email", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         mainform.Show();
                     }
                     else

@@ -12,6 +12,7 @@ namespace Train_Booking_System
 {
     public partial class HistoryForm : Form
     {
+        public string token_user { get; set; }
         public HistoryForm()
         {
             InitializeComponent();
