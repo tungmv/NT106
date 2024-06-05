@@ -48,9 +48,9 @@ namespace Train_Booking_System
             trainBookingFormStep3.origin = origin;
             trainBookingFormStep3.destination = destination;
             // MB debug
-            MessageBox.Show(trainBookingFormStep3.get_ghe);
-            MessageBox.Show(trainBookingFormStep3.origin);
-            MessageBox.Show(trainBookingFormStep3.destination);
+            //MessageBox.Show(trainBookingFormStep3.get_ghe);
+            //MessageBox.Show(trainBookingFormStep3.origin);
+            //MessageBox.Show(trainBookingFormStep3.destination);
             
             trainBookingFormStep3.Show();
         }

@@ -13,7 +13,8 @@ namespace Train_Booking_System
 {
     public partial class Mainform : Form
     {
-        public string DataProperty { get; set; }
+        public string DataProperty { get; set; } // id_user
+        public string token_user { get; set; }
         MyAccountForm MyAccountForm;
         TrainBookingFormStep1 TrainBookingFormStep1;
         TicketForm TicketForm;
@@ -61,6 +62,7 @@ namespace Train_Booking_System
                 MyAccountForm.FormClosed += AccountForm_FormClosed;
                 MyAccountForm.MdiParent = this;
                 MyAccountForm.Dock = DockStyle.Fill;
+                MyAccountForm.token_user = token_user;
                 MyAccountForm.Show();
             }
             else

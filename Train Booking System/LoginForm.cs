@@ -44,17 +44,18 @@ namespace Train_Booking_System
                         var responseContentjson = JObject.Parse(responseContent);
 
                         string id_user = responseContentjson["id"].ToString();
+                        string token = responseContentjson["token"].ToString();
 
                         // MB debug
                         //MessageBox.Show(id_user, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        MessageBox.Show($"Login successful! Your id is: {id_user}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"Login successful! \nYour id is: {id_user}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                         // Open mainform
                         Mainform mainform = new Mainform();
                         mainform.DataProperty = id_user;
-                        //MessageBox.Show(mainform.DataProperty, id_user);
+                        mainform.token_user = token;
                         mainform.Show();
                     }
                     else

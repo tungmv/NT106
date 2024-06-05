@@ -231,7 +231,7 @@ namespace Train_Booking_System
                                             // MB debug
                                             //MessageBox.Show($"{ltt.idlt}--Train:{ltt.idtau}--Time:{ltt.gio}--Thu':{ltt.thu}");
                                         }
-                                        MessageBox.Show("Get data success!");
+                                        MessageBox.Show("Get data success!","Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                         // MB debug
                                         //MessageBox.Show("Response Content: " + response1Content);
