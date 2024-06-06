@@ -31,9 +31,10 @@
             this.DataGridViewTrainList = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.LabelAccountInfo = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.ButtonRefresh = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.ButtonCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Ticket_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Train_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ToaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GheGiuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.XuatPhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiemDen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Arrival_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,16 +49,18 @@
             this.DataGridViewTrainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Ticket_ID,
             this.Train_ID,
+            this.ToaPhong,
+            this.GheGiuong,
             this.XuatPhat,
             this.DiemDen,
             this.Arrival_Date,
             this.DonGia});
-            this.DataGridViewTrainList.Location = new System.Drawing.Point(98, 76);
-            this.DataGridViewTrainList.Margin = new System.Windows.Forms.Padding(4);
+            this.DataGridViewTrainList.Location = new System.Drawing.Point(110, 95);
+            this.DataGridViewTrainList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DataGridViewTrainList.Name = "DataGridViewTrainList";
             this.DataGridViewTrainList.ReadOnly = true;
             this.DataGridViewTrainList.RowHeadersWidth = 51;
-            this.DataGridViewTrainList.Size = new System.Drawing.Size(1015, 506);
+            this.DataGridViewTrainList.Size = new System.Drawing.Size(1142, 632);
             this.DataGridViewTrainList.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.DataGridViewTrainList.StateCommon.Background.ColorAngle = 45F;
             this.DataGridViewTrainList.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -66,11 +69,11 @@
             // 
             // LabelAccountInfo
             // 
-            this.LabelAccountInfo.Location = new System.Drawing.Point(541, 15);
-            this.LabelAccountInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.LabelAccountInfo.Location = new System.Drawing.Point(609, 19);
+            this.LabelAccountInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LabelAccountInfo.Name = "LabelAccountInfo";
             this.LabelAccountInfo.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.LabelAccountInfo.Size = new System.Drawing.Size(95, 34);
+            this.LabelAccountInfo.Size = new System.Drawing.Size(113, 40);
             this.LabelAccountInfo.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.LabelAccountInfo.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.LabelAccountInfo.StateCommon.ShortText.ColorAngle = 45F;
@@ -81,8 +84,8 @@
             // 
             // ButtonRefresh
             // 
-            this.ButtonRefresh.Location = new System.Drawing.Point(391, 620);
-            this.ButtonRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonRefresh.Location = new System.Drawing.Point(594, 772);
+            this.ButtonRefresh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonRefresh.Name = "ButtonRefresh";
             this.ButtonRefresh.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ButtonRefresh.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -91,7 +94,7 @@
             this.ButtonRefresh.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonRefresh.OverrideFocus.Back.ColorAngle = 45F;
             this.ButtonRefresh.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ButtonRefresh.Size = new System.Drawing.Size(164, 46);
+            this.ButtonRefresh.Size = new System.Drawing.Size(184, 58);
             this.ButtonRefresh.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonRefresh.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ButtonRefresh.StateCommon.Back.ColorAngle = 135F;
@@ -119,35 +122,6 @@
             this.ButtonRefresh.Values.Text = "Refresh";
             this.ButtonRefresh.Click += new System.EventHandler(this.ButtonRefresh_Click);
             // 
-            // ButtonCancel
-            // 
-            this.ButtonCancel.Location = new System.Drawing.Point(660, 620);
-            this.ButtonCancel.Margin = new System.Windows.Forms.Padding(4);
-            this.ButtonCancel.Name = "ButtonCancel";
-            this.ButtonCancel.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonCancel.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonCancel.OverrideFocus.Back.ColorAngle = 45F;
-            this.ButtonCancel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ButtonCancel.Size = new System.Drawing.Size(164, 46);
-            this.ButtonCancel.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.ButtonCancel.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.ButtonCancel.StateCommon.Back.ColorAngle = 135F;
-            this.ButtonCancel.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ButtonCancel.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonCancel.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonCancel.StateCommon.Border.ColorAngle = 45F;
-            this.ButtonCancel.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ButtonCancel.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ButtonCancel.StateCommon.Border.Rounding = 10;
-            this.ButtonCancel.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ButtonCancel.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ButtonCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonCancel.TabIndex = 29;
-            this.ButtonCancel.Values.Text = "Cancel";
-            this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
-            // 
             // Ticket_ID
             // 
             this.Ticket_ID.HeaderText = "Ticket ID";
@@ -163,6 +137,22 @@
             this.Train_ID.Name = "Train_ID";
             this.Train_ID.ReadOnly = true;
             this.Train_ID.Width = 125;
+            // 
+            // ToaPhong
+            // 
+            this.ToaPhong.HeaderText = "ToaPhong";
+            this.ToaPhong.MinimumWidth = 8;
+            this.ToaPhong.Name = "ToaPhong";
+            this.ToaPhong.ReadOnly = true;
+            this.ToaPhong.Width = 150;
+            // 
+            // GheGiuong
+            // 
+            this.GheGiuong.HeaderText = "GheGiuong";
+            this.GheGiuong.MinimumWidth = 8;
+            this.GheGiuong.Name = "GheGiuong";
+            this.GheGiuong.ReadOnly = true;
+            this.GheGiuong.Width = 150;
             // 
             // XuatPhat
             // 
@@ -198,15 +188,14 @@
             // 
             // TicketForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 752);
-            this.Controls.Add(this.ButtonCancel);
+            this.ClientSize = new System.Drawing.Size(1342, 940);
             this.Controls.Add(this.ButtonRefresh);
             this.Controls.Add(this.LabelAccountInfo);
             this.Controls.Add(this.DataGridViewTrainList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TicketForm";
             this.Text = "TicketForm";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTrainList)).EndInit();
@@ -220,9 +209,10 @@
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView DataGridViewTrainList;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel LabelAccountInfo;
         private ComponentFactory.Krypton.Toolkit.KryptonButton ButtonRefresh;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton ButtonCancel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ticket_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Train_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ToaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GheGiuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn XuatPhat;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiemDen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Arrival_Date;

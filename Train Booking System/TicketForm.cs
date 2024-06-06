@@ -36,7 +36,7 @@ namespace Train_Booking_System
 
                 try
                 {
-                    var response = await client.GetAsync(TicketUrl + email);
+                    var response = await client.GetAsync(ngrokURL.Url + "/api/User/ticketHistory/" + email);
                     string result = await response.Content.ReadAsStringAsync();
 
                     var contentType = response.Content.Headers.ContentType?.MediaType;
@@ -55,8 +55,8 @@ namespace Train_Booking_System
                                 this.DataGridViewTrainList.Rows.Add(
                                     ticket.ID_VeNgoi,
                                     ticket.ID_LichTrinh,
-                                    //ticket.ID_Ghe,
-                                    //ticket.ID_Toa,
+                                    ticket.ID_Toa,
+                                    ticket.ID_Ghe,
                                     ticket.XuatPhat,
                                     ticket.DiemDen,
                                     ticket.ExpireDate,
