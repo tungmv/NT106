@@ -61,3 +61,33 @@ D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.TicketFor
 D:\uni\NT106\NT106\Train Booking System\obj\Debug\Train_Booking_System.UserReg.resources
 D:\uni\NT106\NT106\Train Booking System\bin\Debug\Newtonsoft.Json.dll
 D:\uni\NT106\NT106\Train Booking System\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\Train Booking System.exe.config
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\Train Booking System.exe
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\Train Booking System.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\Guna.UI2.dll
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Design.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train Booking System.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.AdminLogin.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.Dashboard.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.HistoryForm.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.MyAccountForm.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.TicketForm.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep2.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep1.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.LoginForm.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.Properties.Resources.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.TrainBookingFormStep3.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.UserReg.resources
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train Booking System.csproj.GenerateResource.cache
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train Booking System.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train Bo.7A443004.Up2Date
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train Booking System.exe
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train Booking System.pdb
+C:\Users\HP\Documents\repo\NT106\Train Booking System\obj\Debug\Train_Booking_System.Mainform.resources

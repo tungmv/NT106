@@ -1,4 +1,6 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +12,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Train_Booking_System.TrainBookingFormStep1;
 
 namespace Train_Booking_System
 {
@@ -25,9 +28,10 @@ namespace Train_Booking_System
         public string ghe;
 
         private Mainform mainform;
-        public TrainBookingFormStep2(Mainform mainform)
+        public TrainBookingFormStep2(Mainform mainform, string _trainId)
         {
             this.mainform = mainform;
+            TrainId = _trainId;
             InitializeComponent();
             InitializeKryptonButtons();
         }
@@ -55,15 +59,33 @@ namespace Train_Booking_System
             trainBookingFormStep3.Show();
         }
 
-        private void InitializeKryptonButtons()
+        private async void InitializeKryptonButtons()
         {
-            for (int i = 1; i <= 40; i++)
+            // Send a get request to train endpoint to fetch in available seats
+            string url = ngrokURL.Url + "/api/Train/" + TrainId;
+            using (HttpClient client = new HttpClient())
             {
-                //KryptonButton button = this.Controls.Find($"g{i}", true).FirstOrDefault() as KryptonButton;
-                KryptonButton button = this.Controls.Find($"g{i:00}", true).FirstOrDefault() as KryptonButton;
-                if (button != null)
+                client.DefaultRequestHeaders.Add("accept", "text/plain");
+                List<string> availableIDs = new List<string>();
+                try
                 {
-                    button.Click += KryptonButton_Click;
+                    HttpResponseMessage response = await client.GetAsync(url);
+                    // We get the IDs for Cars only:
+                    string responseContent = await response.Content.ReadAsStringAsync();
+                    // Parse to JSOn
+                    var jsonResponse = JObject.Parse(responseContent);
+                    var carIDarray = (JArray)jsonResponse["cars"];
+                    List<Car> listCar = carIDarray.ToObject<List<Car>>();
+                    // manually assign each car's ID to the car UI picturebox's tag
+                    pictureBox20.Tag = listCar[0].ID_Toa;
+                    pictureBox19.Tag = listCar[1].ID_Toa;
+                    pictureBox18.Tag = listCar[2].ID_Toa;
+                    pictureBox17.Tag = listCar[3].ID_Toa;
+                    pictureBox20_Click(pictureBox20, EventArgs.Empty);
+                }
+                catch (Exception ex) 
+                {
+                    MessageBox.Show($"Error while loading seats/beds: {ex.Message}");
                 }
             }
         }
@@ -94,5 +116,78 @@ namespace Train_Booking_System
         {
 
         }
+
+        public class Car
+        {
+            [JsonProperty("iD_Toa")]
+            public string ID_Toa { get; set; }
+        }
+
+        public class Ghe
+        {
+            [JsonProperty("ghe")]
+            public string ID_Ghe { get; set; }
+        }
+
+        private async void pictureBox20_Click(object sender, EventArgs e)
+        {
+            List<Ghe> listGhe = new List<Ghe>();
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("accept", "text/plain");
+                List<string> availableIDs = new List<string>();
+                try
+                {
+                    HttpResponseMessage response = await client.GetAsync(ngrokURL.Url + "/api/Train/car/" + pictureBox20.Tag.ToString());
+                    // We get the available seats for the current car when user click the picturebox representing it
+                    string responseContent = await response.Content.ReadAsStringAsync();
+                    // Parse to JSOn
+                    var jsonResponse = JObject.Parse(responseContent);
+                    JArray responseArray = (JArray)jsonResponse["response"];
+                    foreach (JObject car in responseArray)
+                    {
+                        // Get the ghe array
+                        JArray gheArray = (JArray)car["ghe"];
+
+                        // Convert each item in the ghe array to a Ghe object
+                        foreach (JToken gheToken in gheArray)
+                        {
+                            Ghe ghe = new Ghe { ID_Ghe = gheToken.ToString() };
+                            listGhe.Add(ghe);
+                        }
+                    }
+
+                    // manually assign each car's ID to the car UI picturebox's tag
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error while loading seats/beds for car {pictureBox20.Tag.ToString()}: {ex.Message}");
+                }
+            }
+
+            for (int i = 1; i <= 40; i++)
+            {
+                HashSet<string> availableSeatIDs = new HashSet<string>(listGhe.Select(seat => seat.ID_Ghe));
+                string seatIndex = i.ToString("00"); // format i as a 2 digit numbers for ease of mind
+             
+                KryptonButton button = this.Controls.Find($"g{seatIndex}", true).FirstOrDefault() as KryptonButton;
+                if (button != null)
+                {
+                    if (availableSeatIDs.Contains(seatIndex))
+                    {
+                        // Seat is available, assign the click event
+                        button.Click += KryptonButton_Click;
+                    }
+                    else
+                    {
+                        // Seat is not available, change its color to gray
+                        button.StateCommon.Back.Color1 = System.Drawing.Color.Gray;
+                        button.Enabled = false; // Optional: disable the button
+                    }
+                }
+            }
+        }
     }
-}
+    }

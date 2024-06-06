@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|c:\\users\\hp\\documents\\repo\\nt106\\remotefilemanagement\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\\u0111\u1ED3 \u00E1n\\nt106\\remotefilemanagement\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C291E97D-AC84-45F9-BFB3-DA6D9D9EEE8E}|RemoteFileManagement.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Server.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\Server.cs",
               "RelativeDocumentMoniker": "Server.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\Server.cs",
               "RelativeToolTip": "Server.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAqwKIAAAAdAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAiwCAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T13:00:37.442Z",
               "IsPinned": true,
@@ -48,48 +48,59 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Client.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\Client.cs",
               "RelativeDocumentMoniker": "Client.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\Client.cs",
               "RelativeToolTip": "Client.cs",
               "ViewState": "AQIAAOIAAAAAAAAAAAAAAO4AAACWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T04:39:56.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T04:39:56.702Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Server.cs [Design]",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\Server.cs",
               "RelativeDocumentMoniker": "Server.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Server.cs [Design]",
-              "RelativeToolTip": "Server.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T08:57:54.826Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-26T08:57:54.826Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Client.cs [Design]",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\repo\\NT106\\RemoteFileManagement\\Client.cs",
               "RelativeDocumentMoniker": "Client.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\\u0110\u1ED3 \u00E1n\\NT106\\RemoteFileManagement\\Client.cs [Design]",
-              "RelativeToolTip": "Client.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T14:21:02.594Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-25T14:21:02.594Z"
             }
           ]
         }

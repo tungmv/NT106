@@ -42,7 +42,7 @@ namespace Train_Booking_System
                 try
                 {
                     // Send POST request
-                    var response = await client.PostAsync(createAccountUrl, content);
+                    var response = await client.PostAsync(ngrokURL.Url + "/api/User/createAccount", content);
 
                     if (response.IsSuccessStatusCode)
                     {

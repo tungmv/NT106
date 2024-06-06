@@ -176,7 +176,23 @@
         q+99SG7J/udIJB4A94IybgJZ2eEAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="Exitbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH6AYGBAE6RPbZHAAAAVxJREFU
+        SEvl1s0rBVEYx/EhkrWSbL2TxJa/xr/Akqv8RZS3LCQlSd4WbCQbG1ZI5KX4PrdGv/s4M3dud8Ys/Oqz
+        uDPPzH3umTvnnEjSjXkc4RGveBH2+Rqj8GnBLO6xi0E0lCGs4R1fKZ4xDZ92rCKu20YfMqUHm9AvSmIj
+        MQOfDmxBa3cwgLpZxCf04gfcBhxjGD7WQOhH2OOw0U3NJfSiddgw98OGUfWiFT5JDZg9jCAxb4iLnxAa
+        4npJa8DsYwzBaOEdUrtNSBs2oPfyDjCOX9GiUAP2DOewhEqCZVxB7xVyiAnURAt8A51YgdY0y+aZSfxE
+        T/oGunAOrcmDvU1TqEZPhBo4g9bk5QTVSU0P/mUD5hQ1B/5VA5kfQal/wtJfQ4tOREkKm4iypqmpuPTF
+        6AJaHC/HfikubDleQKkbkiK3ZJk3p1aY96bUdlQNxW/LrZkP5wY5bsuj6BtaQbB0/kgujwAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
   <metadata name="TimerSidebar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>62</value>
   </metadata>
 </root>

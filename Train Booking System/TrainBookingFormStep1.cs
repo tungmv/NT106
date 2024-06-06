@@ -51,7 +51,8 @@ namespace Train_Booking_System
                 try
                 {
                     // Send GET request
-                    var response = await client.GetAsync(fetchStationUrl);
+                    //var response = await client.GetAsync(fetchStationUrl);
+                    var response = await client.GetAsync(ngrokURL.Url + "/api/Route/fetchStation");
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -116,6 +117,8 @@ namespace Train_Booking_System
         {
             // insert check here
             string TrainIdData = combobox_date.SelectedItem.ToString();
+            string[] partsPicked = combobox_date.SelectedItem.ToString().Split(new string[] { "--" }, StringSplitOptions.None);
+            TrainId = partsPicked[0];
             string pattern = @"(.*)--Time";
             // Create a Regex object with the pattern
             Regex regex = new Regex(pattern);
@@ -125,13 +128,13 @@ namespace Train_Booking_System
 
             if (match.Success)
             {
-                TrainId = match.Groups[1].Value;
+                //TrainId = match.Groups[1].Value;
                 //MB debug
                 //MessageBox.Show(TrainId);
             }
 
             //open TrainBookingFormStep2
-            TrainBookingFormStep2 trainBookingFormStep2 = new TrainBookingFormStep2(mainform);
+            TrainBookingFormStep2 trainBookingFormStep2 = new TrainBookingFormStep2(mainform, TrainId);
             //reference to mainform
             trainBookingFormStep2.MdiParent = mainform;
             trainBookingFormStep2.Dock = DockStyle.Fill;
@@ -187,7 +190,8 @@ namespace Train_Booking_System
                 var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
                 try
                 {
-                    var response = await client.PostAsync(FindRoutesUrl, content);
+                    //var response = await client.PostAsync(FindRoutesUrl, content);
+                    var response = await client.PostAsync(ngrokURL.Url + "/api/Route/FindRoutes", content);
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -212,7 +216,8 @@ namespace Train_Booking_System
                                 try
                                 {
                                     // Send the GET request
-                                    HttpResponseMessage response1 = await client.GetAsync(RouteIdUrl+resRoute);
+                                    // HttpResponseMessage response1 = await client.GetAsync(RouteIdUrl+resRoute);
+                                    HttpResponseMessage response1 = await client1.GetAsync(ngrokURL.Url + "/api/Route/" + resRoute);
 
                                     // Check if the request was successful
                                     if (response1.IsSuccessStatusCode)

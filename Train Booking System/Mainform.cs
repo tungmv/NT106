@@ -142,5 +142,21 @@ namespace Train_Booking_System
                 HistoryForm.Activate();
             }
         }
+
+        private void Exitbtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Mainform_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    public static class ngrokURL
+    {
+        // a global url string
+        public static string Url { get; set; } = "https://96cf-2001-ee0-1b08-3691-ecf4-c619-b53-4d3f.ngrok-free.app";
     }
 }

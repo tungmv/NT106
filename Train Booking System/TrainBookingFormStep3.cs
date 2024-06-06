@@ -75,7 +75,7 @@ namespace Train_Booking_System
 
                 try
                 {
-                    var response = await client.PostAsync(GenticketUrl, content);
+                    var response = await client.PostAsync(ngrokURL.Url + "/api/Train/GenerateTicket", content);
 
                     if (response.IsSuccessStatusCode)
                     {

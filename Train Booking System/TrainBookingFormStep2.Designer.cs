@@ -211,17 +211,19 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox1.Location = new System.Drawing.Point(131, 214);
+            this.pictureBox1.Location = new System.Drawing.Point(196, 329);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(18, 60);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // g02
             // 
-            this.g02.Location = new System.Drawing.Point(140, 259);
+            this.g02.Location = new System.Drawing.Point(210, 398);
+            this.g02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g02.Name = "g02";
-            this.g02.Size = new System.Drawing.Size(32, 39);
+            this.g02.Size = new System.Drawing.Size(48, 60);
             this.g02.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g02.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g02.StateCommon.Back.ColorAngle = 45F;
@@ -237,9 +239,10 @@
             // pictureBox41
             // 
             this.pictureBox41.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox41.Location = new System.Drawing.Point(131, 259);
+            this.pictureBox41.Location = new System.Drawing.Point(196, 398);
+            this.pictureBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox41.Size = new System.Drawing.Size(18, 60);
             this.pictureBox41.TabIndex = 82;
             this.pictureBox41.TabStop = false;
             // 
@@ -248,18 +251,20 @@
             this.button40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.ForeColor = System.Drawing.Color.Black;
-            this.button40.Location = new System.Drawing.Point(140, 259);
+            this.button40.Location = new System.Drawing.Point(210, 398);
+            this.button40.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(32, 39);
+            this.button40.Size = new System.Drawing.Size(48, 60);
             this.button40.TabIndex = 81;
             this.button40.Text = "1";
             this.button40.UseVisualStyleBackColor = false;
             // 
             // g05
             // 
-            this.g05.Location = new System.Drawing.Point(200, 214);
+            this.g05.Location = new System.Drawing.Point(300, 329);
+            this.g05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g05.Name = "g05";
-            this.g05.Size = new System.Drawing.Size(32, 39);
+            this.g05.Size = new System.Drawing.Size(48, 60);
             this.g05.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g05.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g05.StateCommon.Back.ColorAngle = 45F;
@@ -275,9 +280,10 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox2.Location = new System.Drawing.Point(191, 214);
+            this.pictureBox2.Location = new System.Drawing.Point(286, 329);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(18, 60);
             this.pictureBox2.TabIndex = 85;
             this.pictureBox2.TabStop = false;
             // 
@@ -286,18 +292,20 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(200, 214);
+            this.button1.Location = new System.Drawing.Point(300, 329);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 39);
+            this.button1.Size = new System.Drawing.Size(48, 60);
             this.button1.TabIndex = 84;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // g06
             // 
-            this.g06.Location = new System.Drawing.Point(200, 259);
+            this.g06.Location = new System.Drawing.Point(300, 398);
+            this.g06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g06.Name = "g06";
-            this.g06.Size = new System.Drawing.Size(32, 39);
+            this.g06.Size = new System.Drawing.Size(48, 60);
             this.g06.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g06.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g06.StateCommon.Back.ColorAngle = 45F;
@@ -313,9 +321,10 @@
             // pictureBox42
             // 
             this.pictureBox42.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox42.Location = new System.Drawing.Point(191, 259);
+            this.pictureBox42.Location = new System.Drawing.Point(286, 398);
+            this.pictureBox42.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox42.Size = new System.Drawing.Size(18, 60);
             this.pictureBox42.TabIndex = 88;
             this.pictureBox42.TabStop = false;
             // 
@@ -324,18 +333,20 @@
             this.button41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.ForeColor = System.Drawing.Color.Black;
-            this.button41.Location = new System.Drawing.Point(200, 259);
+            this.button41.Location = new System.Drawing.Point(300, 398);
+            this.button41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(32, 39);
+            this.button41.Size = new System.Drawing.Size(48, 60);
             this.button41.TabIndex = 87;
             this.button41.Text = "1";
             this.button41.UseVisualStyleBackColor = false;
             // 
             // g03
             // 
-            this.g03.Location = new System.Drawing.Point(140, 335);
+            this.g03.Location = new System.Drawing.Point(210, 515);
+            this.g03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g03.Name = "g03";
-            this.g03.Size = new System.Drawing.Size(32, 39);
+            this.g03.Size = new System.Drawing.Size(48, 60);
             this.g03.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g03.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g03.StateCommon.Back.ColorAngle = 45F;
@@ -351,9 +362,10 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox5.Location = new System.Drawing.Point(131, 335);
+            this.pictureBox5.Location = new System.Drawing.Point(196, 515);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox5.Size = new System.Drawing.Size(18, 60);
             this.pictureBox5.TabIndex = 91;
             this.pictureBox5.TabStop = false;
             // 
@@ -362,18 +374,20 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(140, 335);
+            this.button4.Location = new System.Drawing.Point(210, 515);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(32, 39);
+            this.button4.Size = new System.Drawing.Size(48, 60);
             this.button4.TabIndex = 90;
             this.button4.Text = "1";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // g04
             // 
-            this.g04.Location = new System.Drawing.Point(140, 380);
+            this.g04.Location = new System.Drawing.Point(210, 585);
+            this.g04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g04.Name = "g04";
-            this.g04.Size = new System.Drawing.Size(32, 39);
+            this.g04.Size = new System.Drawing.Size(48, 60);
             this.g04.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g04.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g04.StateCommon.Back.ColorAngle = 45F;
@@ -389,9 +403,10 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox6.Location = new System.Drawing.Point(131, 380);
+            this.pictureBox6.Location = new System.Drawing.Point(196, 585);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox6.Size = new System.Drawing.Size(18, 60);
             this.pictureBox6.TabIndex = 94;
             this.pictureBox6.TabStop = false;
             // 
@@ -400,18 +415,20 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(140, 380);
+            this.button5.Location = new System.Drawing.Point(210, 585);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(32, 39);
+            this.button5.Size = new System.Drawing.Size(48, 60);
             this.button5.TabIndex = 93;
             this.button5.Text = "1";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // g07
             // 
-            this.g07.Location = new System.Drawing.Point(200, 335);
+            this.g07.Location = new System.Drawing.Point(300, 515);
+            this.g07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g07.Name = "g07";
-            this.g07.Size = new System.Drawing.Size(32, 39);
+            this.g07.Size = new System.Drawing.Size(48, 60);
             this.g07.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g07.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g07.StateCommon.Back.ColorAngle = 45F;
@@ -427,9 +444,10 @@
             // pictureBox43
             // 
             this.pictureBox43.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox43.Location = new System.Drawing.Point(191, 335);
+            this.pictureBox43.Location = new System.Drawing.Point(286, 515);
+            this.pictureBox43.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox43.Size = new System.Drawing.Size(18, 60);
             this.pictureBox43.TabIndex = 97;
             this.pictureBox43.TabStop = false;
             // 
@@ -438,18 +456,20 @@
             this.button42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.ForeColor = System.Drawing.Color.Black;
-            this.button42.Location = new System.Drawing.Point(200, 335);
+            this.button42.Location = new System.Drawing.Point(300, 515);
+            this.button42.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(32, 39);
+            this.button42.Size = new System.Drawing.Size(48, 60);
             this.button42.TabIndex = 96;
             this.button42.Text = "1";
             this.button42.UseVisualStyleBackColor = false;
             // 
             // g08
             // 
-            this.g08.Location = new System.Drawing.Point(200, 380);
+            this.g08.Location = new System.Drawing.Point(300, 585);
+            this.g08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g08.Name = "g08";
-            this.g08.Size = new System.Drawing.Size(32, 39);
+            this.g08.Size = new System.Drawing.Size(48, 60);
             this.g08.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g08.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g08.StateCommon.Back.ColorAngle = 45F;
@@ -465,9 +485,10 @@
             // pictureBox44
             // 
             this.pictureBox44.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox44.Location = new System.Drawing.Point(191, 380);
+            this.pictureBox44.Location = new System.Drawing.Point(286, 585);
+            this.pictureBox44.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox44.Size = new System.Drawing.Size(18, 60);
             this.pictureBox44.TabIndex = 100;
             this.pictureBox44.TabStop = false;
             // 
@@ -476,18 +497,20 @@
             this.button43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.ForeColor = System.Drawing.Color.Black;
-            this.button43.Location = new System.Drawing.Point(200, 380);
+            this.button43.Location = new System.Drawing.Point(300, 585);
+            this.button43.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(32, 39);
+            this.button43.Size = new System.Drawing.Size(48, 60);
             this.button43.TabIndex = 99;
             this.button43.Text = "1";
             this.button43.UseVisualStyleBackColor = false;
             // 
             // g09
             // 
-            this.g09.Location = new System.Drawing.Point(260, 214);
+            this.g09.Location = new System.Drawing.Point(390, 329);
+            this.g09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g09.Name = "g09";
-            this.g09.Size = new System.Drawing.Size(32, 39);
+            this.g09.Size = new System.Drawing.Size(48, 60);
             this.g09.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g09.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g09.StateCommon.Back.ColorAngle = 45F;
@@ -503,9 +526,10 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox3.Location = new System.Drawing.Point(251, 214);
+            this.pictureBox3.Location = new System.Drawing.Point(376, 329);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox3.Size = new System.Drawing.Size(18, 60);
             this.pictureBox3.TabIndex = 103;
             this.pictureBox3.TabStop = false;
             // 
@@ -514,18 +538,20 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(260, 214);
+            this.button2.Location = new System.Drawing.Point(390, 329);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 39);
+            this.button2.Size = new System.Drawing.Size(48, 60);
             this.button2.TabIndex = 102;
             this.button2.Text = "1";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // g10
             // 
-            this.g10.Location = new System.Drawing.Point(260, 259);
+            this.g10.Location = new System.Drawing.Point(390, 398);
+            this.g10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g10.Name = "g10";
-            this.g10.Size = new System.Drawing.Size(32, 39);
+            this.g10.Size = new System.Drawing.Size(48, 60);
             this.g10.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g10.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g10.StateCommon.Back.ColorAngle = 45F;
@@ -541,9 +567,10 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox4.Location = new System.Drawing.Point(251, 259);
+            this.pictureBox4.Location = new System.Drawing.Point(376, 398);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox4.Size = new System.Drawing.Size(18, 60);
             this.pictureBox4.TabIndex = 106;
             this.pictureBox4.TabStop = false;
             // 
@@ -552,18 +579,20 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(260, 259);
+            this.button3.Location = new System.Drawing.Point(390, 398);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(32, 39);
+            this.button3.Size = new System.Drawing.Size(48, 60);
             this.button3.TabIndex = 105;
             this.button3.Text = "1";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // g13
             // 
-            this.g13.Location = new System.Drawing.Point(320, 214);
+            this.g13.Location = new System.Drawing.Point(480, 329);
+            this.g13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g13.Name = "g13";
-            this.g13.Size = new System.Drawing.Size(32, 39);
+            this.g13.Size = new System.Drawing.Size(48, 60);
             this.g13.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g13.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g13.StateCommon.Back.ColorAngle = 45F;
@@ -579,9 +608,10 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox7.Location = new System.Drawing.Point(311, 214);
+            this.pictureBox7.Location = new System.Drawing.Point(466, 329);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox7.Size = new System.Drawing.Size(18, 60);
             this.pictureBox7.TabIndex = 109;
             this.pictureBox7.TabStop = false;
             // 
@@ -590,18 +620,20 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(320, 214);
+            this.button6.Location = new System.Drawing.Point(480, 329);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(32, 39);
+            this.button6.Size = new System.Drawing.Size(48, 60);
             this.button6.TabIndex = 108;
             this.button6.Text = "1";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // g14
             // 
-            this.g14.Location = new System.Drawing.Point(320, 259);
+            this.g14.Location = new System.Drawing.Point(480, 398);
+            this.g14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g14.Name = "g14";
-            this.g14.Size = new System.Drawing.Size(32, 39);
+            this.g14.Size = new System.Drawing.Size(48, 60);
             this.g14.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g14.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g14.StateCommon.Back.ColorAngle = 45F;
@@ -617,9 +649,10 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox8.Location = new System.Drawing.Point(311, 259);
+            this.pictureBox8.Location = new System.Drawing.Point(466, 398);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox8.Size = new System.Drawing.Size(18, 60);
             this.pictureBox8.TabIndex = 112;
             this.pictureBox8.TabStop = false;
             // 
@@ -628,18 +661,20 @@
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(320, 259);
+            this.button7.Location = new System.Drawing.Point(480, 398);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(32, 39);
+            this.button7.Size = new System.Drawing.Size(48, 60);
             this.button7.TabIndex = 111;
             this.button7.Text = "1";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // g11
             // 
-            this.g11.Location = new System.Drawing.Point(260, 335);
+            this.g11.Location = new System.Drawing.Point(390, 515);
+            this.g11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g11.Name = "g11";
-            this.g11.Size = new System.Drawing.Size(32, 39);
+            this.g11.Size = new System.Drawing.Size(48, 60);
             this.g11.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g11.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g11.StateCommon.Back.ColorAngle = 45F;
@@ -655,9 +690,10 @@
             // pictureBox45
             // 
             this.pictureBox45.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox45.Location = new System.Drawing.Point(251, 335);
+            this.pictureBox45.Location = new System.Drawing.Point(376, 515);
+            this.pictureBox45.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox45.Size = new System.Drawing.Size(18, 60);
             this.pictureBox45.TabIndex = 115;
             this.pictureBox45.TabStop = false;
             // 
@@ -666,18 +702,20 @@
             this.button44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button44.ForeColor = System.Drawing.Color.Black;
-            this.button44.Location = new System.Drawing.Point(260, 335);
+            this.button44.Location = new System.Drawing.Point(390, 515);
+            this.button44.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(32, 39);
+            this.button44.Size = new System.Drawing.Size(48, 60);
             this.button44.TabIndex = 114;
             this.button44.Text = "1";
             this.button44.UseVisualStyleBackColor = false;
             // 
             // g12
             // 
-            this.g12.Location = new System.Drawing.Point(260, 380);
+            this.g12.Location = new System.Drawing.Point(390, 585);
+            this.g12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g12.Name = "g12";
-            this.g12.Size = new System.Drawing.Size(32, 39);
+            this.g12.Size = new System.Drawing.Size(48, 60);
             this.g12.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g12.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g12.StateCommon.Back.ColorAngle = 45F;
@@ -693,9 +731,10 @@
             // pictureBox46
             // 
             this.pictureBox46.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox46.Location = new System.Drawing.Point(251, 380);
+            this.pictureBox46.Location = new System.Drawing.Point(376, 585);
+            this.pictureBox46.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox46.Size = new System.Drawing.Size(18, 60);
             this.pictureBox46.TabIndex = 118;
             this.pictureBox46.TabStop = false;
             // 
@@ -704,18 +743,20 @@
             this.button45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.ForeColor = System.Drawing.Color.Black;
-            this.button45.Location = new System.Drawing.Point(260, 380);
+            this.button45.Location = new System.Drawing.Point(390, 585);
+            this.button45.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(32, 39);
+            this.button45.Size = new System.Drawing.Size(48, 60);
             this.button45.TabIndex = 117;
             this.button45.Text = "1";
             this.button45.UseVisualStyleBackColor = false;
             // 
             // g15
             // 
-            this.g15.Location = new System.Drawing.Point(320, 335);
+            this.g15.Location = new System.Drawing.Point(480, 515);
+            this.g15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g15.Name = "g15";
-            this.g15.Size = new System.Drawing.Size(32, 39);
+            this.g15.Size = new System.Drawing.Size(48, 60);
             this.g15.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g15.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g15.StateCommon.Back.ColorAngle = 45F;
@@ -731,9 +772,10 @@
             // pictureBox47
             // 
             this.pictureBox47.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox47.Location = new System.Drawing.Point(311, 335);
+            this.pictureBox47.Location = new System.Drawing.Point(466, 515);
+            this.pictureBox47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox47.Size = new System.Drawing.Size(18, 60);
             this.pictureBox47.TabIndex = 121;
             this.pictureBox47.TabStop = false;
             // 
@@ -742,18 +784,20 @@
             this.button46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button46.ForeColor = System.Drawing.Color.Black;
-            this.button46.Location = new System.Drawing.Point(320, 335);
+            this.button46.Location = new System.Drawing.Point(480, 515);
+            this.button46.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(32, 39);
+            this.button46.Size = new System.Drawing.Size(48, 60);
             this.button46.TabIndex = 120;
             this.button46.Text = "1";
             this.button46.UseVisualStyleBackColor = false;
             // 
             // g16
             // 
-            this.g16.Location = new System.Drawing.Point(320, 380);
+            this.g16.Location = new System.Drawing.Point(480, 585);
+            this.g16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g16.Name = "g16";
-            this.g16.Size = new System.Drawing.Size(32, 39);
+            this.g16.Size = new System.Drawing.Size(48, 60);
             this.g16.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g16.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g16.StateCommon.Back.ColorAngle = 45F;
@@ -769,9 +813,10 @@
             // pictureBox48
             // 
             this.pictureBox48.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox48.Location = new System.Drawing.Point(311, 380);
+            this.pictureBox48.Location = new System.Drawing.Point(466, 585);
+            this.pictureBox48.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox48.Size = new System.Drawing.Size(18, 60);
             this.pictureBox48.TabIndex = 124;
             this.pictureBox48.TabStop = false;
             // 
@@ -780,9 +825,10 @@
             this.button47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button47.ForeColor = System.Drawing.Color.Black;
-            this.button47.Location = new System.Drawing.Point(320, 380);
+            this.button47.Location = new System.Drawing.Point(480, 585);
+            this.button47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(32, 39);
+            this.button47.Size = new System.Drawing.Size(48, 60);
             this.button47.TabIndex = 123;
             this.button47.Text = "1";
             this.button47.UseVisualStyleBackColor = false;
@@ -790,9 +836,10 @@
             // pictureBox55
             // 
             this.pictureBox55.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox55.Location = new System.Drawing.Point(678, 335);
+            this.pictureBox55.Location = new System.Drawing.Point(1017, 515);
+            this.pictureBox55.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox55.Size = new System.Drawing.Size(18, 60);
             this.pictureBox55.TabIndex = 169;
             this.pictureBox55.TabStop = false;
             // 
@@ -801,9 +848,10 @@
             this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button51.ForeColor = System.Drawing.Color.Black;
-            this.button51.Location = new System.Drawing.Point(687, 259);
+            this.button51.Location = new System.Drawing.Point(1030, 398);
+            this.button51.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(32, 39);
+            this.button51.Size = new System.Drawing.Size(48, 60);
             this.button51.TabIndex = 159;
             this.button51.Text = "1";
             this.button51.UseVisualStyleBackColor = false;
@@ -811,27 +859,30 @@
             // pictureBox53
             // 
             this.pictureBox53.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox53.Location = new System.Drawing.Point(618, 335);
+            this.pictureBox53.Location = new System.Drawing.Point(927, 515);
+            this.pictureBox53.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox53.Size = new System.Drawing.Size(18, 60);
             this.pictureBox53.TabIndex = 163;
             this.pictureBox53.TabStop = false;
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox10.Location = new System.Drawing.Point(498, 259);
+            this.pictureBox10.Location = new System.Drawing.Point(747, 398);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox10.Size = new System.Drawing.Size(18, 60);
             this.pictureBox10.TabIndex = 130;
             this.pictureBox10.TabStop = false;
             // 
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox11.Location = new System.Drawing.Point(558, 214);
+            this.pictureBox11.Location = new System.Drawing.Point(837, 329);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox11.Size = new System.Drawing.Size(18, 60);
             this.pictureBox11.TabIndex = 133;
             this.pictureBox11.TabStop = false;
             // 
@@ -840,18 +891,20 @@
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(507, 214);
+            this.button8.Location = new System.Drawing.Point(760, 329);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(32, 39);
+            this.button8.Size = new System.Drawing.Size(48, 60);
             this.button8.TabIndex = 126;
             this.button8.Text = "1";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // g24
             // 
-            this.g24.Location = new System.Drawing.Point(507, 380);
+            this.g24.Location = new System.Drawing.Point(760, 585);
+            this.g24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g24.Name = "g24";
-            this.g24.Size = new System.Drawing.Size(32, 39);
+            this.g24.Size = new System.Drawing.Size(48, 60);
             this.g24.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g24.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g24.StateCommon.Back.ColorAngle = 45F;
@@ -866,9 +919,10 @@
             // 
             // g27
             // 
-            this.g27.Location = new System.Drawing.Point(567, 335);
+            this.g27.Location = new System.Drawing.Point(850, 515);
+            this.g27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g27.Name = "g27";
-            this.g27.Size = new System.Drawing.Size(32, 39);
+            this.g27.Size = new System.Drawing.Size(48, 60);
             this.g27.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g27.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g27.StateCommon.Back.ColorAngle = 45F;
@@ -883,9 +937,10 @@
             // 
             // g26
             // 
-            this.g26.Location = new System.Drawing.Point(567, 259);
+            this.g26.Location = new System.Drawing.Point(850, 398);
+            this.g26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g26.Name = "g26";
-            this.g26.Size = new System.Drawing.Size(32, 39);
+            this.g26.Size = new System.Drawing.Size(48, 60);
             this.g26.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g26.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g26.StateCommon.Back.ColorAngle = 45F;
@@ -900,9 +955,10 @@
             // 
             // g23
             // 
-            this.g23.Location = new System.Drawing.Point(507, 335);
+            this.g23.Location = new System.Drawing.Point(760, 515);
+            this.g23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g23.Name = "g23";
-            this.g23.Size = new System.Drawing.Size(32, 39);
+            this.g23.Size = new System.Drawing.Size(48, 60);
             this.g23.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g23.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g23.StateCommon.Back.ColorAngle = 45F;
@@ -917,9 +973,10 @@
             // 
             // g30
             // 
-            this.g30.Location = new System.Drawing.Point(627, 259);
+            this.g30.Location = new System.Drawing.Point(940, 398);
+            this.g30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g30.Name = "g30";
-            this.g30.Size = new System.Drawing.Size(32, 39);
+            this.g30.Size = new System.Drawing.Size(48, 60);
             this.g30.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g30.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g30.StateCommon.Back.ColorAngle = 45F;
@@ -934,9 +991,10 @@
             // 
             // g33
             // 
-            this.g33.Location = new System.Drawing.Point(687, 214);
+            this.g33.Location = new System.Drawing.Point(1030, 329);
+            this.g33.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g33.Name = "g33";
-            this.g33.Size = new System.Drawing.Size(32, 39);
+            this.g33.Size = new System.Drawing.Size(48, 60);
             this.g33.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g33.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g33.StateCommon.Back.ColorAngle = 45F;
@@ -951,9 +1009,10 @@
             // 
             // g28
             // 
-            this.g28.Location = new System.Drawing.Point(567, 380);
+            this.g28.Location = new System.Drawing.Point(850, 585);
+            this.g28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g28.Name = "g28";
-            this.g28.Size = new System.Drawing.Size(32, 39);
+            this.g28.Size = new System.Drawing.Size(48, 60);
             this.g28.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g28.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g28.StateCommon.Back.ColorAngle = 45F;
@@ -968,9 +1027,10 @@
             // 
             // g29
             // 
-            this.g29.Location = new System.Drawing.Point(627, 214);
+            this.g29.Location = new System.Drawing.Point(940, 329);
+            this.g29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g29.Name = "g29";
-            this.g29.Size = new System.Drawing.Size(32, 39);
+            this.g29.Size = new System.Drawing.Size(48, 60);
             this.g29.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g29.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g29.StateCommon.Back.ColorAngle = 45F;
@@ -988,18 +1048,20 @@
             this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button50.ForeColor = System.Drawing.Color.Black;
-            this.button50.Location = new System.Drawing.Point(687, 214);
+            this.button50.Location = new System.Drawing.Point(1030, 329);
+            this.button50.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(32, 39);
+            this.button50.Size = new System.Drawing.Size(48, 60);
             this.button50.TabIndex = 156;
             this.button50.Text = "1";
             this.button50.UseVisualStyleBackColor = false;
             // 
             // g34
             // 
-            this.g34.Location = new System.Drawing.Point(687, 259);
+            this.g34.Location = new System.Drawing.Point(1030, 398);
+            this.g34.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g34.Name = "g34";
-            this.g34.Size = new System.Drawing.Size(32, 39);
+            this.g34.Size = new System.Drawing.Size(48, 60);
             this.g34.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g34.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g34.StateCommon.Back.ColorAngle = 45F;
@@ -1014,9 +1076,10 @@
             // 
             // g31
             // 
-            this.g31.Location = new System.Drawing.Point(627, 335);
+            this.g31.Location = new System.Drawing.Point(940, 515);
+            this.g31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g31.Name = "g31";
-            this.g31.Size = new System.Drawing.Size(32, 39);
+            this.g31.Size = new System.Drawing.Size(48, 60);
             this.g31.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g31.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g31.StateCommon.Back.ColorAngle = 45F;
@@ -1034,18 +1097,20 @@
             this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button49.ForeColor = System.Drawing.Color.Black;
-            this.button49.Location = new System.Drawing.Point(627, 259);
+            this.button49.Location = new System.Drawing.Point(940, 398);
+            this.button49.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(32, 39);
+            this.button49.Size = new System.Drawing.Size(48, 60);
             this.button49.TabIndex = 153;
             this.button49.Text = "1";
             this.button49.UseVisualStyleBackColor = false;
             // 
             // g21
             // 
-            this.g21.Location = new System.Drawing.Point(507, 214);
+            this.g21.Location = new System.Drawing.Point(760, 329);
+            this.g21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g21.Name = "g21";
-            this.g21.Size = new System.Drawing.Size(32, 39);
+            this.g21.Size = new System.Drawing.Size(48, 60);
             this.g21.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g21.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g21.StateCommon.Back.ColorAngle = 45F;
@@ -1061,17 +1126,19 @@
             // pictureBox51
             // 
             this.pictureBox51.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox51.Location = new System.Drawing.Point(678, 214);
+            this.pictureBox51.Location = new System.Drawing.Point(1017, 329);
+            this.pictureBox51.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox51.Size = new System.Drawing.Size(18, 60);
             this.pictureBox51.TabIndex = 157;
             this.pictureBox51.TabStop = false;
             // 
             // g22
             // 
-            this.g22.Location = new System.Drawing.Point(507, 259);
+            this.g22.Location = new System.Drawing.Point(760, 398);
+            this.g22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g22.Name = "g22";
-            this.g22.Size = new System.Drawing.Size(32, 39);
+            this.g22.Size = new System.Drawing.Size(48, 60);
             this.g22.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g22.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g22.StateCommon.Back.ColorAngle = 45F;
@@ -1086,9 +1153,10 @@
             // 
             // g25
             // 
-            this.g25.Location = new System.Drawing.Point(567, 214);
+            this.g25.Location = new System.Drawing.Point(850, 329);
+            this.g25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g25.Name = "g25";
-            this.g25.Size = new System.Drawing.Size(32, 39);
+            this.g25.Size = new System.Drawing.Size(48, 60);
             this.g25.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g25.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g25.StateCommon.Back.ColorAngle = 45F;
@@ -1106,9 +1174,10 @@
             this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button54.ForeColor = System.Drawing.Color.Black;
-            this.button54.Location = new System.Drawing.Point(687, 335);
+            this.button54.Location = new System.Drawing.Point(1030, 515);
+            this.button54.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(32, 39);
+            this.button54.Size = new System.Drawing.Size(48, 60);
             this.button54.TabIndex = 168;
             this.button54.Text = "1";
             this.button54.UseVisualStyleBackColor = false;
@@ -1116,9 +1185,10 @@
             // pictureBox52
             // 
             this.pictureBox52.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox52.Location = new System.Drawing.Point(678, 259);
+            this.pictureBox52.Location = new System.Drawing.Point(1017, 398);
+            this.pictureBox52.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox52.Size = new System.Drawing.Size(18, 60);
             this.pictureBox52.TabIndex = 160;
             this.pictureBox52.TabStop = false;
             // 
@@ -1127,9 +1197,10 @@
             this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button55.ForeColor = System.Drawing.Color.Black;
-            this.button55.Location = new System.Drawing.Point(687, 380);
+            this.button55.Location = new System.Drawing.Point(1030, 585);
+            this.button55.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(32, 39);
+            this.button55.Size = new System.Drawing.Size(48, 60);
             this.button55.TabIndex = 171;
             this.button55.Text = "1";
             this.button55.UseVisualStyleBackColor = false;
@@ -1139,18 +1210,20 @@
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.Black;
-            this.button14.Location = new System.Drawing.Point(567, 335);
+            this.button14.Location = new System.Drawing.Point(850, 515);
+            this.button14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(32, 39);
+            this.button14.Size = new System.Drawing.Size(48, 60);
             this.button14.TabIndex = 144;
             this.button14.Text = "1";
             this.button14.UseVisualStyleBackColor = false;
             // 
             // g32
             // 
-            this.g32.Location = new System.Drawing.Point(627, 380);
+            this.g32.Location = new System.Drawing.Point(940, 585);
+            this.g32.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g32.Name = "g32";
-            this.g32.Size = new System.Drawing.Size(32, 39);
+            this.g32.Size = new System.Drawing.Size(48, 60);
             this.g32.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g32.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g32.StateCommon.Back.ColorAngle = 45F;
@@ -1168,9 +1241,10 @@
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.Black;
-            this.button15.Location = new System.Drawing.Point(567, 380);
+            this.button15.Location = new System.Drawing.Point(850, 585);
+            this.button15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(32, 39);
+            this.button15.Size = new System.Drawing.Size(48, 60);
             this.button15.TabIndex = 147;
             this.button15.Text = "1";
             this.button15.UseVisualStyleBackColor = false;
@@ -1180,9 +1254,10 @@
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(507, 259);
+            this.button9.Location = new System.Drawing.Point(760, 398);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(32, 39);
+            this.button9.Size = new System.Drawing.Size(48, 60);
             this.button9.TabIndex = 129;
             this.button9.Text = "1";
             this.button9.UseVisualStyleBackColor = false;
@@ -1192,9 +1267,10 @@
             this.button48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button48.ForeColor = System.Drawing.Color.Black;
-            this.button48.Location = new System.Drawing.Point(627, 214);
+            this.button48.Location = new System.Drawing.Point(940, 329);
+            this.button48.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(32, 39);
+            this.button48.Size = new System.Drawing.Size(48, 60);
             this.button48.TabIndex = 150;
             this.button48.Text = "1";
             this.button48.UseVisualStyleBackColor = false;
@@ -1204,9 +1280,10 @@
             this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button53.ForeColor = System.Drawing.Color.Black;
-            this.button53.Location = new System.Drawing.Point(627, 380);
+            this.button53.Location = new System.Drawing.Point(940, 585);
+            this.button53.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(32, 39);
+            this.button53.Size = new System.Drawing.Size(48, 60);
             this.button53.TabIndex = 165;
             this.button53.Text = "1";
             this.button53.UseVisualStyleBackColor = false;
@@ -1214,18 +1291,20 @@
             // pictureBox49
             // 
             this.pictureBox49.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox49.Location = new System.Drawing.Point(618, 214);
+            this.pictureBox49.Location = new System.Drawing.Point(927, 329);
+            this.pictureBox49.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox49.Size = new System.Drawing.Size(18, 60);
             this.pictureBox49.TabIndex = 151;
             this.pictureBox49.TabStop = false;
             // 
             // pictureBox54
             // 
             this.pictureBox54.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox54.Location = new System.Drawing.Point(618, 380);
+            this.pictureBox54.Location = new System.Drawing.Point(927, 585);
+            this.pictureBox54.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox54.Size = new System.Drawing.Size(18, 60);
             this.pictureBox54.TabIndex = 166;
             this.pictureBox54.TabStop = false;
             // 
@@ -1234,9 +1313,10 @@
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(507, 380);
+            this.button13.Location = new System.Drawing.Point(760, 585);
+            this.button13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(32, 39);
+            this.button13.Size = new System.Drawing.Size(48, 60);
             this.button13.TabIndex = 141;
             this.button13.Text = "1";
             this.button13.UseVisualStyleBackColor = false;
@@ -1246,9 +1326,10 @@
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(567, 214);
+            this.button10.Location = new System.Drawing.Point(850, 329);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(32, 39);
+            this.button10.Size = new System.Drawing.Size(48, 60);
             this.button10.TabIndex = 132;
             this.button10.Text = "1";
             this.button10.UseVisualStyleBackColor = false;
@@ -1258,9 +1339,10 @@
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(567, 259);
+            this.button11.Location = new System.Drawing.Point(850, 398);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(32, 39);
+            this.button11.Size = new System.Drawing.Size(48, 60);
             this.button11.TabIndex = 135;
             this.button11.Text = "1";
             this.button11.UseVisualStyleBackColor = false;
@@ -1268,18 +1350,20 @@
             // pictureBox16
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox16.Location = new System.Drawing.Point(558, 380);
+            this.pictureBox16.Location = new System.Drawing.Point(837, 585);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox16.Size = new System.Drawing.Size(18, 60);
             this.pictureBox16.TabIndex = 148;
             this.pictureBox16.TabStop = false;
             // 
             // pictureBox56
             // 
             this.pictureBox56.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox56.Location = new System.Drawing.Point(678, 380);
+            this.pictureBox56.Location = new System.Drawing.Point(1017, 585);
+            this.pictureBox56.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox56.Size = new System.Drawing.Size(18, 60);
             this.pictureBox56.TabIndex = 172;
             this.pictureBox56.TabStop = false;
             // 
@@ -1288,9 +1372,10 @@
             this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button52.ForeColor = System.Drawing.Color.Black;
-            this.button52.Location = new System.Drawing.Point(627, 335);
+            this.button52.Location = new System.Drawing.Point(940, 515);
+            this.button52.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(32, 39);
+            this.button52.Size = new System.Drawing.Size(48, 60);
             this.button52.TabIndex = 162;
             this.button52.Text = "1";
             this.button52.UseVisualStyleBackColor = false;
@@ -1298,9 +1383,10 @@
             // pictureBox50
             // 
             this.pictureBox50.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox50.Location = new System.Drawing.Point(618, 259);
+            this.pictureBox50.Location = new System.Drawing.Point(927, 398);
+            this.pictureBox50.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox50.Size = new System.Drawing.Size(18, 60);
             this.pictureBox50.TabIndex = 154;
             this.pictureBox50.TabStop = false;
             // 
@@ -1309,9 +1395,10 @@
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(507, 335);
+            this.button12.Location = new System.Drawing.Point(760, 515);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(32, 39);
+            this.button12.Size = new System.Drawing.Size(48, 60);
             this.button12.TabIndex = 138;
             this.button12.Text = "1";
             this.button12.UseVisualStyleBackColor = false;
@@ -1319,26 +1406,29 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox9.Location = new System.Drawing.Point(498, 214);
+            this.pictureBox9.Location = new System.Drawing.Point(747, 329);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox9.Size = new System.Drawing.Size(18, 60);
             this.pictureBox9.TabIndex = 127;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox12.Location = new System.Drawing.Point(558, 259);
+            this.pictureBox12.Location = new System.Drawing.Point(837, 398);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox12.Size = new System.Drawing.Size(18, 60);
             this.pictureBox12.TabIndex = 136;
             this.pictureBox12.TabStop = false;
             // 
             // g36
             // 
-            this.g36.Location = new System.Drawing.Point(687, 380);
+            this.g36.Location = new System.Drawing.Point(1030, 585);
+            this.g36.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g36.Name = "g36";
-            this.g36.Size = new System.Drawing.Size(32, 39);
+            this.g36.Size = new System.Drawing.Size(48, 60);
             this.g36.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g36.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g36.StateCommon.Back.ColorAngle = 45F;
@@ -1354,35 +1444,39 @@
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox13.Location = new System.Drawing.Point(498, 335);
+            this.pictureBox13.Location = new System.Drawing.Point(747, 515);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox13.Size = new System.Drawing.Size(18, 60);
             this.pictureBox13.TabIndex = 139;
             this.pictureBox13.TabStop = false;
             // 
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox14.Location = new System.Drawing.Point(498, 380);
+            this.pictureBox14.Location = new System.Drawing.Point(747, 585);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox14.Size = new System.Drawing.Size(18, 60);
             this.pictureBox14.TabIndex = 142;
             this.pictureBox14.TabStop = false;
             // 
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox15.Location = new System.Drawing.Point(558, 335);
+            this.pictureBox15.Location = new System.Drawing.Point(837, 515);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox15.Size = new System.Drawing.Size(18, 60);
             this.pictureBox15.TabIndex = 145;
             this.pictureBox15.TabStop = false;
             // 
             // g35
             // 
-            this.g35.Location = new System.Drawing.Point(687, 335);
+            this.g35.Location = new System.Drawing.Point(1030, 515);
+            this.g35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g35.Name = "g35";
-            this.g35.Size = new System.Drawing.Size(32, 39);
+            this.g35.Size = new System.Drawing.Size(48, 60);
             this.g35.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g35.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g35.StateCommon.Back.ColorAngle = 45F;
@@ -1397,9 +1491,10 @@
             // 
             // g17
             // 
-            this.g17.Location = new System.Drawing.Point(379, 214);
+            this.g17.Location = new System.Drawing.Point(568, 329);
+            this.g17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g17.Name = "g17";
-            this.g17.Size = new System.Drawing.Size(32, 39);
+            this.g17.Size = new System.Drawing.Size(48, 60);
             this.g17.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g17.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g17.StateCommon.Back.ColorAngle = 45F;
@@ -1415,9 +1510,10 @@
             // pictureBox25
             // 
             this.pictureBox25.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox25.Location = new System.Drawing.Point(370, 214);
+            this.pictureBox25.Location = new System.Drawing.Point(555, 329);
+            this.pictureBox25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox25.Size = new System.Drawing.Size(18, 60);
             this.pictureBox25.TabIndex = 175;
             this.pictureBox25.TabStop = false;
             // 
@@ -1426,18 +1522,20 @@
             this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button24.ForeColor = System.Drawing.Color.Black;
-            this.button24.Location = new System.Drawing.Point(379, 214);
+            this.button24.Location = new System.Drawing.Point(568, 329);
+            this.button24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(32, 39);
+            this.button24.Size = new System.Drawing.Size(48, 60);
             this.button24.TabIndex = 174;
             this.button24.Text = "1";
             this.button24.UseVisualStyleBackColor = false;
             // 
             // g18
             // 
-            this.g18.Location = new System.Drawing.Point(379, 259);
+            this.g18.Location = new System.Drawing.Point(568, 398);
+            this.g18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g18.Name = "g18";
-            this.g18.Size = new System.Drawing.Size(32, 39);
+            this.g18.Size = new System.Drawing.Size(48, 60);
             this.g18.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g18.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g18.StateCommon.Back.ColorAngle = 45F;
@@ -1453,9 +1551,10 @@
             // pictureBox26
             // 
             this.pictureBox26.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox26.Location = new System.Drawing.Point(370, 259);
+            this.pictureBox26.Location = new System.Drawing.Point(555, 398);
+            this.pictureBox26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox26.Size = new System.Drawing.Size(18, 60);
             this.pictureBox26.TabIndex = 178;
             this.pictureBox26.TabStop = false;
             // 
@@ -1464,18 +1563,20 @@
             this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button25.ForeColor = System.Drawing.Color.Black;
-            this.button25.Location = new System.Drawing.Point(379, 259);
+            this.button25.Location = new System.Drawing.Point(568, 398);
+            this.button25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(32, 39);
+            this.button25.Size = new System.Drawing.Size(48, 60);
             this.button25.TabIndex = 177;
             this.button25.Text = "1";
             this.button25.UseVisualStyleBackColor = false;
             // 
             // g19
             // 
-            this.g19.Location = new System.Drawing.Point(379, 335);
+            this.g19.Location = new System.Drawing.Point(568, 515);
+            this.g19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g19.Name = "g19";
-            this.g19.Size = new System.Drawing.Size(32, 39);
+            this.g19.Size = new System.Drawing.Size(48, 60);
             this.g19.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g19.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g19.StateCommon.Back.ColorAngle = 45F;
@@ -1491,9 +1592,10 @@
             // pictureBox27
             // 
             this.pictureBox27.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox27.Location = new System.Drawing.Point(370, 335);
+            this.pictureBox27.Location = new System.Drawing.Point(555, 515);
+            this.pictureBox27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox27.Size = new System.Drawing.Size(18, 60);
             this.pictureBox27.TabIndex = 181;
             this.pictureBox27.TabStop = false;
             // 
@@ -1502,18 +1604,20 @@
             this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button26.ForeColor = System.Drawing.Color.Black;
-            this.button26.Location = new System.Drawing.Point(379, 335);
+            this.button26.Location = new System.Drawing.Point(568, 515);
+            this.button26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(32, 39);
+            this.button26.Size = new System.Drawing.Size(48, 60);
             this.button26.TabIndex = 180;
             this.button26.Text = "1";
             this.button26.UseVisualStyleBackColor = false;
             // 
             // g20
             // 
-            this.g20.Location = new System.Drawing.Point(379, 380);
+            this.g20.Location = new System.Drawing.Point(568, 585);
+            this.g20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g20.Name = "g20";
-            this.g20.Size = new System.Drawing.Size(32, 39);
+            this.g20.Size = new System.Drawing.Size(48, 60);
             this.g20.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g20.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g20.StateCommon.Back.ColorAngle = 45F;
@@ -1529,9 +1633,10 @@
             // pictureBox28
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox28.Location = new System.Drawing.Point(370, 380);
+            this.pictureBox28.Location = new System.Drawing.Point(555, 585);
+            this.pictureBox28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox28.Size = new System.Drawing.Size(18, 60);
             this.pictureBox28.TabIndex = 184;
             this.pictureBox28.TabStop = false;
             // 
@@ -1540,18 +1645,20 @@
             this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button27.ForeColor = System.Drawing.Color.Black;
-            this.button27.Location = new System.Drawing.Point(379, 380);
+            this.button27.Location = new System.Drawing.Point(568, 585);
+            this.button27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(32, 39);
+            this.button27.Size = new System.Drawing.Size(48, 60);
             this.button27.TabIndex = 183;
             this.button27.Text = "1";
             this.button27.UseVisualStyleBackColor = false;
             // 
             // g37
             // 
-            this.g37.Location = new System.Drawing.Point(746, 214);
+            this.g37.Location = new System.Drawing.Point(1119, 329);
+            this.g37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g37.Name = "g37";
-            this.g37.Size = new System.Drawing.Size(32, 39);
+            this.g37.Size = new System.Drawing.Size(48, 60);
             this.g37.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g37.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g37.StateCommon.Back.ColorAngle = 45F;
@@ -1567,9 +1674,10 @@
             // pictureBox21
             // 
             this.pictureBox21.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox21.Location = new System.Drawing.Point(737, 214);
+            this.pictureBox21.Location = new System.Drawing.Point(1106, 329);
+            this.pictureBox21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox21.Size = new System.Drawing.Size(18, 60);
             this.pictureBox21.TabIndex = 187;
             this.pictureBox21.TabStop = false;
             // 
@@ -1578,18 +1686,20 @@
             this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.Black;
-            this.button20.Location = new System.Drawing.Point(746, 214);
+            this.button20.Location = new System.Drawing.Point(1119, 329);
+            this.button20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(32, 39);
+            this.button20.Size = new System.Drawing.Size(48, 60);
             this.button20.TabIndex = 186;
             this.button20.Text = "1";
             this.button20.UseVisualStyleBackColor = false;
             // 
             // g38
             // 
-            this.g38.Location = new System.Drawing.Point(746, 259);
+            this.g38.Location = new System.Drawing.Point(1119, 398);
+            this.g38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g38.Name = "g38";
-            this.g38.Size = new System.Drawing.Size(32, 39);
+            this.g38.Size = new System.Drawing.Size(48, 60);
             this.g38.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g38.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g38.StateCommon.Back.ColorAngle = 45F;
@@ -1605,9 +1715,10 @@
             // pictureBox22
             // 
             this.pictureBox22.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox22.Location = new System.Drawing.Point(737, 259);
+            this.pictureBox22.Location = new System.Drawing.Point(1106, 398);
+            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox22.Size = new System.Drawing.Size(18, 60);
             this.pictureBox22.TabIndex = 190;
             this.pictureBox22.TabStop = false;
             // 
@@ -1616,18 +1727,20 @@
             this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.Color.Black;
-            this.button21.Location = new System.Drawing.Point(746, 259);
+            this.button21.Location = new System.Drawing.Point(1119, 398);
+            this.button21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(32, 39);
+            this.button21.Size = new System.Drawing.Size(48, 60);
             this.button21.TabIndex = 189;
             this.button21.Text = "1";
             this.button21.UseVisualStyleBackColor = false;
             // 
             // g39
             // 
-            this.g39.Location = new System.Drawing.Point(746, 335);
+            this.g39.Location = new System.Drawing.Point(1119, 515);
+            this.g39.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g39.Name = "g39";
-            this.g39.Size = new System.Drawing.Size(32, 39);
+            this.g39.Size = new System.Drawing.Size(48, 60);
             this.g39.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g39.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g39.StateCommon.Back.ColorAngle = 45F;
@@ -1643,9 +1756,10 @@
             // pictureBox23
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox23.Location = new System.Drawing.Point(737, 335);
+            this.pictureBox23.Location = new System.Drawing.Point(1106, 515);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox23.Size = new System.Drawing.Size(18, 60);
             this.pictureBox23.TabIndex = 193;
             this.pictureBox23.TabStop = false;
             // 
@@ -1654,18 +1768,20 @@
             this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.Black;
-            this.button22.Location = new System.Drawing.Point(746, 335);
+            this.button22.Location = new System.Drawing.Point(1119, 515);
+            this.button22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(32, 39);
+            this.button22.Size = new System.Drawing.Size(48, 60);
             this.button22.TabIndex = 192;
             this.button22.Text = "1";
             this.button22.UseVisualStyleBackColor = false;
             // 
             // g40
             // 
-            this.g40.Location = new System.Drawing.Point(746, 380);
+            this.g40.Location = new System.Drawing.Point(1119, 585);
+            this.g40.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g40.Name = "g40";
-            this.g40.Size = new System.Drawing.Size(32, 39);
+            this.g40.Size = new System.Drawing.Size(48, 60);
             this.g40.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g40.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g40.StateCommon.Back.ColorAngle = 45F;
@@ -1681,9 +1797,10 @@
             // pictureBox24
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox24.Location = new System.Drawing.Point(737, 380);
+            this.pictureBox24.Location = new System.Drawing.Point(1106, 585);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(12, 39);
+            this.pictureBox24.Size = new System.Drawing.Size(18, 60);
             this.pictureBox24.TabIndex = 196;
             this.pictureBox24.TabStop = false;
             // 
@@ -1692,18 +1809,20 @@
             this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.Color.Black;
-            this.button23.Location = new System.Drawing.Point(746, 380);
+            this.button23.Location = new System.Drawing.Point(1119, 585);
+            this.button23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(32, 39);
+            this.button23.Size = new System.Drawing.Size(48, 60);
             this.button23.TabIndex = 195;
             this.button23.Text = "1";
             this.button23.UseVisualStyleBackColor = false;
             // 
             // g01
             // 
-            this.g01.Location = new System.Drawing.Point(140, 214);
+            this.g01.Location = new System.Drawing.Point(210, 329);
+            this.g01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.g01.Name = "g01";
-            this.g01.Size = new System.Drawing.Size(32, 39);
+            this.g01.Size = new System.Drawing.Size(48, 60);
             this.g01.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.g01.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.g01.StateCommon.Back.ColorAngle = 45F;
@@ -1719,45 +1838,51 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(653, 98);
+            this.pictureBox17.Location = new System.Drawing.Point(980, 151);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(179, 76);
+            this.pictureBox17.Size = new System.Drawing.Size(268, 117);
             this.pictureBox17.TabIndex = 199;
             this.pictureBox17.TabStop = false;
             // 
             // pictureBox18
             // 
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(441, 94);
+            this.pictureBox18.Location = new System.Drawing.Point(662, 145);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(206, 76);
+            this.pictureBox18.Size = new System.Drawing.Size(309, 117);
             this.pictureBox18.TabIndex = 200;
             this.pictureBox18.TabStop = false;
             // 
             // pictureBox19
             // 
             this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(235, 94);
+            this.pictureBox19.Location = new System.Drawing.Point(352, 145);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(206, 76);
+            this.pictureBox19.Size = new System.Drawing.Size(309, 117);
             this.pictureBox19.TabIndex = 201;
             this.pictureBox19.TabStop = false;
             // 
             // pictureBox20
             // 
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(32, 94);
+            this.pictureBox20.Location = new System.Drawing.Point(48, 145);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(206, 76);
+            this.pictureBox20.Size = new System.Drawing.Size(309, 117);
             this.pictureBox20.TabIndex = 202;
             this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(360, 23);
+            this.kryptonLabel1.Location = new System.Drawing.Point(540, 35);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel1.Size = new System.Drawing.Size(144, 28);
+            this.kryptonLabel1.Size = new System.Drawing.Size(213, 40);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonLabel1.StateCommon.ShortText.ColorAngle = 45F;
@@ -1769,48 +1894,53 @@
             // pictureBox29
             // 
             this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
-            this.pictureBox29.Location = new System.Drawing.Point(721, 55);
+            this.pictureBox29.Location = new System.Drawing.Point(1082, 85);
+            this.pictureBox29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox29.Size = new System.Drawing.Size(48, 51);
             this.pictureBox29.TabIndex = 207;
             this.pictureBox29.TabStop = false;
             // 
             // pictureBox30
             // 
             this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
-            this.pictureBox30.Location = new System.Drawing.Point(524, 55);
+            this.pictureBox30.Location = new System.Drawing.Point(786, 85);
+            this.pictureBox30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox30.Size = new System.Drawing.Size(48, 51);
             this.pictureBox30.TabIndex = 208;
             this.pictureBox30.TabStop = false;
             // 
             // pictureBox31
             // 
             this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
-            this.pictureBox31.Location = new System.Drawing.Point(320, 55);
+            this.pictureBox31.Location = new System.Drawing.Point(480, 85);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox31.Size = new System.Drawing.Size(48, 51);
             this.pictureBox31.TabIndex = 209;
             this.pictureBox31.TabStop = false;
             // 
             // pictureBox32
             // 
             this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
-            this.pictureBox32.Location = new System.Drawing.Point(115, 55);
+            this.pictureBox32.Location = new System.Drawing.Point(172, 85);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox32.Size = new System.Drawing.Size(48, 51);
             this.pictureBox32.TabIndex = 210;
             this.pictureBox32.TabStop = false;
             // 
             // ButtonNext
             // 
-            this.ButtonNext.Location = new System.Drawing.Point(721, 480);
+            this.ButtonNext.Location = new System.Drawing.Point(1082, 738);
+            this.ButtonNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonNext.Name = "ButtonNext";
             this.ButtonNext.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonNext.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonNext.OverrideFocus.Back.ColorAngle = 45F;
             this.ButtonNext.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ButtonNext.Size = new System.Drawing.Size(123, 37);
+            this.ButtonNext.Size = new System.Drawing.Size(184, 57);
             this.ButtonNext.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.ButtonNext.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.ButtonNext.StateCommon.Back.ColorAngle = 135F;
@@ -1832,9 +1962,9 @@
             // 
             // TrainBookingFormStep2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 548);
+            this.ClientSize = new System.Drawing.Size(1358, 843);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox30);
@@ -1965,6 +2095,7 @@
             this.Controls.Add(this.g01);
             this.Controls.Add(this.ButtonNext);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TrainBookingFormStep2";
             this.Text = "TicketsForm";
             this.Load += new System.EventHandler(this.TrainBookingFormStep2_Load);

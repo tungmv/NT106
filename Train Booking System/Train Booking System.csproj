@@ -201,5 +201,8 @@
   <ItemGroup>
     <None Include="Resources\Đsvn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exiticon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

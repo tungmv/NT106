@@ -191,7 +191,12 @@ namespace Server_API.Controllers
                 }
                 ).ToListAsync();
 
-            return Ok(query);
+            var response = new
+            {
+                response = query,
+            };
+
+            return Ok(response);
         }
 
         [AllowAnonymous]

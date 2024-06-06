@@ -32,7 +32,7 @@ namespace Train_Booking_System
                 try
                 {
                     // Send POST request
-                    var response = await client.PostAsync(loginUrl, content);
+                    var response = await client.PostAsync(ngrokURL.Url + "/api/Auth/login", content);
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -78,5 +78,10 @@ namespace Train_Booking_System
         private void TextBoxEmail_TextChanged(object sender, EventArgs e) { } 
 
         private void TextBoxPassword_TextChanged(object sender, EventArgs e) { }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -12,3 +12,17 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\De
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.csproj.CoreCompileInputs.cache
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.exe
 D:\Tai_Lieu_Hoc\VisualStudioProjects\Đồ án\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.pdb
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\bin\Debug\RemoteFileManagement.exe.config
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\bin\Debug\RemoteFileManagement.exe
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\bin\Debug\RemoteFileManagement.pdb
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Client.resources
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Form1.resources
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Properties.Resources.resources
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.Server.resources
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.TestClientForm.resources
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.TestForm.resources
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.csproj.GenerateResource.cache
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.exe
+C:\Users\HP\Documents\repo\NT106\RemoteFileManagement\obj\Debug\RemoteFileManagement.pdb
